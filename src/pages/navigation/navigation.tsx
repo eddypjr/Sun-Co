@@ -1,5 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import { NavLink, NavigationContainer, NavBarLinks } from './navigation.styles';
+import {
+  LogoContainer,
+  NavLink,
+  NavigationContainer,
+  NavBarLinks,
+  ViewCartContainer,
+} from './navigation.styles';
 import logo from '../../assets/logo.svg';
 import cartIcon from '../../assets/cartIcon.svg';
 
@@ -8,16 +14,17 @@ const Navigation = () => {
     <>
       <NavigationContainer>
         <NavBarLinks>
-          <NavLink to="/">
-            <p>
+          <LogoContainer>
+            <NavLink to="/">
               <img src={logo} />
-            </p>
-          </NavLink>
-
-          <NavLink to="/cart">
-            <img src={cartIcon} />
-            <span>View Cart</span>
-          </NavLink>
+            </NavLink>
+          </LogoContainer>
+          <ViewCartContainer>
+            <NavLink to="/cart">
+              <img src={cartIcon} />
+            </NavLink>
+            <div>View Cart</div>
+          </ViewCartContainer>
         </NavBarLinks>
       </NavigationContainer>
       <Outlet />

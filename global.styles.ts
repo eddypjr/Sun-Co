@@ -4,9 +4,8 @@ export const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Titillium Web';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter-Bold', Helvetica;
+
 
   @media screen and (max-width: 800px) {
     padding: 10px;
