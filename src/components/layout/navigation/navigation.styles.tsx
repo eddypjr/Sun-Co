@@ -4,12 +4,10 @@ import { Link } from 'react-router-dom';
 export const NavigationContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 60px;
   margin-bottom: 25px;
   justify-content: space-around;
-
   border-bottom: 1px solid gray;
-
   @media screen and (max-width: 800px) {
     height: 60px;
     width: 100%;
@@ -29,7 +27,7 @@ export const ViewCartContainer = styled.div`
   border-radius: 8px;
   margin-right: 5%;
   @media screen and (max-width: 800px) {
-    margin-right: 2%;
+    margin-right: 5%;
     justify-content: space-between;
     align-items: center;
   }
@@ -38,7 +36,7 @@ export const ViewCartContainer = styled.div`
 export const LogoContainer = styled.div`
   margin-left: 5%;
   @media screen and (max-width: 800px) {
-    margin-left: 2%;
+    margin-left: 5%;
   }
 `;
 

@@ -1,4 +1,3 @@
-import { Outlet } from 'react-router-dom';
 import {
   LogoContainer,
   NavLink,
@@ -6,8 +5,8 @@ import {
   NavBarLinks,
   ViewCartContainer,
 } from './navigation.styles';
-import logo from '../../assets/logo.svg';
-import cartIcon from '../../assets/cartIcon.svg';
+import logo from '../../../assets/logo.svg';
+import cartIcon from '../../../assets/cartIcon.svg';
 
 const Navigation = () => {
   return (
@@ -27,7 +26,6 @@ const Navigation = () => {
           </ViewCartContainer>
         </NavBarLinks>
       </NavigationContainer>
-      <Outlet />
     </>
   );
 };
