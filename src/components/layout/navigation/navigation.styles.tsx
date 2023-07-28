@@ -25,7 +25,7 @@ export const ViewCartContainer = styled.div`
   gap: 10px;
   border: 1px black solid;
   border-radius: 8px;
-  margin-right: 5%;
+  margin-right: 10%;
   @media screen and (max-width: 800px) {
     margin-right: 5%;
     justify-content: space-between;
@@ -34,7 +34,7 @@ export const ViewCartContainer = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  margin-left: 5%;
+  margin-left: 10%;
   @media screen and (max-width: 800px) {
     margin-left: 5%;
   }

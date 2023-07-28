@@ -20,7 +20,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  margin-left: 5%;
+  margin-left: 10%;
   display: flex;
   @media screen and (max-width: 800px) {
     margin-left: 5%;
@@ -46,7 +46,7 @@ export const FooterLink = styled(Link)`
 `;
 
 export const SocialLogoContainer = styled.div`
-  margin-right: 5%;
+  margin-right: 10%;
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 800px) {
