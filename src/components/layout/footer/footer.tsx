@@ -1,8 +1,9 @@
 import {
-  LogoContainer,
+  CopyrightContainer,
   FooterLink,
   FooterContainer,
   FooterLinksContainer,
+  LogoContainer,
   SocialLogoContainer,
 } from './footer.styles';
 import blackLogo from '../../../assets/blackLogo.png';
@@ -20,7 +21,10 @@ const Footer = () => {
               <img src={blackLogo} />
             </FooterLink>
           </LogoContainer>
-          <div>&#169; 2023 dot.cards text task. All rights reserved</div>
+          <CopyrightContainer>
+            <div>&#169; 2023 dot.cards text task.</div>
+            <div>All rights reserved</div>
+          </CopyrightContainer>
           <SocialLogoContainer>
             <FooterLink to="https://www.instagram.com/dot.cards/?hl=en">
               <img src={Instagram} />
