@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "brand": "Off-White",
+      "name": "Out of Office 'Ooo' sneakers",
+      "price": 775
+    },
+    {
+      "id": 2,
+      "brand": "Nike",
+      "name": "Nike Gamma Force",
+      "price": 200
+    },
+    {
+      "id": 3,
+      "brand": "Off-White",
+      "name": "Cosmic Unity",
+      "price": 160
+    },
+    {
+      "id": 4,
+      "brand": "adidas",
+      "name": "DAILY 3.0 SHOES",
+      "price": 98.99
+    }
+  ]
+}
