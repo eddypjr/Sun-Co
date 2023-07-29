@@ -14,14 +14,12 @@ export const ProductContainer = styled.div`
   align-items: flex-start;
   gap: 14px;
   width: 100%;
-
 `;
 
-export const ProductImage = styled.div`
+export const ProductImage = styled.img`
   width: 95%;
   height: 300px;
   border-radius: 18.77px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 `;
 
 export const ProductBrand = styled.div`

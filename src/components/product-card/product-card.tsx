@@ -13,6 +13,7 @@ export type Product = {
   name: string;
   brand: string;
   price: number;
+  image: string;
 };
 
 type ProductCardProps = {
@@ -20,17 +21,17 @@ type ProductCardProps = {
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
-  const { brand, name, price } = product;
+  const { brand, name, price, image } = product;
 
   return (
     <>
       <Container>
-        <ProductImage />
+        <ProductImage src={image} />
         <ProductContainer>
           <ProductBrand>{brand}</ProductBrand>
           <ProductName>{name}</ProductName>
         </ProductContainer>
-          <ProductPrice>{price}</ProductPrice>
+        <ProductPrice>{price}</ProductPrice>
       </Container>
     </>
   );
