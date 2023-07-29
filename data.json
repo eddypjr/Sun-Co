@@ -10,13 +10,13 @@
     {
       "id": 2,
       "brand": "Nike",
-      "name": "Nike Gamma Force",
+      "name": "Gamma Force",
       "description": "filler text",
       "price": 200
     },
     {
       "id": 3,
-      "brand": "Off-White",
+      "brand": "Nike",
       "name": "Cosmic Unity",
       "description": "lorem",
       "price": 160

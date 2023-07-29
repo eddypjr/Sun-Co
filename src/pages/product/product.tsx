@@ -1,9 +1,10 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import AddToCartBox from '../../components/addToCart/addToCart';
 import ProductDescription from '../../components/product-description/product-description';
 import { Container, InnerContainer, ProductImage } from './product.styles';
 import { useLocation } from 'react-router-dom';
 import { PhotoUrlList } from '../../products';
+import PhotoCarousel from '../../components/photo-carousel/photo-carousel';
 
 const Product = () => {
   const { state } = useLocation();
@@ -36,7 +37,7 @@ const Product = () => {
     <>
       <Container>
         <InnerContainer>
-          <ProductImage />
+          <PhotoCarousel images={imageUrl} />
           <AddToCartBox product={product} />
           <ProductDescription description={description} />
           <ProductImage src={imageUrl[imageUrl.length - 1]} />

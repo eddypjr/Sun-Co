@@ -4,7 +4,7 @@ export const ProductImage = styled.img`
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  background-color: red;
+  margin-top: 5%;
 `;
 
 export const Container = styled.div`
