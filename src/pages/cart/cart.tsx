@@ -13,9 +13,11 @@ import { useContext, useState } from 'react';
 import { CartContext } from '../../contexts/cart.context';
 
 const Cart = () => {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, cartTotal } = useContext(CartContext);
 
-  console.log('cartItems', cartItems);
+  
+
+  console.log('cartTotal', cartTotal);
 
   return (
     <>
@@ -33,7 +35,7 @@ const Cart = () => {
               })}
             </LeftContainer>
             <RightContainer>
-              <Summary />
+              <Summary cartTotal={cartTotal } />
             </RightContainer>
           </GridContainer>
         </InnerContainer>

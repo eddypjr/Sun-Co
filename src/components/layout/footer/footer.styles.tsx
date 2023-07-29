@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
   background-color: black;
   color: #d9dbe1;
   font-size: 14px;
-  position: relative;
+  position: absolute;
   margin-top: 5%;
   bottom: 0;
   

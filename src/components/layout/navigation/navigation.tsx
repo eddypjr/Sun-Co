@@ -20,12 +20,13 @@ const Navigation = () => {
               <img src={logo} />
             </NavLink>
           </LogoContainer>
-          <ViewCartContainer>
-            <NavLink to="/cart">
+
+          <NavLink to="/cart">
+            <ViewCartContainer>
               <img src={cartIcon} />
-            </NavLink>
-            <div>View Cart</div>
-          </ViewCartContainer>
+              View Cart
+            </ViewCartContainer>
+          </NavLink>
         </NavBarLinks>
       </NavigationContainer>
     </>

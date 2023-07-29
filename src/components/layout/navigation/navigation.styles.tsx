@@ -20,12 +20,12 @@ export const NavigationContainer = styled.div`
 export const ViewCartContainer = styled.div`
   display: flex;
   padding: 8px 24px;
-  justify-content: center;
   align-items: center;
   gap: 10px;
   border: 1px black solid;
   border-radius: 8px;
-  margin-right: 10%;
+  color: black;
+  background-color: white;
   @media screen and (max-width: 800px) {
     margin-right: 5%;
     justify-content: space-between;
@@ -51,9 +51,8 @@ export const NavBarLinks = styled.div`
 
 export const NavLink = styled(Link)`
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: 10%;
   @media screen and (max-width: 800px) {
+
   }
 `;
