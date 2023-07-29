@@ -13,7 +13,9 @@ import {
 } from './addToCart.styles';
 import QuantityStepper from '../quantity-stepper/quantity-stepper';
 
-const AddToCartBox = ({brand, name, price}) => {
+const AddToCartBox = ({ product }) => {
+  const { brand, name, price } = product;
+
   return (
     <>
       <Container>
@@ -28,9 +30,9 @@ const AddToCartBox = ({brand, name, price}) => {
             <Quantity>Quantity</Quantity>
             <QuantityStepper />
           </InnerBottom>
-            <Spacing>
-              <AddToCartButton />
-            </Spacing>
+          <Spacing>
+            <AddToCartButton product={product} />
+          </Spacing>
         </InnerContainer>
       </Container>
     </>

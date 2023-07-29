@@ -7,8 +7,7 @@ import {
   Underline,
 } from './product-description.styles';
 
-const ProductDescription = () => {
-
+const ProductDescription = ({ description }) => {
   return (
     <>
       <Container>
@@ -16,17 +15,16 @@ const ProductDescription = () => {
           <DescriptionHeadingText>Description</DescriptionHeadingText>
           <Underline />
           <Description>
-            Energize your look with a fresh take on heritage adidas style. The
-            adidas Daily 3.0 Shoes cut a classic profile with a modern suede
-            upper. Your walk across campus or commute across town has never
-            looked or felt this good.
+            {description}
           </Description>
-          <BulletPoints>
-            <li>Regular fit</li>
-            <li>Lace closure</li>
-            <li>Rubber outsole with vulcanized look</li>
-            <li>Imported</li>
-          </BulletPoints>
+          <div>
+            <BulletPoints>
+              <li>Regular fit</li>
+              <li>Lace closure</li>
+              <li>Rubber outsole with vulcanized look</li>
+              <li>Imported</li>
+            </BulletPoints>
+          </div>
         </InnerContainer>
       </Container>
     </>

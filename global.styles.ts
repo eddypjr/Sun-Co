@@ -15,4 +15,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 `;

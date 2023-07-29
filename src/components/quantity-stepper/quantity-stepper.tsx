@@ -18,15 +18,17 @@ const QuantityStepper = () => {
 
   return (
     <>
-    <QtyStepper>
-      <Button onClick={handleDecrement}>
-        <img src={minus} />
-      </Button>
-      <Span>{quantity}</Span>
-      <Button onClick={handleIncrement}>
-        <img src={plus} />
-      </Button>
-    </QtyStepper>
+      <div>
+        <QtyStepper>
+          <Button onClick={handleDecrement}>
+            <img src={minus} />
+          </Button>
+          <Span>{quantity}</Span>
+          <Button onClick={handleIncrement}>
+            <img src={plus} />
+          </Button>
+        </QtyStepper>
+      </div>
     </>
   );
 };

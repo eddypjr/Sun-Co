@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 `;
 
-export const InnerContainer = styled.p`
+export const InnerContainer = styled.div`
   width: 100%;
   // display: flex;
   flex-direction: row;

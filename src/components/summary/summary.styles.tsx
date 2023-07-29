@@ -7,6 +7,7 @@ export const Container = styled.div`
   background: var(--white, #fff);
   box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
     rgba(0, 0, 0, 0.08);
+  font-family: DM Sans;
 `;
 
 export const InnerContainer = styled.div`
@@ -21,45 +22,9 @@ export const InnerTop = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 40%;
-  margin-left: 13%;
-`;
-
-export const Brand = styled.h1`
-  color: var(--black, #201b21);
-  font-size: 24px;
-  font-style: normal;
-  font-family: DM Sans;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.5px;
-`;
-
-export const Name = styled.h2`
-  color: var(--dark-grey, #67696e);
-  font-family: Inter;
+  height: 100%;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 120% */
-`;
-export const Price = styled.h1`
-  color: var(--black, #201b21);
-  font-size: 24px;
-  font-style: normal;
-  font-family: DM Sans;
-  font-weight: 500;
-  line-height: 24px; /* 100% */
-  letter-spacing: -0.5px;
-`;
-
-export const Quantity = styled.h1`
-  color: var(--black, #201b21);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px; /* 111.111% */
-  letter-spacing: -0.5px;
+  margin-left: 13%;
 `;
 
 export const InnerBottom = styled.div`
@@ -81,4 +46,21 @@ export const Underline = styled.div`
   opacity: 0.1;
   background-color: #201b21;
   height: 1px;
+`;
+
+export const Heading = styled.h1`
+  color: var(--black, #201b21);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  letter-spacing: -1px;
+`;
+export const Total = styled.div`
+  font-size: 24px;
+`;
+export const SummaryDetails = styled.div`
+  font-size: 20px;
+  padding: 10px 0px;
 `;

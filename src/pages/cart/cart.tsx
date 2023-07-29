@@ -1,7 +1,14 @@
+import Summary from '../../components/summary/summary';
+import CartItems from '../../components/cart-items/cart-items';
+
 const Cart = () => {
   return (
     <>
-      <p>Cart</p>
+      <div>
+        <CartItems />
+
+        <Summary />
+      </div>
     </>
   );
 };

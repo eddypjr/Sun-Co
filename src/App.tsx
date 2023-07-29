@@ -6,8 +6,6 @@ import Cart from './pages/cart/cart';
 import Layout from './components/layout/layout';
 import Product from './pages/product/product';
 
-
-
 const App: FC = () => {
   return (
     <>

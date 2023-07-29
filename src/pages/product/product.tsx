@@ -8,14 +8,14 @@ import { useLocation } from 'react-router-dom';
 const Product = () => {
   const { state } = useLocation();
   const { product } = state || {};
-  const { brand, description, name, price } = product;
-  // console.log(product);
+  const { description } = product;
+
   return (
     <>
       <Container>
         <InnerContainer>
           <ProductImage>image</ProductImage>
-          <AddToCartBox brand={brand} name={name} price={price } />
+          <AddToCartBox product={product} />
           <ProductDescription description={description} />
           <ProductImage>image</ProductImage>
         </InnerContainer>
