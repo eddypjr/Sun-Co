@@ -1,8 +1,3 @@
-import FirstThumbnail from './assets/images/products/thumbnails/1.png';
-import SecondThumbnail from './assets/images/products/thumbnails/2.png';
-import ThirdNumbnail from './assets/images/products/thumbnails/3.png';
-import FourthThumbnail from './assets/images/products/thumbnails/4.png';
-
 import Adidas1 from './assets/images/products/adidas/1.png';
 import Adidas2 from './assets/images/products/adidas/2.png';
 import Adidas3 from './assets/images/products/adidas/3.png';
@@ -40,11 +35,4 @@ export const PhotoUrlList = [
   NikeGammaForce2,
   NikeGammaForce3,
   NikeGammaForce4,
-];
-
-export const ThumbnailList = [
-  FirstThumbnail,
-  SecondThumbnail,
-  ThirdNumbnail,
-  FourthThumbnail,
 ];

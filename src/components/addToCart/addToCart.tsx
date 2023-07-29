@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import AddToCartButton from '../add-to-cart-button/add-to-cart-button';
 import {
   Container,
@@ -15,6 +16,15 @@ import QuantityStepper from '../quantity-stepper/quantity-stepper';
 
 const AddToCartBox = ({ product }) => {
   const { brand, name, price } = product;
+  const [quantity, setQuantity] = useState(1);
+
+  const handleIncrement = () => {
+    setQuantity((prevQuantity) => Math.min(prevQuantity + 1, 99));
+  };
+
+  const handleDecrement = () => {
+    setQuantity((prevQuantity) => Math.max(prevQuantity - 1, 1));
+  };
 
   return (
     <>
@@ -28,10 +38,14 @@ const AddToCartBox = ({ product }) => {
           <Underline />
           <InnerBottom>
             <Quantity>Quantity</Quantity>
-            <QuantityStepper />
+            <QuantityStepper
+              handleIncrement={handleIncrement}
+              handleDecrement={handleDecrement}
+              quantity={quantity}
+            />
           </InnerBottom>
           <Spacing>
-            <AddToCartButton product={product} />
+            <AddToCartButton product={product} quantity={quantity} />
           </Spacing>
         </InnerContainer>
       </Container>

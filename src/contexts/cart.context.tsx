@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 
-const addCartItem = (cartItems, productToAdd) => {
+const addCartItem = (cartItems, productToAdd, quantity) => {
   // first determine if cartItems contains productToAdd
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === productToAdd.id
@@ -10,12 +10,12 @@ const addCartItem = (cartItems, productToAdd) => {
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id
-        ? { ...cartItem, quantity: cartItem.quantity + 1 }
+        ? { ...cartItem, quantity: cartItem.quantity + quantity }
         : cartItem
     );
   }
   // else, add the new cart item
-  return [...cartItems, { ...productToAdd, quantity: 1 }];
+  return [...cartItems, { ...productToAdd, quantity: quantity }];
 };
 
 export const CartContext = createContext({
@@ -30,8 +30,8 @@ export const CartProvider = ({ children }) => {
   const [cartCount, setCartCount] = useState(0);
   const [cartTotal, setCartTotal] = useState(0);
 
-  const addItemToCart = (productToAdd) => {
-    setCartItems(addCartItem(cartItems, productToAdd));
+  const addItemToCart = (productToAdd, quantity) => {
+    setCartItems(addCartItem(cartItems, productToAdd, quantity));
   };
 
   const value = {
