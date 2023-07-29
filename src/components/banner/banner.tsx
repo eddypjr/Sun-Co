@@ -23,7 +23,7 @@ const Banner = () => {
             <BannerH1>25% OFF</BannerH1>
             <BannerH2>Summer Sale</BannerH2>
             <BannerP>Discover our summer styles with discount</BannerP>
-            <ShopNowButton to="/product">
+            <ShopNowButton to="/cart">
               Shop Now <img src={rightArrow} />
             </ShopNowButton>
           </LeftBannerContainer>
