@@ -9,8 +9,10 @@ import {
   LeftBannerContainer,
   ShopNowButton,
 } from './banner.styles';
-import rightArrow from '../../assets/rightArrow.svg';
-import banner from '../../assets/banner.png';
+// import rightArrow from '../../../public/assets/svg/rightArrow.svg';
+// import banner from '../../../public/assets/images/banner.png';
+import banner from '../../assets/images/banner.png';
+import rightArrow from '../../assets/svg/rightArrow.svg';
 
 const Banner = () => {
   return (

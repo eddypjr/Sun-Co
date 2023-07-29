@@ -5,8 +5,10 @@ import {
   NavBarLinks,
   ViewCartContainer,
 } from './navigation.styles';
-import logo from '../../../assets/logo.svg';
-import cartIcon from '../../../assets/cartIcon.svg';
+// import logo from '../../../../public/assets/svg/logo.svg';
+// import cartIcon from '../../../../public/assets/svg/cartIcon.svg';
+import logo from '../../../assets/svg/logo.svg';
+import cartIcon from '../../../assets/svg/cartIcon.svg';
 
 const Navigation = () => {
   return (

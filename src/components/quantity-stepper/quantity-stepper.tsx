@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { QtyStepper, Button, Span } from './quantity-stepper.styles';
-import plus from '../../assets/plus.svg';
-import minus from '../../assets/minus.svg';
+// import plus from '../../../public/assets/svg/plus.svg'
+// import minus from '../../../public/assets/svg/minus.svg';
+import plus from '../../assets/svg/plus.svg';
+import minus from '../../assets/svg/minus.svg';
 const QuantityStepper = () => {
   const [quantity, setQuantity] = useState(1);
 
