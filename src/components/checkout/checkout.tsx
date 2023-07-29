@@ -1,5 +1,5 @@
 import { Checkout } from './checkout.styles';
-import rightArrow from '../../assets/rightArrow.svg';
+import rightArrow from '../../assets/svg/rightArrow.svg';
 
 const CheckoutButton = () => {
   // use Link instead of div for buttons

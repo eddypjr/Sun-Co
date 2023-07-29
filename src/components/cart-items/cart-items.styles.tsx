@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  // background-color: red;
+  border-bottom: 1px solid #201b21;
 `;
 
 export const InnerContainer = styled.div`
@@ -11,8 +11,13 @@ export const InnerContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
 `;
 
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+`;
+
 export const ImageContainer = styled.div`
- width: 100%;
+  width: 100%;
 `;
 
 export const Image = styled.img`
@@ -23,13 +28,17 @@ export const Image = styled.img`
 `;
 
 export const SecondColumnBottom = styled.div`
-  // width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 25%;
+  column-gap: 42px;
 `;
 
 export const MiddleColumn = styled.div`
   width: 100%;
+  margin-left: 10%;
+  display: grid;
+  row-gap: 0px;
 `;
 
 export const Brand = styled.div`
@@ -64,4 +73,21 @@ export const Price = styled.div`
   font-weight: 500;
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.5px;
+`;
+
+export const RemoveButton = styled.button`
+  color: #67696e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  text-decoration-line: underline;
+  width: 63px;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 `;

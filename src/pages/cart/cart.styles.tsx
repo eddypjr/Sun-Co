@@ -7,11 +7,26 @@ export const Container = styled.div`
   justify-items: center;
 `;
 
-export const InnerContainer = styled.div`
-  width:80%;
+export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 42px;
+`;
+
+export const LeftContainer = styled.div`
+  display: grid;
+  row-gap: 20px;
+`;
+
+export const RightContainer = styled.div`
+  display: grid;
+`;
+
+export const InnerContainer = styled.div`
+  width: 80%;
+  display: grid;
+  column-gap: 42px;
+  // grid-template-columns: repeat(, 1fr);
 `;
 
 export const CartHeading = styled.h1`

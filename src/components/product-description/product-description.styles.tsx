@@ -12,7 +12,6 @@ export const InnerContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 `;
 
 
