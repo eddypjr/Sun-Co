@@ -13,24 +13,24 @@ import {
 } from './addToCart.styles';
 import QuantityStepper from '../quantity-stepper/quantity-stepper';
 
-const AddToCartBox = () => {
+const AddToCartBox = ({brand, name, price}) => {
   return (
     <>
       <Container>
         <InnerContainer>
           <InnerTop>
-            <Brand>brand</Brand>
-            <Name>name</Name>
-            <Price>price</Price>
+            <Brand>{brand}</Brand>
+            <Name>{name}</Name>
+            <Price>${price}</Price>
           </InnerTop>
           <Underline />
           <InnerBottom>
             <Quantity>Quantity</Quantity>
             <QuantityStepper />
+          </InnerBottom>
             <Spacing>
               <AddToCartButton />
             </Spacing>
-          </InnerBottom>
         </InnerContainer>
       </Container>
     </>

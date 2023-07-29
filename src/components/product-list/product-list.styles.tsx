@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -23,3 +24,7 @@ export const ExploreText = styled.h1`
   line-height: 48px; /* 133.333% */
   letter-spacing: -1px;
 `;
+
+export const NavLinkDiv = styled.div`
+width: 100%;
+`

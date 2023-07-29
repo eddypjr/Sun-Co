@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -14,15 +14,15 @@ export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  border: 1px solid black;
 `;
 
 export const InnerTop = styled.div`
-width: 80%;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  margin-left: 13%;
 `;
 
 export const Brand = styled.h1`
@@ -64,20 +64,22 @@ export const Quantity = styled.h1`
 `;
 
 export const InnerBottom = styled.div`
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
- 
+  margin-left: 13%;
 `;
 
 export const Spacing = styled.div`
-margin-top: 3%;
-`
+  padding-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Underline = styled.div`
   opacity: 0.1;
   background-color: #201b21;
-  height: 25px;
+  height: 1px;
 `;

@@ -5,8 +5,10 @@ import {
   Container,
   ProductsContainer,
   ExploreText,
+  NavLinkDiv,
 } from './product-list.styles';
-// import Thumbnails from '../../../public/images/products/thumbnails/cosmic-unity-3.png';
+import { Link, Route, Routes } from 'react-router-dom';
+import Product from '../../pages/product/product';
 
 const ProductList: FC = () => {
   const { products } = useContext(ProductsContext);
@@ -17,7 +19,11 @@ const ProductList: FC = () => {
         <ExploreText>Explore the latest drops</ExploreText>
         <ProductsContainer>
           {products.map((product) => (
-            <ProductCard key={product['id']} product={product} />
+            <NavLinkDiv key={product['id']}>
+              <Link to={`/product/${product['id']}`} state={{ product }}>
+                <ProductCard product={product} />
+              </Link>
+            </NavLinkDiv>
           ))}
         </ProductsContainer>
       </Container>
