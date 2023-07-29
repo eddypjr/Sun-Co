@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ProductImage = styled.div`
+export const ProductImage = styled.img`
   border-radius: 20px;
   width: 100%;
   height: 100%;
