@@ -1,16 +1,19 @@
 import {
+  ItemCount,
   LogoContainer,
   NavLink,
   NavigationContainer,
   NavBarLinks,
   ViewCartContainer,
 } from './navigation.styles';
-// import logo from '../../../../public/assets/svg/logo.svg';
-// import cartIcon from '../../../../public/assets/svg/cartIcon.svg';
 import logo from '../../../assets/svg/logo.svg';
 import cartIcon from '../../../assets/svg/cartIcon.svg';
+import { useContext } from 'react';
+import { CartContext } from '../../../contexts/cart.context';
 
 const Navigation = () => {
+  const { cartCount } = useContext(CartContext);
+
   return (
     <>
       <NavigationContainer>
@@ -25,6 +28,7 @@ const Navigation = () => {
             <ViewCartContainer>
               <img src={cartIcon} />
               View Cart
+              {cartCount > 0 && <ItemCount>{cartCount}</ItemCount>}
             </ViewCartContainer>
           </NavLink>
         </NavBarLinks>

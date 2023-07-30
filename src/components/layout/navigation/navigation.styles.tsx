@@ -53,6 +53,17 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   margin-right: 10%;
   @media screen and (max-width: 800px) {
-
   }
+`;
+
+export const ItemCount = styled.div`
+  background-color: #ec5e2a;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ec5e2a;
+  outline: none;
+  color: white;
+  cursor: pointer;
 `;

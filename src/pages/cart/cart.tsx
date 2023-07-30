@@ -13,11 +13,11 @@ import { useContext, useState } from 'react';
 import { CartContext } from '../../contexts/cart.context';
 
 const Cart = () => {
-  const { cartItems, cartTotal } = useContext(CartContext);
+  const { cartItems, cartTotal, cartCount } = useContext(CartContext);
 
   
 
-  console.log('cartTotal', cartTotal);
+  console.log('cartCount', cartCount);
 
   return (
     <>
