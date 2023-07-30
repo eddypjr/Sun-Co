@@ -10,9 +10,9 @@ const AddToCartButton = ({ product, quantity }) => {
 
   return (
     <>
-      <AddButton onClick={addItemHandler}>
-        <Link to="/">Add to Cart</Link>
-      </AddButton>
+      <Link to="/">
+        <AddButton onClick={addItemHandler}>Add to Cart</AddButton>
+      </Link>
     </>
   );
 };

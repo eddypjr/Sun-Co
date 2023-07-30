@@ -9,8 +9,8 @@ export const FooterContainer = styled.div`
   background-color: black;
   color: #d9dbe1;
   font-size: 14px;
-  position: absolute;
-  margin-top: 5%;
+  // position: absolute;
+  margin-top: auto;
   bottom: 0;
   
   @media screen and (max-width: 800px) {

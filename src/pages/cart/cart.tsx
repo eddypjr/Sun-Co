@@ -9,15 +9,11 @@ import {
   LeftContainer,
   RightContainer
 } from './cart.styles';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
 
 const Cart = () => {
-  const { cartItems, cartTotal, cartCount } = useContext(CartContext);
-
-  
-
-  console.log('cartCount', cartCount);
+  const { cartItems, cartTotal } = useContext(CartContext);
 
   return (
     <>
@@ -35,7 +31,7 @@ const Cart = () => {
               })}
             </LeftContainer>
             <RightContainer>
-              <Summary cartTotal={cartTotal } />
+              <Summary cartTotal={cartTotal} />
             </RightContainer>
           </GridContainer>
         </InnerContainer>
