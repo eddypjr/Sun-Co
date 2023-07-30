@@ -1,8 +1,8 @@
 import { Checkout } from './checkout.styles';
 import rightArrow from '../../assets/svg/rightArrow.svg';
+import { FC } from 'react';
 
-const CheckoutButton = () => {
-  // use Link instead of div for buttons
+const CheckoutButton: FC = () => {
   return (
     <>
       <Checkout to="">

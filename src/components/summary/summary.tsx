@@ -16,9 +16,13 @@ import {
   Spacing,
 } from './summary.styles';
 import CheckoutButton from '../checkout/checkout';
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
-const Summary = ({ cartTotal }) => {
+type SummaryProps = {
+  cartTotal: number;
+}
+
+const Summary: FC<SummaryProps> = ({ cartTotal }) => {
   const [total, setNewTotal] = useState(0);
 
   useEffect(() => {

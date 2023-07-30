@@ -12,10 +12,20 @@ import {
   SecondColumnBottom,
   ThirdColumn,
 } from './cart-items.styles';
-import { useContext } from 'react';
+import { FC, useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
 
-const CartItems = ({ item }) => {
+type CartItemsProps = {
+  item: {
+    brand: string;
+    name: string;
+    image: string;
+    price: number;
+    quantity: number;
+  };
+};
+
+const CartItems: FC<CartItemsProps> = ({ item }) => {
   const { addItemToCart, subtractItemFromCart, removeItemFromCart } =
     useContext(CartContext);
   const { image, brand, name, price, quantity } = item;

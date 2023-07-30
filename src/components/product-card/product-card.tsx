@@ -7,14 +7,7 @@ import {
   ProductName,
   ProductPrice,
 } from './product-card.styles';
-
-export type Product = {
-  id: string;
-  name: string;
-  brand: string;
-  price: number;
-  image: string;
-};
+import type { Product } from '../../contexts/cart.context';
 
 type ProductCardProps = {
   product: Product;

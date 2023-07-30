@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import {
   BottomContainer,
   Container,
@@ -12,7 +12,11 @@ import {
 import LeftChevron from '../../assets/svg/chevron-left.svg';
 import RightChevron from '../../assets/svg/chevron-right.svg';
 
-const PhotoCarousel = ({ images }) => {
+type PhotoCarouselProps = {
+  images: string[];
+};
+
+const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {

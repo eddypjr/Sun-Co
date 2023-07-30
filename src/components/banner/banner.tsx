@@ -11,8 +11,9 @@ import {
 } from './banner.styles';
 import banner from '../../assets/images/banner.png';
 import rightArrow from '../../assets/svg/rightArrow.svg';
+import { FC } from 'react';
 
-const Banner = () => {
+const Banner: FC = () => {
   return (
     <>
       <Container>

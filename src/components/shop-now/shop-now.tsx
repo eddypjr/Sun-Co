@@ -1,8 +1,8 @@
 import { Shop } from './shop-now.styles';
 import rightArrow from '../../assets/rightArrow.svg';
+import { FC } from 'react';
 
-const ShopNow = () => {
-  // use Link instead of div for buttons
+const ShopNow: FC = () => {
   return (
     <>
       <Shop to="">

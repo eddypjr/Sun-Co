@@ -1,6 +1,25 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect, PropsWithChildren } from 'react';
 
-const addCartItem = (cartItems, productToAdd, quantity) => {
+export type Product = {
+  id: string;
+  name: string;
+  brand: string;
+  price: number;
+  image: string;
+};
+
+type CartItem = {
+  id: string;
+  brand: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  quantity: number;
+}
+
+
+const addCartItem = (cartItems: CartItem[], productToAdd: CartItem, quantity: number) => {
   // first determine if cartItems contains productToAdd
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === productToAdd.id
@@ -18,7 +37,7 @@ const addCartItem = (cartItems, productToAdd, quantity) => {
   return [...cartItems, { ...productToAdd, quantity: quantity }];
 };
 
-const subtractCartItem = (cartItems, productToSubtract) => {
+const subtractCartItem = (cartItems: CartItem[], productToSubtract: CartItem) => {
   return cartItems.map((cartItem) => {
     if (cartItem.id === productToSubtract.id && cartItem.quantity > 1) {
       return { ...cartItem, quantity: cartItem.quantity - 1 };
@@ -27,11 +46,20 @@ const subtractCartItem = (cartItems, productToSubtract) => {
   });
 };
 
-const removeCartItem = (cartItems, productToRemove) => {
+const removeCartItem = (cartItems: CartItem[], productToRemove: CartItem) => {
   return cartItems.filter((cartItem) => cartItem.id !== productToRemove.id);
 };
 
-export const CartContext = createContext({
+interface CartContextInterface {
+  cartItems: CartItem[];
+  addItemToCart: () => void;
+  subtractItemFromCart: () => void;
+  removeItemFromCart: () => void;
+  cartTotal: number;
+  cartCount: number;
+}
+
+export const CartContext = createContext<CartContextInterface>({
   cartItems: [],
   addItemToCart: () => {},
   subtractItemFromCart: () => {},
@@ -40,10 +68,10 @@ export const CartContext = createContext({
   cartCount: 0,
 });
 
-export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
-  const [cartCount, setCartCount] = useState(0);
-  const [cartTotal, setCartTotal] = useState(0);
+export const CartProvider = ({ children }: PropsWithChildren) => {
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [cartCount, setCartCount] = useState<number>(0);
+  const [cartTotal, setCartTotal] = useState<number>(0);
 
   useEffect(() => {
     const newCartCount = cartItems.reduce(
@@ -63,15 +91,15 @@ export const CartProvider = ({ children }) => {
     setCartTotal(newCartTotal);
   }, [cartItems]);
 
-  const addItemToCart = (productToAdd, quantity) => {
+  const addItemToCart = (productToAdd: CartItem, quantity: number) => {
     setCartItems(addCartItem(cartItems, productToAdd, quantity));
   };
 
-  const subtractItemFromCart = (productToSubtract) => {
+  const subtractItemFromCart = (productToSubtract: CartItem) => {
     setCartItems(subtractCartItem(cartItems, productToSubtract));
   };
 
-  const removeItemFromCart = (productToRemove) => {
+  const removeItemFromCart = (productToRemove: CartItem) => {
     setCartItems(removeCartItem(cartItems, productToRemove));
   };
 

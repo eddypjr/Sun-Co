@@ -1,7 +1,19 @@
 import { QtyStepper, Button, Span } from './quantity-stepper.styles';
 import plus from '../../assets/svg/plus.svg';
 import minus from '../../assets/svg/minus.svg';
-const QuantityStepper = ({ handleIncrement, handleDecrement, quantity }) => {
+import { FC } from 'react';
+
+type QuantityStepperProps = {
+  handleIncrement: () => void;
+  handleDecrement: () => void;
+  quantity: number;
+};
+
+const QuantityStepper: FC<QuantityStepperProps> = ({
+  handleIncrement,
+  handleDecrement,
+  quantity,
+}) => {
   return (
     <>
       <div>

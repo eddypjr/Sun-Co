@@ -8,10 +8,10 @@ import {
 } from './navigation.styles';
 import logo from '../../../assets/svg/logo.svg';
 import cartIcon from '../../../assets/svg/cartIcon.svg';
-import { useContext } from 'react';
+import { FC, useContext } from 'react';
 import { CartContext } from '../../../contexts/cart.context';
 
-const Navigation = () => {
+const Navigation: FC = () => {
   const { cartCount } = useContext(CartContext);
 
   return (

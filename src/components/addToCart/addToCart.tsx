@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import AddToCartButton from '../add-to-cart-button/add-to-cart-button';
 import {
   Container,
@@ -13,8 +13,13 @@ import {
   Underline,
 } from './addToCart.styles';
 import QuantityStepper from '../quantity-stepper/quantity-stepper';
+import type { Product } from '../../contexts/cart.context';
 
-const AddToCartBox = ({ product }) => {
+type AddToCartBoxProps = {
+  product: Product;
+};
+
+const AddToCartBox: FC<AddToCartBoxProps> = ({ product }) => {
   const { brand, name, price } = product;
   const [quantity, setQuantity] = useState(1);
 

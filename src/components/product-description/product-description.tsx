@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import {
   BulletPoints,
   Container,
@@ -7,7 +8,11 @@ import {
   Underline,
 } from './product-description.styles';
 
-const ProductDescription = ({ description }) => {
+type ProductDescriptionProps = {
+  description: string;
+}
+
+const ProductDescription: FC<ProductDescriptionProps> = ({ description }) => {
   return (
     <>
       <Container>
