@@ -5,11 +5,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter-Bold', Helvetica;
+  background-color: var(--white, #FFF);
+
+    @media screen and (max-width: 800px) {
+    padding-bottom: 100px;
+  }
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #201B21;
 }
 
 * {

@@ -1,11 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ProductImage = styled.img`
   border-radius: 20px;
   width: 100%;
-  height: 100%;
   margin-top: 5%;
 
+  @media screen and (max-width: 800px) {
+    padding-bottom: 100px;
+  }
 `;
 
 export const Container = styled.div`
@@ -13,6 +15,12 @@ export const Container = styled.div`
   display: grid;
   justify-items: center;
   margin-bottom: 5%;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -22,5 +30,12 @@ export const InnerContainer = styled.div`
   width: 80%;
   justify-items: center;
   row-gap: 10px;
-`;
 
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    row-gap: 35px;
+  }
+`;

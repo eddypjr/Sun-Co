@@ -15,4 +15,9 @@ export const AddButton = styled.button`
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 111.111% */
+
+  @media screen and (max-width: 800px) {
+    width: 302px;
+    padding: 14px 80px;
+  }
 `;

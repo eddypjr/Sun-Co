@@ -17,7 +17,7 @@ const ProductList: FC = () => {
       <Container>
         <ExploreText>Explore the latest drops</ExploreText>
         <ProductsContainer>
-          {products.map((product, i) => (
+          {products.map((product) => (
             <NavLinkDiv key={product['id']}>
               <Link to={`/product/${product['id']}`} state={{ product }}>
                 <ProductCard product={product} />

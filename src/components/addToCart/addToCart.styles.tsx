@@ -14,14 +14,28 @@ export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    // width: 100%;
+    // height: 700px;
+    // background-color: red;
+    margin-top: 5%;
+  }
 `;
 
 export const InnerTop = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 40%;
-  margin-left: 13%;
+  height: 55%;
+  margin-left: 5%;
+  // background-color: red;
+
+  @media screen and (max-width: 800px) {
+    // width: 100%;
+    // height: 700px;
+    // background-color: red;
+  }
 `;
 
 export const Brand = styled.h1`
@@ -32,6 +46,16 @@ export const Brand = styled.h1`
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    color: var(--black, #201b21);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.375px;
+  }
 `;
 
 export const Name = styled.h2`
@@ -41,6 +65,15 @@ export const Name = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 120% */
+
+  @media screen and (max-width: 800px) {
+    color: var(--dark-grey, #67696e);
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 120% */
+  }
 `;
 export const Price = styled.h1`
   color: var(--black, #201b21);
@@ -50,6 +83,16 @@ export const Price = styled.h1`
   font-weight: 500;
   line-height: 24px; /* 100% */
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    color: var(--black, #201b21);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 100% */
+    letter-spacing: -0.375px;
+  }
 `;
 
 export const Quantity = styled.h1`
@@ -59,6 +102,16 @@ export const Quantity = styled.h1`
   font-weight: 700;
   line-height: 20px; /* 111.111% */
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    color: var(--black, #201b21);
+    font-family: DM Sans;
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; /* 111.111% */
+    letter-spacing: -0.375px;
+  }
 `;
 
 export const InnerBottom = styled.div`
@@ -66,6 +119,13 @@ export const InnerBottom = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 13%;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 5%;
+    // width: 100%;
+    // height: 700px;
+    // background-color: red;
+  }
 `;
 
 export const Spacing = styled.div`
@@ -74,6 +134,11 @@ export const Spacing = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 800px) {
+    // width: 100%;
+    // height: 700px;
+    margin-bottom: 5%;
+  }
 `;
 
 export const Underline = styled.div`

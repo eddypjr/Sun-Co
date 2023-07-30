@@ -21,10 +21,13 @@ export const BannerContainer = styled.div`
   padding: 2.5rem 0;
 
   @media screen and (max-width: 800px) {
+    width: 90%;
     padding: 0.625rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 30px;
+    border-radius: 20px;
   }
 `;
 
@@ -35,7 +38,6 @@ export const LeftBannerContainer = styled.div`
   @media screen and (max-width: 800px) {
     height: 100%;
     order: 2;
-    
   }
 `;
 
@@ -91,9 +93,10 @@ export const BannerP = styled.p`
   margin: 0.625rem @media screen and (max-width: 800px) {
     color: var(--dark-grey, #67696e);
     font-family: Inter;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    line-height: 20px; /* 142.857% */
   }
 `;
 
@@ -111,6 +114,7 @@ export const ShopNowButton = styled(Link)`
   @media screen and (max-width: 800px) {
     font-size: 1rem;
     margin-top: 0;
+    padding: 12px 80px;
   }
 `;
 
@@ -127,7 +131,7 @@ export const BannerImage = styled.img`
   height: 20.063rem;
 
   @media screen and (max-width: 800px) {
-    width: 9.375rem;
-    height: 7.813rem;
+    width: 175px;
+    height: 175px;
   }
 `;

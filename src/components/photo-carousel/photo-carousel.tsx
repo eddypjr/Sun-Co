@@ -1,9 +1,10 @@
 import { FC, useState } from 'react';
 import {
   BottomContainer,
+  Circle,
   Container,
   Slide,
-  SlideHidden,
+  SlideContainer,
   Arrow,
   Indicators,
   Indicator,
@@ -30,15 +31,15 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
   return (
     <>
       <Container>
-        {images.map((img, i) => {
-          return slide === i ? (
-            <Slide src={img} key={i} />
-          ) : (
-            <SlideHidden src={img} key={i} />
-          );
-        })}
+        <SlideContainer>
+          {images.map((img, i) => {
+            return slide === i && <Slide src={img} key={i} />;
+          })}
+        </SlideContainer>
         <BottomContainer>
-          <Arrow src={LeftChevron} onClick={prevSlide} />
+          <Circle>
+            <Arrow src={LeftChevron} onClick={prevSlide} />
+          </Circle>
 
           <Indicators>
             {images.map((_, i) => {
@@ -49,7 +50,9 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
               );
             })}
           </Indicators>
-          <Arrow src={RightChevron} onClick={nextSlide} />
+          <Circle>
+            <Arrow src={RightChevron} onClick={nextSlide} />
+          </Circle>
         </BottomContainer>
       </Container>
     </>

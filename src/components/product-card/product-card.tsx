@@ -24,7 +24,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
           <ProductBrand>{brand}</ProductBrand>
           <ProductName>{name}</ProductName>
         </ProductContainer>
-        <ProductPrice>{price}</ProductPrice>
+        <ProductPrice>${price}</ProductPrice>
       </Container>
     </>
   );

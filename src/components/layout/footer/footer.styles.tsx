@@ -6,17 +6,13 @@ export const FooterContainer = styled.div`
   width: 100%;
   height: 60px;
   justify-content: space-around;
-  background-color: black;
+  background-color: #201b21;
   color: #d9dbe1;
   font-size: 14px;
-  // position: absolute;
-  margin-top: auto;
+  position: fixed;
   bottom: 0;
   
   @media screen and (max-width: 800px) {
-    height: 80px;
-    width: 100%;
-    justify-content: space-evenly;
     font-size: 12px;
     padding: 10px;
   }
@@ -47,7 +43,6 @@ export const FooterLink = styled(Link)`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 800px) {
-
   }
 `;
 

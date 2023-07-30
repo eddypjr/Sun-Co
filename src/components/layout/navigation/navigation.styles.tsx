@@ -7,7 +7,7 @@ export const NavigationContainer = styled.div`
   height: 60px;
   margin-bottom: 25px;
   justify-content: space-around;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #e9ebee;
   @media screen and (max-width: 800px) {
     height: 60px;
     width: 100%;
@@ -22,14 +22,14 @@ export const ViewCartContainer = styled.div`
   padding: 8px 24px;
   align-items: center;
   gap: 10px;
-  border: 1px black solid;
+  border: 1px #201b21 solid;
   border-radius: 8px;
-  color: black;
+  color: #201b21;
   background-color: white;
   @media screen and (max-width: 800px) {
-    margin-right: 5%;
     justify-content: space-between;
     align-items: center;
+    padding: 6px 18px;
   }
 `;
 
@@ -53,6 +53,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   margin-right: 10%;
   @media screen and (max-width: 800px) {
+    margin-right: 5%;
   }
 `;
 
@@ -66,4 +67,8 @@ export const ItemCount = styled.div`
   outline: none;
   color: white;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
 `;

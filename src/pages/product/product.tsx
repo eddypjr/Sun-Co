@@ -8,12 +8,12 @@ import PhotoCarousel from '../../components/photo-carousel/photo-carousel';
 
 const Product = () => {
   const { state } = useLocation();
-  const [imageUrl, setImageUrl] = useState([]);
+  const [imageUrl, setImageUrl] = useState<string[]>([]);
   const { product } = state || {};
   const { description, brand, name } = product;
 
   useEffect(() => {
-    function findMatchingStrings(imageArray, brand, name) {
+    function findMatchingStrings(imageArray: string[], brand: string, name: string) {
       const regex = new RegExp(`\\/products\\/${brand}\\/`, 'i');
       const matchingStrings = imageArray.filter((str) => regex.test(str));
 
