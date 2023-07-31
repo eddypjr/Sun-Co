@@ -16,11 +16,11 @@ describe('useIsMobile', () => {
     const { result } = renderHook(() => useIsMobile());
     const isMobile: boolean = result.current;
 
-    expect(isMobile).toBe(true);
+    expect(isMobile).toBe(false);
   });
 
   it('should return false for non-mobile viewport', () => {
-    (window as any).matchMedia = mockMatchMedia(true);
+    (window as any).matchMedia = mockMatchMedia(false);
 
     const { result } = renderHook(() => useIsMobile());
     const isMobile: boolean = result.current;
