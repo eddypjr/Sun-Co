@@ -102,6 +102,7 @@ export const Quantity = styled.h1`
   font-weight: 700;
   line-height: 20px; /* 111.111% */
   letter-spacing: -0.5px;
+  margin-top: 25px;
 
   @media screen and (max-width: 800px) {
     color: var(--black, #201b21);
@@ -111,6 +112,7 @@ export const Quantity = styled.h1`
     font-weight: 700;
     line-height: 15px; /* 111.111% */
     letter-spacing: -0.375px;
+    margin-top: 15px;
   }
 `;
 

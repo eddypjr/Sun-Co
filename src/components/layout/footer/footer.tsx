@@ -6,11 +6,11 @@ import {
   LogoContainer,
   SocialLogoContainer,
 } from './footer.styles';
+import { FC } from 'react';
 import blackLogo from '../../../assets/images/blackLogo.png';
 import Instagram from '../../../assets/svg/Instagram.svg';
 import Twitter from '../../../assets/svg/Twitter.svg';
 import Youtube from '../../../assets/svg/Youtube.svg';
-import { FC } from 'react';
 
 const Footer: FC = () => {
   return (

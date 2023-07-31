@@ -16,9 +16,8 @@ export const BannerContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 2.5rem;
+  border-radius: 40px;
   background-color: var(--hero-bg, #eaeeef);
-  padding: 2.5rem 0;
 
   @media screen and (max-width: 800px) {
     width: 90%;
@@ -33,7 +32,6 @@ export const BannerContainer = styled.div`
 
 export const LeftBannerContainer = styled.div`
   font-family: DM Sans;
-  height: 20.063rem;
 
   @media screen and (max-width: 800px) {
     height: 100%;
@@ -49,7 +47,6 @@ export const BannerH1 = styled.h1`
   font-weight: 700;
   line-height: 2.5rem;
   letter-spacing: -0.063rem;
-  margin: 0;
 
   @media screen and (max-width: 800px) {
     text-align: center;
@@ -60,13 +57,13 @@ export const BannerH1 = styled.h1`
 `;
 
 export const BannerH2 = styled.h1`
-  color: var(--black, #201b21);
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: DM Sans;
-  font-style: normal;
-  line-height: 4.563rem;
-  margin: 0;
+color: var(--black, #201B21);
+font-family: DM Sans;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 73px; /* 114.063% */
+letter-spacing: -1px;
 
   @media screen and (max-width: 800px) {
     text-align: center;
@@ -79,13 +76,12 @@ export const BannerH2 = styled.h1`
 `;
 
 export const BannerP = styled.p`
-  color: var(--grey, #67696e);
+  color: var(--dark-grey, #67696e);
   font-family: Inter;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.875rem;
-  margin: 0.625rem 
+  line-height: 30px; /* 150% */
   @media screen and (max-width: 800px) {
     font-size: 14px;
     line-height: 20px; /* 142.857% */
@@ -102,6 +98,7 @@ export const ShopNowButton = styled(Link)`
   background: var(--black, #201b21);
   color: white;
   margin-top: 1.25rem;
+  font-size: 18px;
 
   @media screen and (max-width: 800px) {
     font-size: 1rem;
@@ -120,16 +117,19 @@ export const ImageContainer = styled.div`
 `;
 
 export const BannerImage = styled.img`
-  width: 30.625rem;
-  height: 20.063rem;
+  width: 30vw;
+  height: 100%;
 
-  @media screen and (max-width: 800px) {
-    width: 175px;
-    height: 175px;
+  @media screen and (max-width: 1200px) {
+    width: 35vw;
+    height: 100%;
   }
-
   @media screen and (max-width: 1024px) {
-    width: 200px;
+    width: 35vw;
+    height: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    width: 250px;
     height: 200px;
   }
 `;

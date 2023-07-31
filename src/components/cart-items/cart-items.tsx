@@ -11,6 +11,7 @@ import {
   RemoveButton,
   SecondColumnBottom,
   ThirdColumn,
+  Underline,
 } from './cart-items.styles';
 import { FC, useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
@@ -52,6 +53,7 @@ const CartItems: FC<CartItemsProps> = ({ item }) => {
             <Price>${price}</Price>
           </ThirdColumn>
         </InnerContainer>
+        <Underline />
       </Container>
     </>
   );

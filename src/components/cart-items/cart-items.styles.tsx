@@ -125,3 +125,9 @@ export const RemoveButton = styled.button`
     margin: 5% 0;
   }
 `;
+
+export const Underline = styled.div`
+  height: 1px;
+  border: 1px solid #e9ebee;
+  margin: 5% 0;
+`;

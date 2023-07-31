@@ -15,6 +15,7 @@ export const FooterContainer = styled.div`
   @media screen and (max-width: 800px) {
     font-size: 12px;
     padding: 10px;
+    height: auto;
   }
 `;
 
