@@ -17,13 +17,11 @@ export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 20px;
+  background: var(--white, #fff);
+  box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
+    rgba(0, 0, 0, 0.08);
 
-  @media screen and (max-width: 800px) {
-    border-radius: 20px;
-    background: var(--white, #fff);
-    box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
-      rgba(0, 0, 0, 0.08);
-  }
 `;
 
 export const InnerTop = styled.div`

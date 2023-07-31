@@ -16,7 +16,6 @@ export const InnerGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   column-gap: 42px;
   
-
   @media screen and (max-width: 800px) {
     justify-items: center;
   }
@@ -25,6 +24,8 @@ export const InnerGrid = styled.div`
 export const LeftContainer = styled.div`
   display: grid;
   row-gap: 20px;
+  align-content: start;
+
   @media screen and (max-width: 800px) {
     grid-row-start: 2;
     grid-row-end: 2;

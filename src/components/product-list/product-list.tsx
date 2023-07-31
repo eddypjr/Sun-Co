@@ -4,7 +4,7 @@ import {
   ExploreText,
   NavLinkDiv,
 } from './product-list.styles';
-import { useContext, FC } from 'react';
+import { FC, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductsContext } from '../../contexts/product.context';
 import ProductCard from '../product-card/product-card';
@@ -17,13 +17,15 @@ const ProductList: FC = () => {
       <Container>
         <ExploreText>Explore the latest drops</ExploreText>
         <ProductsContainer>
-          {products.map((product) => (
-            <NavLinkDiv key={product['id']}>
-              <Link to={`/product/${product['id']}`} state={{ product }}>
-                <ProductCard product={product} />
-              </Link>
-            </NavLinkDiv>
-          ))}
+          {products.map((product) => {
+            return (
+              <NavLinkDiv key={product['id']}>
+                <Link to={`/product/${product['id']}`} state={{ product }}>
+                  <ProductCard product={product} />
+                </Link>
+              </NavLinkDiv>
+            );
+          })}
         </ProductsContainer>
       </Container>
     </>

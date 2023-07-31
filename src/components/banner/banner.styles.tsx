@@ -85,7 +85,8 @@ export const BannerP = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 1.875rem;
-  margin: 0.625rem @media screen and (max-width: 800px) {
+  margin: 0.625rem 
+  @media screen and (max-width: 800px) {
     font-size: 14px;
     line-height: 20px; /* 142.857% */
   }
