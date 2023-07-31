@@ -14,15 +14,10 @@ import {
 } from './cart-items.styles';
 import { FC, useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
+import type { CartItem } from '../../contexts/cart.context';
 
 type CartItemsProps = {
-  item: {
-    brand: string;
-    name: string;
-    image: string;
-    price: number;
-    quantity: number;
-  };
+  item: CartItem;
 };
 
 const CartItems: FC<CartItemsProps> = ({ item }) => {
