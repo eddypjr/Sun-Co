@@ -24,20 +24,20 @@ export const ExploreText = styled.h1`
   margin-left: 10%;
   color: var(--black, #201b21);
   font-family: DM Sans;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px; /* 133.333% */
-  letter-spacing: -1px;
+  line-height: 3rem; /* 133.333% */
+  letter-spacing: -0.063rem;
 
   @media screen and (max-width: 800px) {
     margin-left: 5%;
     color: var(--black, #201b21);
     font-family: DM Sans;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px; /* 128.571% */
-    letter-spacing: -1px;
+    line-height: 2.25rem; /* 128.571% */
+    letter-spacing: -0.063rem;
   }
 `;

@@ -4,31 +4,31 @@ import { Link } from 'react-router-dom';
 export const NavigationContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 60px;
-  margin-bottom: 25px;
+  height: 3.75rem;
+  margin-bottom: 1.563rem;
   justify-content: space-around;
-  border-bottom: 1px solid #e9ebee;
+  border-bottom: 0.063rem solid #e9ebee;
   @media screen and (max-width: 800px) {
-    height: 60px;
+    height: 3.75rem;
     justify-content: space-between;
-    padding: 10px 0px;
-    margin-bottom: 20px;
+    padding: 0.625rem0rem;
+    margin-bottom: 1.25rem;
   }
 `;
 
 export const ViewCartContainer = styled.div`
   display: flex;
-  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
   align-items: center;
-  gap: 10px;
-  border: 1px #201b21 solid;
-  border-radius: 8px;
+  gap: 0.625rem;
+  border: 0.063rem #201b21 solid;
+  border-radius: 0.5rem;
   color: #201b21;
   background-color: white;
   @media screen and (max-width: 800px) {
     justify-content: space-between;
     align-items: center;
-    padding: 6px 18px;
+    padding: 0.375rem 1.125rem;
   }
 `;
 
@@ -56,16 +56,16 @@ export const NavLink = styled(Link)`
 
 export const ItemCount = styled.div`
   background-color: #ec5e2a;
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #ec5e2a;
+  border: 0.063rem solid #ec5e2a;
   outline: none;
   color: white;
   cursor: pointer;
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 `;

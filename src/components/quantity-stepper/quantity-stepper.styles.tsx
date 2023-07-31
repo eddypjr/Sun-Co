@@ -1,21 +1,20 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const QtyStepper = styled.div`
-  border-radius: 10px;
-  border: 1px solid #e9ebee;
-  box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
-    rgba(0, 0, 0, 0.08);
+  border-radius: 0.625rem;
+  border: 0.063rem solid #e9ebee;
+  box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
   display: inline-flex;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 
   @media screen and (max-width: 800px) {
     justify-content: center;
     display: inline-flex;
-    padding: 9px 12px;
+    padding: 0.563rem 0.75rem;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
   }
 `;
 
@@ -23,30 +22,30 @@ export const Span = styled.span`
   color: var(--black, #201b21);
   text-align: center;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px;
-  width: 24px;
+  line-height: 1.5rem;
+  width: 1.5rem;
 
   @media screen and (max-width: 800px) {
     color: var(--black, #201b21);
     text-align: center;
     font-family: Inter;
-    font-size: 13.5px;
+    font-size: 0.844rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 18px; /* 133.333% */
-    width: 18px;
+    line-height: 1.125rem; /* 133.333% */
+    width: 1.125rem;
   }
 `;
 
 export const Button = styled.div`
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 
   @media screen and (max-width: 800px) {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 `;

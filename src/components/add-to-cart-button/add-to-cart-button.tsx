@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import { AddButton } from './add-to-cart-button.styles';
 import { FC, useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';

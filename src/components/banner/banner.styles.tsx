@@ -16,7 +16,7 @@ export const BannerContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   background-color: var(--hero-bg, #eaeeef);
 
   @media screen and (max-width: 800px) {
@@ -25,8 +25,8 @@ export const BannerContainer = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 30px;
-    border-radius: 20px;
+    padding-bottom: 1.875rem;
+    border-radius: 1.25rem;
   }
 `;
 
@@ -59,17 +59,15 @@ export const BannerH1 = styled.h1`
 export const BannerH2 = styled.h1`
 color: var(--black, #201B21);
 font-family: DM Sans;
-font-size: 64px;
+font-size: 4rem;
 font-style: normal;
 font-weight: 700;
 line-height: 73px; /* 114.063% */
-letter-spacing: -1px;
+letter-spacing: -0.063rem;
 
   @media screen and (max-width: 800px) {
     text-align: center;
-    font-family: DM Sans;
     font-size: 3rem;
-    font-weight: 700;
     line-height: 3.422rem
     letter-spacing: -0.064rem;
   }
@@ -78,13 +76,13 @@ letter-spacing: -1px;
 export const BannerP = styled.p`
   color: var(--dark-grey, #67696e);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 1.875rem; /* 150% */
   @media screen and (max-width: 800px) {
-    font-size: 14px;
-    line-height: 20px; /* 142.857% */
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* 142.857% */
   }
 `;
 
@@ -98,17 +96,17 @@ export const ShopNowButton = styled(Link)`
   background: var(--black, #201b21);
   color: white;
   margin-top: 1.25rem;
-  font-size: 18px;
+  font-size: 1.125rem;
 
   @media screen and (max-width: 800px) {
     font-size: 1rem;
     margin-top: 0;
-    padding: 12px 80px;
+    padding: 0.75rem 5rem;
     width: 70vw;
   }
 `;
 
-export const ImageContainer = styled.div`
+export const RightBannerContainer = styled.div`
   height: 100%;
 
   @media screen and (max-width: 800px) {
@@ -124,12 +122,12 @@ export const BannerImage = styled.img`
     width: 35vw;
     height: 100%;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 101.5rem) {
     width: 35vw;
     height: 100%;
   }
   @media screen and (max-width: 800px) {
-    width: 250px;
-    height: 200px;
+    width: 15.625rem;
+    height: 12.5rem;
   }
 `;

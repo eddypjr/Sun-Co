@@ -6,11 +6,11 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  `;
-  
-  export const SlideContainer = styled.div`
-    height: 80%;
-  `;
+`;
+
+export const SlideContainer = styled.div`
+  height: 80%;
+`;
 
 export const BottomContainer = styled.div`
   width: 100%;
@@ -41,18 +41,18 @@ export const RightArrow = styled.img`
 `;
 
 export const Indicator = styled.button`
-  background-color: #201B21;
+  background-color: #201b21;
   height: 0.75rem;
   width: 0.5rem;
   border-radius: 50%;
-  border: 1px solid #201B21;
+  border: 0.063rem solid #201b21;
   outline: none;
   margin: 0 0.2rem;
   cursor: pointer;
 `;
 
 export const IndicatorInactive = styled.button`
-  background-color: #D9DBE1;
+  background-color: #d9dbe1;
   height: 0.6rem;
   border-radius: 50%;
   border: none;
@@ -69,14 +69,13 @@ export const Indicators = styled.div`
 
 export const Circle = styled.div`
   background-color: white;
-  width: 35px;
-  height: 35px;
+  width: 2.188rem;
+  height: 2.188rem;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 0.063rem solid white;
   outline: none;
   color: white;
   cursor: pointer;
-  box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
-    rgba(0, 0, 0, 0.4);
+  box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
 `;

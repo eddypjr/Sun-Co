@@ -1,9 +1,9 @@
 import {
   Brand,
   Container,
-  InnerBottom,
+  Bottom,
   InnerContainer,
-  InnerTop,
+  Top,
   Name,
   Price,
   Quantity,
@@ -35,20 +35,20 @@ const AddToCartBox: FC<AddToCartBoxProps> = ({ product }) => {
     <>
       <Container>
         <InnerContainer>
-          <InnerTop>
+          <Top>
             <Brand>{brand}</Brand>
             <Name>{name}</Name>
             <Price>${price}</Price>
-          </InnerTop>
+          </Top>
           <Underline />
-          <InnerBottom>
+          <Bottom>
             <Quantity>Quantity</Quantity>
             <QuantityStepper
               handleIncrement={handleIncrement}
               handleDecrement={handleDecrement}
               quantity={quantity}
             />
-          </InnerBottom>
+          </Bottom>
           <Spacing>
             <AddToCartButton product={product} quantity={quantity} />
           </Spacing>

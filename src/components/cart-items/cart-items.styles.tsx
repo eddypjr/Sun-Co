@@ -20,14 +20,14 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  border-radius: 18.77px;
-  width: 165px;
-  height: 166px;
+  border-radius: 1.173rem;
+  width: 10.313rem;
+  height: 10.313rem;
   flex-shrink: 0;
 
   @media screen and (max-width: 800px) {
-    width: 125px;
-    height: 125px;
+    width: 11.563rem;
+    height: 11.563rem;
   }
 `;
 
@@ -35,7 +35,7 @@ export const SecondColumnBottom = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 25%;
-  column-gap: 42px;
+  column-gap: 2.625rem;
 
   @media screen and (max-width: 800px) {
     display: flex;
@@ -48,7 +48,7 @@ export const MiddleColumn = styled.div`
   width: 100%;
   margin-left: 10%;
   display: grid;
-  row-gap: 0px;
+  row-gap: 0rem;
 
   @media screen and (max-width: 800px) {
     margin-left: 15%;
@@ -58,29 +58,29 @@ export const MiddleColumn = styled.div`
 export const Brand = styled.div`
   color: var(--black, #201b21);
   font-family: DM Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 120% */
-  letter-spacing: -0.5px;
+  line-height: 1.5rem; /* 120% */
+  letter-spacing: -0.031rem;
 
   @media screen and (max-width: 800px) {
-    font-size: 16px;
-    line-height: 20px; /* 125% */
+    font-size: 1rem;
+    line-height: 1.25rem; /* 125% */
   }
 `;
 
 export const Name = styled.div`
   color: var(--dark-grey, #67696e);
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 1.5rem; /* 133.333% */
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
-    line-height: 18px; /* 128.571% */
+    font-size: 0.875rem;
+    line-height: 1.125rem; /* 128.571% */
   }
 `;
 
@@ -90,27 +90,27 @@ export const Price = styled.div`
   color: var(--black, #201b21);
   text-align: right;
   font-family: DM Sans;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 133.333% */
-  letter-spacing: -0.5px;
+  line-height: 1.5rem; /* 133.333% */
+  letter-spacing: -0.031rem;
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
-    line-height: 20px; /* 142.857% */
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* 142.857% */
   }
 `;
 
 export const RemoveButton = styled.button`
   color: var(--dark-grey, #67696e);
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  line-height: 1.5rem; /* 150% */
   text-decoration-line: underline;
-  width: 63px;
+  width: 3.938rem;
   background: none;
   border: none;
   padding: 0;
@@ -119,15 +119,15 @@ export const RemoveButton = styled.button`
   outline: inherit;
 
   @media screen and (max-width: 800px) {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
-    line-height: 20px; /* 142.857% */
+    line-height: 1.25rem; /* 142.857% */
     margin: 5% 0;
   }
 `;
 
 export const Underline = styled.div`
-  height: 1px;
-  border: 1px solid #e9ebee;
+  height: 0.063rem;
+  border: 0.063rem solid #e9ebee;
   margin: 5% 0;
 `;

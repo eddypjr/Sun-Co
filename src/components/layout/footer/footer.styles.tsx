@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 export const FooterContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   justify-content: space-around;
   background-color: #201b21;
   color: #d9dbe1;
-  font-size: 14px;
+  font-size: 0.875rem;
   position: fixed;
   bottom: 0;
-  
+
   @media screen and (max-width: 800px) {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 0.75rem;
+    padding: 0.625rem;
     height: auto;
   }
 `;
@@ -52,7 +52,6 @@ export const SocialLogoContainer = styled.div`
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 800px) {
-    
   }
 `;
 
@@ -61,7 +60,7 @@ export const CopyrightContainer = styled.div`
   color: #d9dbe1;
   @media screen and (max-width: 800px) {
     order: 3;
-    padding: 5px 0px;
+    padding: 0.313rem 0rem;
     flex-direction: column;
   }
 `;

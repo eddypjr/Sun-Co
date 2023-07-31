@@ -5,13 +5,13 @@ import {
   BannerImage,
   BannerP,
   Container,
-  ImageContainer,
   LeftBannerContainer,
+  RightBannerContainer,
   ShopNowButton,
 } from './banner.styles';
+import { FC } from 'react';
 import banner from '../../assets/images/banner.png';
 import rightArrow from '../../assets/svg/rightArrow.svg';
-import { FC } from 'react';
 
 const Banner: FC = () => {
   return (
@@ -26,9 +26,9 @@ const Banner: FC = () => {
               Shop Now <img src={rightArrow} />
             </ShopNowButton>
           </LeftBannerContainer>
-          <ImageContainer>
+          <RightBannerContainer>
             <BannerImage src={banner} />
-          </ImageContainer>
+          </RightBannerContainer>
         </BannerContainer>
       </Container>
     </>
