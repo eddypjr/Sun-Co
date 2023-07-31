@@ -46,7 +46,6 @@ const MobileProductStepper: FC = () => {
               <Link to={`/product/${product['id']}`} state={{ product }}>
                 <ProductCard product={product} />
               </Link>
-              {/* <Underline /> */}
             </NavLinkDiv>
           )
         );
