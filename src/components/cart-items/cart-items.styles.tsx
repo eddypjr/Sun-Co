@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  
 `;
 
 export const InnerContainer = styled.div`
@@ -25,6 +24,11 @@ export const Image = styled.img`
   width: 165px;
   height: 166px;
   flex-shrink: 0;
+
+  @media screen and (max-width: 800px) {
+    width: 125px;
+    height: 125px;
+  }
 `;
 
 export const SecondColumnBottom = styled.div`
@@ -32,6 +36,12 @@ export const SecondColumnBottom = styled.div`
   grid-template-columns: repeat(2, 1fr);
   margin-top: 25%;
   column-gap: 42px;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0%;
+  }
 `;
 
 export const MiddleColumn = styled.div`
@@ -39,6 +49,10 @@ export const MiddleColumn = styled.div`
   margin-left: 10%;
   display: grid;
   row-gap: 0px;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 15%;
+  }
 `;
 
 export const Brand = styled.div`
@@ -49,6 +63,11 @@ export const Brand = styled.div`
   font-weight: 700;
   line-height: 24px; /* 120% */
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+    line-height: 20px; /* 125% */
+  }
 `;
 
 export const Name = styled.div`
@@ -58,11 +77,14 @@ export const Name = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 133.333% */
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    line-height: 18px; /* 128.571% */
+  }
 `;
 
-export const ThirdColumn = styled.div`
-  width: 100%;
-`;
+export const ThirdColumn = styled.div``;
 
 export const Price = styled.div`
   color: var(--black, #201b21);
@@ -73,10 +95,15 @@ export const Price = styled.div`
   font-weight: 500;
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+  }
 `;
 
 export const RemoveButton = styled.button`
-  color: #67696e;
+  color: var(--dark-grey, #67696e);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -90,4 +117,11 @@ export const RemoveButton = styled.button`
   font: inherit;
   cursor: pointer;
   outline: inherit;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    margin: 5% 0;
+  }
 `;

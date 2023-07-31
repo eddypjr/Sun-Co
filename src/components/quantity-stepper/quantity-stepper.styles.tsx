@@ -9,6 +9,14 @@ export const QtyStepper = styled.div`
   padding: 12px 16px;
   align-items: center;
   gap: 16px;
+
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+    display: inline-flex;
+    padding: 9px 12px;
+    align-items: center;
+    gap: 12px;
+  }
 `;
 
 export const Span = styled.span`
@@ -20,9 +28,25 @@ export const Span = styled.span`
   font-weight: 700;
   line-height: 24px;
   width: 24px;
+
+  @media screen and (max-width: 800px) {
+    color: var(--black, #201b21);
+    text-align: center;
+    font-family: Inter;
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 133.333% */
+    width: 18px;
+  }
 `;
 
 export const Button = styled.div`
   width: 24px;
   height: 24px;
+
+  @media screen and (max-width: 800px) {
+    width: 24px;
+    height: 24px;
+  }
 `;

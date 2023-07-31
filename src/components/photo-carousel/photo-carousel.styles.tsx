@@ -9,8 +9,8 @@ export const Container = styled.div`
   `;
   
   export const SlideContainer = styled.div`
-  height: 85%;
-`;
+    height: 80%;
+  `;
 
 export const BottomContainer = styled.div`
   width: 100%;

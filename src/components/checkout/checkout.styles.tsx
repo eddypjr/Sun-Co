@@ -1,4 +1,4 @@
-import styled  from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Checkout = styled(Link)`
@@ -16,4 +16,13 @@ export const Checkout = styled(Link)`
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    width: 70vw;
+    padding: 12px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 `;

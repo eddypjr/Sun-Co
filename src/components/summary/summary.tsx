@@ -20,7 +20,7 @@ import { FC, useEffect, useState } from 'react';
 
 type SummaryProps = {
   cartTotal: number;
-}
+};
 
 const Summary: FC<SummaryProps> = ({ cartTotal }) => {
   const [total, setNewTotal] = useState(0);

@@ -52,12 +52,8 @@ export const BannerH1 = styled.h1`
   margin: 0;
 
   @media screen and (max-width: 800px) {
-    color: var(--orange, #ec5e2a);
     text-align: center;
-    font-family: DM Sans;
     font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 700;
     line-height: 2.625rem;
     letter-spacing: -0.064rem;
   }
@@ -67,16 +63,15 @@ export const BannerH2 = styled.h1`
   color: var(--black, #201b21);
   font-size: 4rem;
   font-weight: 700;
+  font-family: DM Sans;
   font-style: normal;
   line-height: 4.563rem;
   margin: 0;
 
   @media screen and (max-width: 800px) {
-    color: var(--black, #201b21);
     text-align: center;
     font-family: DM Sans;
     font-size: 3rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 3.422rem
     letter-spacing: -0.064rem;
@@ -91,11 +86,7 @@ export const BannerP = styled.p`
   font-weight: 400;
   line-height: 1.875rem;
   margin: 0.625rem @media screen and (max-width: 800px) {
-    color: var(--dark-grey, #67696e);
-    font-family: Inter;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 20px; /* 142.857% */
   }
 `;
@@ -115,6 +106,7 @@ export const ShopNowButton = styled(Link)`
     font-size: 1rem;
     margin-top: 0;
     padding: 12px 80px;
+    width: 70vw;
   }
 `;
 
@@ -133,5 +125,10 @@ export const BannerImage = styled.img`
   @media screen and (max-width: 800px) {
     width: 175px;
     height: 175px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 200px;
+    height: 200px;
   }
 `;

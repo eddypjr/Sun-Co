@@ -3,11 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  border-radius: 20px;
-  background: var(--white, #fff);
-  box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
-    rgba(0, 0, 0, 0.08);
-  font-family: DM Sans;
+
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+    width: 90vw;
+    height: 389px;
+    margin-left: 5%;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -15,6 +17,13 @@ export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    border-radius: 20px;
+    background: var(--white, #fff);
+    box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
+      rgba(0, 0, 0, 0.08);
+  }
 `;
 
 export const InnerTop = styled.div`
@@ -77,6 +86,12 @@ export const Heading = styled.h1`
   font-weight: 700;
   line-height: 48px; /* 133.333% */
   letter-spacing: -1px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 28px;
+    line-height: 36px; /* 128.571% */
+    letter-spacing: -1px;
+  }
 `;
 export const Total = styled.div`
   color: var(--black, #201b21);
@@ -86,6 +101,12 @@ export const Total = styled.div`
   font-weight: 700;
   line-height: 32px; /* 133.333% */
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.375px;
+  }
 `;
 
 export const SummaryContainer = styled.div`
@@ -99,6 +120,12 @@ export const SummaryContainer = styled.div`
   font-weight: 500;
   line-height: 24px; /* 120% */
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+    line-height: 18px; /* 112.5% */
+    letter-spacing: -0.375px;
+  }
 `;
 
 export const SummaryLeft = styled.div`
@@ -123,8 +150,8 @@ export const SummaryDetails = styled.div`
 `;
 
 export const Discount = styled.div`
-color: orange;
-`
+  color: orange;
+`;
 
 export const FinalPrice = styled.div`
   color: var(--black, #201b21);
@@ -135,4 +162,10 @@ export const FinalPrice = styled.div`
   font-weight: 500;
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 15px;
+    line-height: 18px; /* 120% */
+    letter-spacing: -0.375px;
+  }
 `;

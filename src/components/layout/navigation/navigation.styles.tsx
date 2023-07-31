@@ -10,7 +10,6 @@ export const NavigationContainer = styled.div`
   border-bottom: 1px solid #e9ebee;
   @media screen and (max-width: 800px) {
     height: 60px;
-    width: 100%;
     justify-content: space-between;
     padding: 10px 0px;
     margin-bottom: 20px;
@@ -45,15 +44,13 @@ export const NavBarLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (max-width: 800px) {
-  }
 `;
 
 export const NavLink = styled(Link)`
   cursor: pointer;
   margin-right: 10%;
   @media screen and (max-width: 800px) {
-    margin-right: 5%;
+    margin-right: 10%;
   }
 `;
 
