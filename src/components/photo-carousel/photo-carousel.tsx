@@ -38,7 +38,11 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
         </SlideContainer>
         <BottomContainer>
           <Circle>
-            <Arrow src={LeftChevron} onClick={prevSlide} />
+            <Arrow
+              src={LeftChevron}
+              onClick={prevSlide}
+              data-testid="leftArrow"
+            />
           </Circle>
 
           <Indicators>

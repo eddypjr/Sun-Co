@@ -1,17 +1,18 @@
 import { createContext, useState, useEffect, PropsWithChildren } from 'react';
 
-export type Product = {
-  id: string;
-  name: string;
-  brand: string;
-  price: number;
-  image: string;
-};
+// export type Product = {
+//   id: string;
+//   name: string;
+//   brand: string;
+//   description: string;
+//   price: number;
+//   image: string;
+// };
 
-type CartItem = {
+export type CartItem = {
   id: string;
-  brand: string;
   name: string;
+  brand: string;
   description: string;
   price: number;
   image: string;
@@ -52,9 +53,9 @@ const removeCartItem = (cartItems: CartItem[], productToRemove: CartItem) => {
 
 interface CartContextInterface {
   cartItems: CartItem[];
-  addItemToCart: () => void;
-  subtractItemFromCart: () => void;
-  removeItemFromCart: () => void;
+  addItemToCart: (productToAdd: CartItem, quantity: number) => void;
+  subtractItemFromCart: (productToSubtract: CartItem) => void;
+  removeItemFromCart: (productToRemove: CartItem) => void;
   cartTotal: number;
   cartCount: number;
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -21,7 +22,6 @@ export const InnerContainer = styled.div`
   background: var(--white, #fff);
   box-shadow: 0px 4.444444179534912px 66.66666412353516px 0px
     rgba(0, 0, 0, 0.08);
-
 `;
 
 export const InnerTop = styled.div`
@@ -165,5 +165,31 @@ export const FinalPrice = styled.div`
     font-size: 15px;
     line-height: 18px; /* 120% */
     letter-spacing: -0.375px;
+  }
+`;
+
+export const Checkout = styled(Link)`
+  display: flex;
+  width: 456px;
+  padding: 20px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--black, #201b21);
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    width: 70vw;
+    padding: 12px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 `;

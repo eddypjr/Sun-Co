@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import AddToCartBox from '../../components/addToCart/addToCart';
+import AddToCartBox from '../../components/addToCart/add-to-cart-box';
 import ProductDescription from '../../components/product-description/product-description';
 import { Container, InnerContainer, ProductImage } from './product.styles';
 import { useLocation } from 'react-router-dom';

@@ -1,4 +1,5 @@
 import {
+  Checkout,
   Container,
   Discount,
   FinalPrice,
@@ -15,8 +16,8 @@ import {
   Underline,
   Spacing,
 } from './summary.styles';
-import CheckoutButton from '../checkout/checkout';
 import { FC, useEffect, useState } from 'react';
+import rightArrow from '../../assets/svg/rightArrow.svg';
 
 type SummaryProps = {
   cartTotal: number;
@@ -61,11 +62,13 @@ const Summary: FC<SummaryProps> = ({ cartTotal }) => {
               <Total>Total</Total>
             </InnerLeft>
             <InnerRight>
-              <FinalPrice>${total}</FinalPrice>
+              <FinalPrice data-testid="finalPrice">${total}</FinalPrice>
             </InnerRight>
           </Bottom>
           <Spacing>
-            <CheckoutButton />
+            <Checkout to="">
+              Checkout <img src={rightArrow} />
+            </Checkout>
           </Spacing>
         </InnerContainer>
       </Container>

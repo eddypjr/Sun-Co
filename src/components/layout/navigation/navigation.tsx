@@ -6,7 +6,7 @@ import {
   NavBarLinks,
   ViewCartContainer,
 } from './navigation.styles';
-import logo from '../../../assets/svg/logo.svg';
+import logo from '../../../assets/svg/logo.svg'
 import cartIcon from '../../../assets/svg/cartIcon.svg';
 import { FC, useContext } from 'react';
 import { CartContext } from '../../../contexts/cart.context';
@@ -24,7 +24,7 @@ const Navigation: FC = () => {
             </NavLink>
           </LogoContainer>
 
-          <NavLink to="/cart">
+          <NavLink to="/cart" data-testid="cartLink">
             <ViewCartContainer>
               <img src={cartIcon} />
               View Cart

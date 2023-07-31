@@ -7,10 +7,10 @@ import {
   ProductName,
   ProductPrice,
 } from './product-card.styles';
-import type { Product } from '../../contexts/cart.context';
+import type { CartItem } from '../../contexts/cart.context';
 
 type ProductCardProps = {
-  product: Product;
+  product: CartItem;
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
