@@ -1,31 +1,22 @@
 import {
   Container,
-  ProductsContainer,
   ExploreText,
-  NavLinkDiv,
+  ProductsContainer,
 } from './product-list.styles';
-import { FC, useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { ProductsContext } from '../../contexts/product.context';
-import ProductCard from '../product-card/product-card';
+import { FC } from 'react';
+import useIsMobile from '../../custom-hooks/useIsMobile/useIsMobile';
+import MobileProductStepper from '../mobile-product-stepper/mobile-product-stepper';
+import ProductStepper from '../product-stepper/product-stepper';
 
 const ProductList: FC = () => {
-  const { products } = useContext(ProductsContext);
+  const isMobile = useIsMobile();
 
   return (
     <>
       <Container>
         <ExploreText>Explore the latest drops</ExploreText>
         <ProductsContainer>
-          {products.map((product) => {
-            return (
-              <NavLinkDiv key={product['id']}>
-                <Link to={`/product/${product['id']}`} state={{ product }}>
-                  <ProductCard product={product} />
-                </Link>
-              </NavLinkDiv>
-            );
-          })}
+          {isMobile ? <MobileProductStepper /> : <ProductStepper />}
         </ProductsContainer>
       </Container>
     </>
