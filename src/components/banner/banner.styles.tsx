@@ -39,6 +39,14 @@ export const LeftBannerContainer = styled.div`
   }
 `;
 
+export const RightBannerContainer = styled.div`
+  height: 100%;
+
+  @media screen and (max-width: 800px) {
+    padding: 1.25rem;
+  }
+`;
+
 export const BannerH1 = styled.h1`
   color: var(--orange, #ec5e2a);
   font-family: DM Sans;
@@ -103,14 +111,6 @@ export const ShopNowButton = styled(Link)`
     margin-top: 0;
     padding: 0.75rem 5rem;
     width: 70vw;
-  }
-`;
-
-export const RightBannerContainer = styled.div`
-  height: 100%;
-
-  @media screen and (max-width: 800px) {
-    padding: 1.25rem;
   }
 `;
 

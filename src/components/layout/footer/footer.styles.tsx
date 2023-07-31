@@ -19,14 +19,6 @@ export const FooterContainer = styled.div`
   }
 `;
 
-export const LogoContainer = styled.div`
-  margin-left: 10%;
-  display: flex;
-  @media screen and (max-width: 800px) {
-    margin: 0 5%;
-  }
-`;
-
 export const FooterLinksContainer = styled.div`
   width: 100%;
   display: flex;
@@ -38,12 +30,21 @@ export const FooterLinksContainer = styled.div`
   }
 `;
 
-export const FooterLink = styled(Link)`
-  cursor: pointer;
+export const LogoContainer = styled.div`
+  margin-left: 10%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   @media screen and (max-width: 800px) {
+    margin: 0 5%;
+  }
+`;
+
+export const CopyrightContainer = styled.div`
+  display: flex;
+  color: #d9dbe1;
+  @media screen and (max-width: 800px) {
+    order: 3;
+    padding: 0.313rem 0rem;
+    flex-direction: column;
   }
 `;
 
@@ -55,12 +56,11 @@ export const SocialLogoContainer = styled.div`
   }
 `;
 
-export const CopyrightContainer = styled.div`
+export const FooterLink = styled(Link)`
+  cursor: pointer;
   display: flex;
-  color: #d9dbe1;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 800px) {
-    order: 3;
-    padding: 0.313rem 0rem;
-    flex-direction: column;
   }
 `;

@@ -10,6 +10,7 @@ import { ProductsContext } from '../../contexts/product.context';
 import ProductCard from '../product-card/product-card';
 import LeftChevron from '../../assets/svg/chevron-left.svg';
 import RightChevron from '../../assets/svg/chevron-right.svg';
+
 import type { CartItem } from '../../contexts/cart.context';
 
 const MobileProductStepper: FC = () => {

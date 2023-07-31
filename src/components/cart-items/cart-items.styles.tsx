@@ -19,19 +19,18 @@ export const ImageContainer = styled.div`
   width: 100%;
 `;
 
-export const Image = styled.img`
-  border-radius: 1.173rem;
-  width: 10.313rem;
-  height: 10.313rem;
-  flex-shrink: 0;
+export const MiddleColumn = styled.div`
+  width: 100%;
+  margin-left: 10%;
+  display: grid;
+  row-gap: 0rem;
 
   @media screen and (max-width: 800px) {
-    width: 11.563rem;
-    height: 11.563rem;
+    margin-left: 15%;
   }
 `;
 
-export const SecondColumnBottom = styled.div`
+export const MiddleColumnBottom = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 25%;
@@ -44,14 +43,15 @@ export const SecondColumnBottom = styled.div`
   }
 `;
 
-export const MiddleColumn = styled.div`
-  width: 100%;
-  margin-left: 10%;
-  display: grid;
-  row-gap: 0rem;
+export const Image = styled.img`
+  border-radius: 1.173rem;
+  width: 10.313rem;
+  height: 10.313rem;
+  flex-shrink: 0;
 
   @media screen and (max-width: 800px) {
-    margin-left: 15%;
+    width: 11.563rem;
+    height: 11.563rem;
   }
 `;
 
@@ -83,8 +83,6 @@ export const Name = styled.div`
     line-height: 1.125rem; /* 128.571% */
   }
 `;
-
-export const ThirdColumn = styled.div``;
 
 export const Price = styled.div`
   color: var(--black, #201b21);

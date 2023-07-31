@@ -23,7 +23,7 @@ export const InnerContainer = styled.div`
   box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
 `;
 
-export const InnerTop = styled.div`
+export const SummaryTop = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,11 +48,11 @@ export const Bottom = styled.div`
   margin-left: 10%;
 `;
 
-export const InnerLeft = styled.div`
+export const BottomLeft = styled.div`
   width: 80%;
   display: grid;
 `;
-export const InnerRight = styled.div`
+export const BottomRight = styled.div`
   width: 80%;
   display: grid;
   justify-content: end;

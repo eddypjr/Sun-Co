@@ -21,9 +21,17 @@ export const BottomContainer = styled.div`
   align-items: center;
 `;
 
-export const Slide = styled.img`
-  width: 100%;
-  height: 100%;
+export const Circle = styled.div`
+  background-color: white;
+  width: 2.188rem;
+  height: 2.188rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 0.063rem solid white;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
 `;
 
 export const Arrow = styled.img`
@@ -33,11 +41,14 @@ export const Arrow = styled.img`
   cursor: pointer;
 `;
 
-export const RightArrow = styled.img`
-  width: 2rem;
-  height: 2rem;
-  color: white;
-  cursor: pointer;
+export const Slide = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+export const Indicators = styled.div`
+  display: flex;
+  align-items: baseline;
 `;
 
 export const Indicator = styled.button`
@@ -60,22 +71,4 @@ export const IndicatorInactive = styled.button`
   margin: 0 0.2rem;
   cursor: pointer;
   align-items: baseline;
-`;
-
-export const Indicators = styled.div`
-  display: flex;
-  align-items: baseline;
-`;
-
-export const Circle = styled.div`
-  background-color: white;
-  width: 2.188rem;
-  height: 2.188rem;
-  text-align: center;
-  border-radius: 50%;
-  border: 0.063rem solid white;
-  outline: none;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
 `;

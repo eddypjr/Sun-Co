@@ -1,5 +1,3 @@
-import Summary from '../../components/summary/summary';
-import CartItems from '../../components/cart-items/cart-items';
 import {
   CartHeading,
   CartHeadingDiv,
@@ -11,6 +9,8 @@ import {
 } from './cart.styles';
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
+import CartItems from '../../components/cart-items/cart-items';
+import Summary from '../../components/summary/summary';
 
 const Cart = () => {
   const { cartItems, cartTotal } = useContext(CartContext);

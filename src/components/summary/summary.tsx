@@ -1,20 +1,20 @@
 import {
+  Bottom,
   Checkout,
   Container,
   Discount,
   FinalPrice,
   Heading,
   InnerContainer,
-  InnerTop,
-  InnerLeft,
-  InnerRight,
-  Bottom,
+  SummaryTop,
+  BottomLeft,
+  BottomRight,
+  Spacing,
   SummaryContainer,
   SummaryLeft,
   SummaryRight,
   Total,
   Underline,
-  Spacing,
 } from './summary.styles';
 import { FC, useEffect, useState } from 'react';
 import rightArrow from '../../assets/svg/rightArrow.svg';
@@ -39,7 +39,7 @@ const Summary: FC<SummaryProps> = ({ cartTotal }) => {
     <>
       <Container>
         <InnerContainer>
-          <InnerTop>
+          <SummaryTop>
             <Heading>Summary</Heading>
             <SummaryContainer>
               <SummaryLeft>
@@ -55,15 +55,15 @@ const Summary: FC<SummaryProps> = ({ cartTotal }) => {
                 <Discount>-$6.00</Discount>
               </SummaryRight>
             </SummaryContainer>
-          </InnerTop>
+          </SummaryTop>
           <Underline />
           <Bottom>
-            <InnerLeft>
+            <BottomLeft>
               <Total>Total</Total>
-            </InnerLeft>
-            <InnerRight>
+            </BottomLeft>
+            <BottomRight>
               <FinalPrice data-testid="finalPrice">${total}</FinalPrice>
-            </InnerRight>
+            </BottomRight>
           </Bottom>
           <Spacing>
             <Checkout to="">

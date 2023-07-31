@@ -1,9 +1,9 @@
 import {
   ItemCount,
   LogoContainer,
-  NavLink,
-  NavigationContainer,
   NavBarLinks,
+  NavigationContainer,
+  NavLink,
   ViewCartContainer,
 } from './navigation.styles';
 import logo from '../../../assets/svg/logo.svg'

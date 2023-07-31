@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import {
   Container,
   ProductContainer,
@@ -7,6 +6,7 @@ import {
   ProductName,
   ProductPrice,
 } from './product-card.styles';
+import { FC } from 'react';
 import type { CartItem } from '../../contexts/cart.context';
 
 type ProductCardProps = {

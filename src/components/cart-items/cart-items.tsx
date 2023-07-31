@@ -1,20 +1,19 @@
-import QuantityStepper from '../quantity-stepper/quantity-stepper';
 import {
   Brand,
   Container,
-  InnerContainer,
-  ImageContainer,
   Image,
+  ImageContainer,
+  InnerContainer,
   MiddleColumn,
   Name,
   Price,
   RemoveButton,
-  SecondColumnBottom,
-  ThirdColumn,
+  MiddleColumnBottom,
   Underline,
 } from './cart-items.styles';
 import { FC, useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
+import QuantityStepper from '../quantity-stepper/quantity-stepper';
 import type { CartItem } from '../../contexts/cart.context';
 
 type CartItemsProps = {
@@ -40,18 +39,18 @@ const CartItems: FC<CartItemsProps> = ({ item }) => {
           <MiddleColumn>
             <Brand>{brand}</Brand>
             <Name>{name}</Name>
-            <SecondColumnBottom>
+            <MiddleColumnBottom>
               <QuantityStepper
                 handleIncrement={addItemHandler}
                 handleDecrement={subtractItemHandler}
                 quantity={quantity}
               />
               <RemoveButton onClick={removeItemHandler}>Remove</RemoveButton>
-            </SecondColumnBottom>
+            </MiddleColumnBottom>
           </MiddleColumn>
-          <ThirdColumn>
+          <div>
             <Price>${price}</Price>
-          </ThirdColumn>
+          </div>
         </InnerContainer>
         <Underline />
       </Container>
