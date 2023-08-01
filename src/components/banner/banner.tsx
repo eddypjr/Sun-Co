@@ -23,11 +23,11 @@ const Banner: FC = () => {
             <BannerH2>Summer Sale</BannerH2>
             <BannerP>Discover our summer styles with discount</BannerP>
             <ShopNowButton to="/cart">
-              Shop Now <img src={rightArrow} />
+              Shop Now <img src={rightArrow} alt="right-arrow" />
             </ShopNowButton>
           </LeftBannerContainer>
           <RightBannerContainer>
-            <BannerImage src={banner} />
+            <BannerImage src={banner} alt="banner-image" />
           </RightBannerContainer>
         </BannerContainer>
       </Container>

@@ -34,7 +34,7 @@ const CartItems: FC<CartItemsProps> = ({ item }) => {
       <Container>
         <InnerContainer>
           <ImageContainer>
-            <Image src={image} />
+            <Image src={image} alt="product-thumbnail" />
           </ImageContainer>
           <MiddleColumn>
             <Brand>{brand}</Brand>

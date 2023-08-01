@@ -19,7 +19,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
   return (
     <>
       <Container>
-        <ProductImage src={image} />
+        <ProductImage src={image} alt="product-card-thumbnail" />
         <ProductContainer>
           <ProductBrand>{brand}</ProductBrand>
           <ProductName>{name}</ProductName>

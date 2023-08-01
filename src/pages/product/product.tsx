@@ -44,7 +44,10 @@ const Product = () => {
           <PhotoCarousel images={imageUrls} />
           <AddToCartBox product={product} />
           <ProductDescription description={description} />
-          <ProductImage src={imageUrls[imageUrls.length - 1]} />
+          <ProductImage
+            src={imageUrls[imageUrls.length - 1]}
+            alt="product-display-image"
+          />
         </InnerContainer>
       </Container>
     </>

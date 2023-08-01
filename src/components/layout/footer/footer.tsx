@@ -19,7 +19,7 @@ const Footer: FC = () => {
         <FooterLinksContainer>
           <LogoContainer>
             <FooterLink to="/">
-              <img src={blackLogo} />
+              <img src={blackLogo} alt="logo" />
             </FooterLink>
           </LogoContainer>
           <CopyrightContainer>
@@ -28,13 +28,13 @@ const Footer: FC = () => {
           </CopyrightContainer>
           <SocialLogoContainer>
             <FooterLink to="https://www.instagram.com/dot.cards/?hl=en">
-              <img src={Instagram} />
+              <img src={Instagram} alt="instagram-link" />
             </FooterLink>
             <FooterLink to="https://twitter.com/DotCardsUSA">
-              <img src={Twitter} />
+              <img src={Twitter} alt="twitter-link" />
             </FooterLink>
             <FooterLink to="https://www.youtube.com/@dotnetworking8220">
-              <img src={Youtube} />
+              <img src={Youtube} alt="youtube-link" />
             </FooterLink>
           </SocialLogoContainer>
         </FooterLinksContainer>

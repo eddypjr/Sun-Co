@@ -33,7 +33,11 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
       <Container>
         <SlideContainer>
           {images.map((img, i) => {
-            return slide === i && <Slide src={img} key={i} />;
+            return slide === i ? (
+              <Slide src={img} key={i} alt={`product-image-${i}`} />
+            ) : (
+              <Slide src={img} key={i} alt="no-image" />
+            );
           })}
         </SlideContainer>
         <BottomContainer>
@@ -41,6 +45,7 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
             <Arrow
               src={LeftChevron}
               onClick={prevSlide}
+              alt="left-chevron"
               data-testid="leftArrow"
             />
           </Circle>
@@ -55,7 +60,7 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
             })}
           </Indicators>
           <Circle>
-            <Arrow src={RightChevron} onClick={nextSlide} />
+            <Arrow src={RightChevron} onClick={nextSlide} alt="right-chevron" />
           </Circle>
         </BottomContainer>
       </Container>

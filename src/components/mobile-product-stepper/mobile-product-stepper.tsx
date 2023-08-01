@@ -54,10 +54,10 @@ const MobileProductStepper: FC = () => {
 
       <ArrowsDiv>
         <Circle>
-          <Arrow src={LeftChevron} onClick={nextSlide} />
+          <Arrow src={LeftChevron} onClick={nextSlide} alt="left-chevron" />
         </Circle>
         <Circle>
-          <Arrow src={RightChevron} onClick={prevSlide} />
+          <Arrow src={RightChevron} onClick={prevSlide} alt="right-chevron" />
         </Circle>
       </ArrowsDiv>
     </>

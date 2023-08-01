@@ -67,7 +67,7 @@ const Summary: FC<SummaryProps> = ({ cartTotal }) => {
           </Bottom>
           <Spacing>
             <Checkout to="">
-              Checkout <img src={rightArrow} />
+              Checkout <img src={rightArrow} alt="right-arrow" />
             </Checkout>
           </Spacing>
         </InnerContainer>
