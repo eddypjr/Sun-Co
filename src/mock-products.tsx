@@ -6,7 +6,7 @@ export const mockProducts = [
     description:
       'Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.',
     price: 775,
-    image: './src/assets/images/products/thumbnails/1.png',
+    image: '/src/assets/images/products/thumbnails/1.png',
   },
   {
     id: '2',
@@ -15,7 +15,7 @@ export const mockProducts = [
     description:
       'Clock your best average with the Nike Gamma Force. An updated flex groove pattern and modified midsole foam of these shoes provide flexibility that gives you a barefoot sensation with every step. The breathable and stretchy mesh upper moves with your foot, while the synthetic suede overlays provide stable support.',
     price: 200,
-    image: 'src/assets/images/products/thumbnails/2.png',
+    image: '/assets/images/products/thumbnails/2.png',
   },
   {
     id: '3',
