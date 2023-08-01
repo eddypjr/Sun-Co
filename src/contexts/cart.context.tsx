@@ -7,11 +7,14 @@ export type CartItem = {
   description: string;
   price: number;
   image: string;
-  quantity: number;
-}
+  quantity?: number;
+};
 
-
-const addCartItem = (cartItems: CartItem[], productToAdd: CartItem, quantity: number) => {
+const addCartItem = (
+  cartItems: CartItem[],
+  productToAdd: CartItem,
+  quantity: number
+) => {
   // first determine if cartItems contains productToAdd
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === productToAdd.id
@@ -21,7 +24,7 @@ const addCartItem = (cartItems: CartItem[], productToAdd: CartItem, quantity: nu
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id
-        ? { ...cartItem, quantity: cartItem.quantity + quantity }
+        ? { ...cartItem, quantity: (cartItem?.quantity ?? 0) + quantity }
         : cartItem
     );
   }
@@ -29,10 +32,13 @@ const addCartItem = (cartItems: CartItem[], productToAdd: CartItem, quantity: nu
   return [...cartItems, { ...productToAdd, quantity: quantity }];
 };
 
-const subtractCartItem = (cartItems: CartItem[], productToSubtract: CartItem) => {
+const subtractCartItem = (
+  cartItems: CartItem[],
+  productToSubtract: CartItem
+) => {
   return cartItems.map((cartItem) => {
-    if (cartItem.id === productToSubtract.id && cartItem.quantity > 1) {
-      return { ...cartItem, quantity: cartItem.quantity - 1 };
+    if (cartItem.id === productToSubtract.id && (cartItem?.quantity ?? 0) > 1) {
+      return { ...cartItem, quantity: (cartItem?.quantity ?? 0) - 1 };
     }
     return { ...cartItem };
   });
@@ -67,7 +73,7 @@ export const CartProvider = ({ children }: PropsWithChildren) => {
 
   useEffect(() => {
     const newCartCount = cartItems.reduce(
-      (total, cartItem) => (total += cartItem.quantity),
+      (total, cartItem) => (total += cartItem.quantity ?? 0),
       0
     );
 
@@ -76,7 +82,7 @@ export const CartProvider = ({ children }: PropsWithChildren) => {
 
   useEffect(() => {
     const newCartTotal = cartItems.reduce(
-      (total, cartItem) => (total += cartItem.quantity * cartItem.price),
+      (total, cartItem) => (total += (cartItem.quantity ?? 0) * cartItem.price),
       0
     );
 
