@@ -5,35 +5,29 @@ import { Container, InnerContainer, ProductImage } from './product.styles';
 import { useLocation } from 'react-router-dom';
 import { PhotoUrlList } from '../../products';
 import PhotoCarousel from '../../components/photo-carousel/photo-carousel';
+import useEnvironmentCheck from '../../custom-hooks/useEnvironmentCheck/useEnvironmentCheck';
+import {
+  findImagesContainingBrandOrName,
+  findMatchingStrings,
+} from '../../helpers/helpers';
 
 const Product = () => {
   const { state } = useLocation();
   const [imageUrls, setImageUrls] = useState<string[]>([]);
   const { product } = state || {};
   const { description, brand, name } = product;
+  const isLocal = useEnvironmentCheck();
 
   useEffect(() => {
-    const findImagesContainingBrandOrName = (
-      imageUrls: string[],
-      brand: string,
-      name: string
-    ): string[] => {
-      const regexBrand = brand.replace(/\s/g, '[\\s-]*'); // Convert the brand to a regular expression pattern
-      const regexName = name.replace(/\s/g, '[\\s-]*'); // Convert the name to a regular expression pattern
+    // Using different filtering functions depending on dev or production
+    // This is due to file paths changing after bundling for deployment
+    const matchingImages =
+      isLocal === true
+        ? findImagesContainingBrandOrName(PhotoUrlList, brand, name)
+        : findMatchingStrings(PhotoUrlList, brand, name);
 
-      const brandRegex = new RegExp(regexBrand, 'i');
-      const nameRegex = new RegExp(regexName, 'i');
-
-      return imageUrls.filter((str) => brandRegex.test(str) || nameRegex.test(str));
-    };
-
-    const matchingImages = findImagesContainingBrandOrName(
-      PhotoUrlList,
-      brand,
-      name
-    );
     setImageUrls(matchingImages);
-  }, [brand, name]);
+  }, [brand, name, isLocal]);
 
   return (
     <>
