@@ -27,10 +27,11 @@ export const ProductsProvider = ({ children }: PropsWithChildren) => {
             .then((data) => setProducts(data));
 
           console.log('Successfully fetched from json-server');
+        } else {
+          setProducts(mockProducts);
         }
       } catch (e) {
-        console.log(`Error: ${e}. Setting mock data`);
-        setProducts(mockProducts);
+        console.log(`Error: ${e}`);
       }
     };
 
