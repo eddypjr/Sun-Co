@@ -3,7 +3,7 @@ import AddToCartBox from '../../components/addToCart/add-to-cart-box';
 import ProductDescription from '../../components/product-description/product-description';
 import { Container, InnerContainer, ProductImage } from './product.styles';
 import { useLocation } from 'react-router-dom';
-import { PhotoUrlList } from '../../assets/products';
+import { PhotoUrlList } from '../../products';
 import PhotoCarousel from '../../components/photo-carousel/photo-carousel';
 
 const Product = () => {

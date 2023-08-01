@@ -6,7 +6,7 @@ export const mockProducts = [
     description:
       'Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.',
     price: 775,
-    image: 'src/assets/images/products/thumbnails/1.png',
+    image: './src/assets/images/products/thumbnails/1.png',
   },
   {
     id: '2',

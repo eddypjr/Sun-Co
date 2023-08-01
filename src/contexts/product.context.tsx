@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect, PropsWithChildren } from 'react';
 import useEnvironmentCheck from '../custom-hooks/useEnvironmentCheck/useEnvironmentCheck';
-import { mockProducts } from '../assets/mock-products';
+import { mockProducts } from '../mock-products';
 import type { CartItem } from './cart.context';
 
 interface ProductContextInterface {
