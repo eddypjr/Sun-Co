@@ -34,9 +34,6 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
         <SlideContainer>
           {images.map((img, i) => {
             return slide === i && <Slide src={img} key={i} alt="no-image" />;
-            //   ) : (
-            //   <Slide src={img} key={i} alt={`product-image-${i}`} />
-            // );
           })}
         </SlideContainer>
         <BottomContainer>

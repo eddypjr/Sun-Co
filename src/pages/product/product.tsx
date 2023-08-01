@@ -13,28 +13,26 @@ const Product = () => {
   const { description, brand, name } = product;
 
   useEffect(() => {
-    const findMatchingStrings = (
-      imageArray: string[],
+    const findImagesContainingBrandOrName = (
+      imageUrls: string[],
       brand: string,
       name: string
-    ) => {
-      const regex = new RegExp(`\\/products\\/${brand}\\/`, 'i');
-      const matchingStrings = imageArray.filter((str) => regex.test(str));
+    ): string[] => {
+      const regexBrand = brand.replace(/\s/g, '[\\s-]*'); // Convert the brand to a regular expression pattern
+      const regexName = name.replace(/\s/g, '[\\s-]*'); // Convert the name to a regular expression pattern
 
-      const productName = name.replace(/\s+/g, '').toLowerCase();
-      const productNameRegex = new RegExp(`/Nike/${productName}/`, 'i');
+      const brandRegex = new RegExp(regexBrand, 'i');
+      const nameRegex = new RegExp(regexName, 'i');
 
-      // Nike has two different products, further filtering needed
-      const nikeImages = imageArray.filter((str) => productNameRegex.test(str));
-
-      if (brand === 'Nike') {
-        return nikeImages;
-      }
-      return matchingStrings;
+      return imageUrls.filter((str) => brandRegex.test(str) || nameRegex.test(str));
     };
 
-    const matchingStrings = findMatchingStrings(PhotoUrlList, brand, name);
-    setImageUrls(matchingStrings);
+    const matchingImages = findImagesContainingBrandOrName(
+      PhotoUrlList,
+      brand,
+      name
+    );
+    setImageUrls(matchingImages);
   }, [brand, name]);
 
   return (
@@ -45,7 +43,7 @@ const Product = () => {
           <AddToCartBox product={product} />
           <ProductDescription description={description} />
           <ProductImage
-            src={PhotoUrlList[0]}
+            src={imageUrls[imageUrls.length - 1]}
             alt="product-display-image"
           />
         </InnerContainer>
