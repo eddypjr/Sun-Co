@@ -1,4 +1,4 @@
-**Sun Co. Instructions**
+**Sun Co. Instructions** <br />
 To start locally, the dependency `json-server` must first be installed globally.
 
 To do so: 
