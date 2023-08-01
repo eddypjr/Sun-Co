@@ -31,7 +31,7 @@ export const ProductsProvider = ({ children }: PropsWithChildren) => {
           setProducts(mockProducts);
         }
       } catch (e) {
-        console.log(`Error: ${e}`);
+        console.log(`Error: ${e}. Using imported mock products.`);
       }
     };
 
