@@ -23,8 +23,8 @@ const Product = () => {
     // This is due to file paths changing after bundling for deployment
     const matchingImages =
       isLocal === true
-        ? findImagesContainingBrandOrName(PhotoUrlList, brand, name)
-        : findMatchingStrings(PhotoUrlList, brand, name);
+      ? findMatchingStrings(PhotoUrlList, brand, name)
+      : findImagesContainingBrandOrName(PhotoUrlList, brand, name)
 
     setImageUrls(matchingImages);
   }, [brand, name, isLocal]);
