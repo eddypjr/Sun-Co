@@ -45,7 +45,7 @@ const Product = () => {
           <AddToCartBox product={product} />
           <ProductDescription description={description} />
           <ProductImage
-            src={imageUrls[imageUrls.length - 1]}
+            src={PhotoUrlList[0]}
             alt="product-display-image"
           />
         </InnerContainer>
