@@ -43,7 +43,7 @@ const CartItems: FC<CartItemsProps> = ({ item }) => {
               <QuantityStepper
                 handleIncrement={addItemHandler}
                 handleDecrement={subtractItemHandler}
-                quantity={quantity}
+                quantity={quantity ?? 0}
               />
               <RemoveButton onClick={removeItemHandler}>Remove</RemoveButton>
             </MiddleColumnBottom>
