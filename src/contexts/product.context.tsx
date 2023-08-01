@@ -25,6 +25,8 @@ export const ProductsProvider = ({ children }: PropsWithChildren) => {
           await fetch('http://localhost:3000/products')
             .then((response) => response.json())
             .then((data) => setProducts(data));
+
+          console.log('Successfully fetched from json-server');
         }
       } catch (e) {
         console.log(`Error: ${e}. Setting mock data`);
