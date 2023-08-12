@@ -6,10 +6,7 @@ body {
   padding: 0;
   font-family: 'Inter-Bold', Helvetica;
   background-color: var(--white, #FFF);
-
-    @media screen and (max-width: 800px) {
-    padding-bottom: 100px;
-  }
+  scroll-behavior: smooth;
 }
 
 a {
