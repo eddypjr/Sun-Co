@@ -11,7 +11,7 @@ export const NavigationContainer = styled.div`
   @media screen and (max-width: 800px) {
     height: 3.75rem;
     justify-content: space-between;
-    padding: 0.625rem0rem;
+    padding: 0.625rem 0rem;
     margin-bottom: 1.25rem;
   }
 `;

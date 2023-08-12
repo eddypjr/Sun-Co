@@ -6,20 +6,31 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 1.125rem;
+
+  @media screen and (max-width: 800px) {
+    width: 30vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 50vw;
+  }
 `;
 
 export const ProductContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.875rem;
+  gap: 0.5rem;
   width: 100%;
 `;
 
 export const ProductImage = styled.img`
   width: 95%;
-  height: 18.75rem;
   border-radius: 1.173rem;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const ProductBrand = styled.div`
