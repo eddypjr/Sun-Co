@@ -1,27 +1,16 @@
 import styled from 'styled-components';
 
-export const FooterSection = styled.footer`
-  width: 100%;
-  background-color: #201b21;
-
-
-  a {
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 800px) {
-    font-size: 0.75rem;
-    padding: 0.625rem;
-    height: auto;
-  }
-`;
-
 export const Container = styled.div`
   width: 100%;
+  background-color: #201b21;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
   margin: 0 auto;
+
+  a {
+    cursor: pointer;
+  }
 `;
 
 export const Content = styled.div`
@@ -33,6 +22,9 @@ export const Content = styled.div`
   @media screen and (max-width: 800px) {
     width: 95%;
     flex-wrap: wrap;
+    font-size: 0.75rem;
+    padding: 0.625rem;
+    height: auto;
   }
 `;
 
@@ -54,7 +46,7 @@ export const CopyrightContainer = styled.div`
 export const SocialLogoContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  width: 6%;
 
   @media screen and (max-width: 800px) {
     width: auto;

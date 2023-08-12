@@ -1,8 +1,8 @@
 import {
   Container,
-  ExploreText,
+  Content,
   ProductsContainer,
-  ArrowsDiv,
+  ArrowsContainer,
   Circle,
   Arrow,
 } from './product-list.styles';
@@ -24,29 +24,33 @@ const ProductList: FC = () => {
 
   return (
     <>
-      <Container>
-        <ExploreText>Explore the latest drops</ExploreText>
-        <ProductsContainer ref={ref}>
-          <ProductStepper />
-        </ProductsContainer>
+      <section>
+        <Container>
+          <Content>
+            <h1>Explore the latest drops</h1>
+            <ProductsContainer ref={ref}>
+              <ProductStepper />
+            </ProductsContainer>
 
-        <ArrowsDiv>
-          <Circle>
-            <Arrow
-              src={LeftChevron}
-              onClick={() => scroll(30)}
-              alt="left-chevron"
-            />
-          </Circle>
-          <Circle>
-            <Arrow
-              src={RightChevron}
-              onClick={() => scroll(-30)}
-              alt="right-chevron"
-            />
-          </Circle>
-        </ArrowsDiv>
-      </Container>
+            <ArrowsContainer>
+              <Circle>
+                <Arrow
+                  src={LeftChevron}
+                  onClick={() => scroll(30)}
+                  alt="left-chevron"
+                />
+              </Circle>
+              <Circle>
+                <Arrow
+                  src={RightChevron}
+                  onClick={() => scroll(-30)}
+                  alt="right-chevron"
+                />
+              </Circle>
+            </ArrowsContainer>
+          </Content>
+        </Container>
+      </section>
     </>
   );
 };

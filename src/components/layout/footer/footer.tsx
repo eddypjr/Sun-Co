@@ -1,6 +1,5 @@
 import {
   CopyrightContainer,
-  FooterSection,
   Container,
   Content,
   SocialLogoContainer,
@@ -15,7 +14,7 @@ import { Link } from 'react-router-dom';
 const Footer: FC = () => {
   return (
     <>
-      <FooterSection>
+      <section>
         <Container>
           <Content>
             <Link to="/">
@@ -38,7 +37,7 @@ const Footer: FC = () => {
             </SocialLogoContainer>
           </Content>
         </Container>
-      </FooterSection>
+      </section>
     </>
   );
 };
