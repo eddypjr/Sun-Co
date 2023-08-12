@@ -1,16 +1,13 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-export const FooterContainer = styled.div`
-  display: flex;
+export const FooterSection = styled.footer`
   width: 100%;
-  height: 3.75rem;
-  justify-content: space-around;
   background-color: #201b21;
-  color: #d9dbe1;
-  font-size: 0.875rem;
-  position: fixed;
-  bottom: 0;
+
+
+  a {
+    cursor: pointer;
+  }
 
   @media screen and (max-width: 800px) {
     font-size: 0.75rem;
@@ -19,48 +16,47 @@ export const FooterContainer = styled.div`
   }
 `;
 
-export const FooterLinksContainer = styled.div`
+export const Container = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media screen and (max-width: 800px) {
-    flex-wrap: wrap;
-  }
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 0 auto;
 `;
 
-export const LogoContainer = styled.div`
-  margin-left: 10%;
+export const Content = styled.div`
+  width: 80%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media screen and (max-width: 800px) {
-    margin: 0 5%;
+    width: 95%;
+    flex-wrap: wrap;
   }
 `;
 
 export const CopyrightContainer = styled.div`
   display: flex;
   color: #d9dbe1;
+
   @media screen and (max-width: 800px) {
     order: 3;
     padding: 0.313rem 0rem;
     flex-direction: column;
   }
-`;
 
-export const SocialLogoContainer = styled.div`
-  margin-right: 10%;
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 480px) {
+    flex: 0 0 100%;
   }
 `;
 
-export const FooterLink = styled(Link)`
-  cursor: pointer;
+export const SocialLogoContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+
   @media screen and (max-width: 800px) {
+    width: auto;
   }
 `;
