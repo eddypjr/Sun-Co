@@ -36,13 +36,18 @@ export const ImageContainer = styled.div`
 
   img {
     border-radius: 1.173rem;
-    width: 10.313rem;
-    height: 10.313rem;
+    width: 90%;
+    height: 90%;
     flex-shrink: 0;
 
-    @media screen and (max-width: 800px) {
-      width: 11.563rem;
-      height: 11.563rem;
+    @media (800px <= width <= 1200px) {
+      width: 7.813rem;
+      height: 7.813rem;
+    }
+
+    @media (max-width: 300px) {
+      width: 5.938rem;
+      height: 5.938rem;
     }
   }
 `;
@@ -52,7 +57,6 @@ export const MiddleColumn = styled.div`
   margin-left: 10%;
   display: grid;
   row-gap: 0rem;
-  // background-color: red;
 
   @media screen and (max-width: 800px) {
     margin-left: 15%;
@@ -98,18 +102,6 @@ export const MiddleColumnBottom = styled.div`
     display: flex;
     flex-direction: column-reverse;
     margin-top: 0%;
-  }
-`;
-
-export const Image = styled.img`
-  border-radius: 1.173rem;
-  width: 10.313rem;
-  height: 10.313rem;
-  flex-shrink: 0;
-
-  @media screen and (max-width: 800px) {
-    width: 11.563rem;
-    height: 11.563rem;
   }
 `;
 

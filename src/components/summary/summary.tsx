@@ -2,18 +2,11 @@ import {
   Bottom,
   Checkout,
   Container,
-  Discount,
-  FinalPrice,
-  Heading,
-  InnerContainer,
-  SummaryTop,
-  BottomLeft,
-  BottomRight,
-  Spacing,
+  Content,
   SummaryContainer,
   SummaryLeft,
   SummaryRight,
-  Total,
+  SummaryTop,
   Underline,
 } from './summary.styles';
 import { FC, useEffect, useState } from 'react';
@@ -38,10 +31,10 @@ const Summary: FC<SummaryProps> = ({ cartTotal }) => {
   return (
     <>
       <Container>
-        <InnerContainer>
-          <SummaryTop>
-            <Heading>Summary</Heading>
-            <SummaryContainer>
+        <Content>
+          <SummaryContainer>
+            <h1>Summary</h1>
+            <SummaryTop>
               <SummaryLeft>
                 <div>Subtotal</div>
                 <div>Shipping and delivery</div>
@@ -52,25 +45,23 @@ const Summary: FC<SummaryProps> = ({ cartTotal }) => {
                 <div>${cartTotal}</div>
                 <div>$20</div>
                 <div>$6.00</div>
-                <Discount>-$6.00</Discount>
+                <div className="discount">-$6.00</div>
               </SummaryRight>
-            </SummaryContainer>
-          </SummaryTop>
+            </SummaryTop>
+          </SummaryContainer>
           <Underline />
           <Bottom>
-            <BottomLeft>
-              <Total>Total</Total>
-            </BottomLeft>
-            <BottomRight>
-              <FinalPrice data-testid="finalPrice">${total}</FinalPrice>
-            </BottomRight>
+            <div className="left">
+              <div>Total</div>
+            </div>
+            <div className="right">
+              <div data-testid="finalPrice">${total}</div>
+            </div>
           </Bottom>
-          <Spacing>
-            <Checkout to="">
-              Checkout <img src={rightArrow} alt="right-arrow" />
-            </Checkout>
-          </Spacing>
-        </InnerContainer>
+          <Checkout to="">
+            Checkout <img src={rightArrow} alt="right-arrow" />
+          </Checkout>
+        </Content>
       </Container>
     </>
   );
