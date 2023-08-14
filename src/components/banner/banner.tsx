@@ -1,12 +1,8 @@
 import {
-  BannerContainer,
-  BannerH1,
-  BannerH2,
-  BannerImage,
-  BannerP,
+  BannerLeft,
+  BannerRight,
   Container,
-  LeftBannerContainer,
-  RightBannerContainer,
+  Content,
   ShopNowButton,
 } from './banner.styles';
 import { FC } from 'react';
@@ -15,21 +11,23 @@ import rightArrow from '../../assets/svg/rightArrow.svg';
 
 const Banner: FC = () => {
   return (
-    <Container>
-      <BannerContainer>
-        <LeftBannerContainer>
-          <BannerH1>25% OFF</BannerH1>
-          <BannerH2>Summer Sale</BannerH2>
-          <BannerP>Discover our summer styles with discount</BannerP>
-          <ShopNowButton to="/cart">
-            Shop Now <img src={rightArrow} alt="right-arrow" />
-          </ShopNowButton>
-        </LeftBannerContainer>
-        <RightBannerContainer>
-          <BannerImage src={banner} alt="banner-image" />
-        </RightBannerContainer>
-      </BannerContainer>
-    </Container>
+    <section>
+      <Container>
+        <Content>
+          <BannerLeft>
+            <h1>25% OFF</h1>
+            <h2>Summer Sale</h2>
+            <p>Discover our summer styles with discount</p>
+            <ShopNowButton to="/cart">
+              Shop Now <img src={rightArrow} alt="right-arrow" />
+            </ShopNowButton>
+          </BannerLeft>
+          <BannerRight>
+            <img src={banner} alt="banner-image" />
+          </BannerRight>
+        </Content>
+      </Container>
+    </section>
   );
 };
 
