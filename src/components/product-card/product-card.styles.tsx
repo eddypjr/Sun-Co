@@ -14,6 +14,10 @@ export const Container = styled.div`
   @media screen and (max-width: 480px) {
     width: 50vw;
   }
+
+  &:hover {
+    text-decoration: solid underline #201b21 1px;
+  }
 `;
 
 export const ProductContainer = styled.div`
@@ -33,7 +37,7 @@ export const ProductImage = styled.img`
   }
 `;
 
-export const ProductBrand = styled.div`
+export const Brand = styled.div`
   color: var(--black, #201b21);
   font-family: DM Sans;
   font-size: 1.25rem;
@@ -43,7 +47,7 @@ export const ProductBrand = styled.div`
   letter-spacing: -0.031rem;
 `;
 
-export const ProductName = styled.div`
+export const Name = styled.div`
   color: var(--dark-grey, #67696e);
   font-family: Inter;
   font-size: 1rem;
@@ -52,7 +56,7 @@ export const ProductName = styled.div`
   line-height: 1.25rem; /* 125% */
 `;
 
-export const ProductPrice = styled.div`
+export const Price = styled.div`
   color: var(--black, #201b21);
   font-family: DM Sans;
   font-size: 1.125rem;
@@ -60,4 +64,8 @@ export const ProductPrice = styled.div`
   font-weight: 500;
   line-height: 1.5rem; /* 133.333% */
   letter-spacing: -0.031rem;
+
+  &:hover {
+    // text-decoration: none;
+  }
 `;

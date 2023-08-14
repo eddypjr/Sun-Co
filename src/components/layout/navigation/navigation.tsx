@@ -15,29 +15,27 @@ const Navigation: FC = () => {
   const { cartCount } = useContext(CartContext);
 
   return (
-    <>
-      <nav>
-        <Container>
-          <Content>
-            <NavBarLinks>
-              <div>
-                <Link to="/">
-                  <img src={logo} alt="logo" />
-                </Link>
-              </div>
-
-              <Link to="/cart" data-testid="cartLink">
-                <ViewCartContainer>
-                  <img src={cartIcon} alt="cart-icon" />
-                  View Cart
-                  {cartCount > 0 && <ItemCount>{cartCount}</ItemCount>}
-                </ViewCartContainer>
+    <nav>
+      <Container>
+        <Content>
+          <NavBarLinks>
+            <div>
+              <Link to="/">
+                <img src={logo} alt="logo" />
               </Link>
-            </NavBarLinks>
-          </Content>
-        </Container>
-      </nav>
-    </>
+            </div>
+
+            <Link to="/cart" data-testid="cartLink">
+              <ViewCartContainer>
+                <img src={cartIcon} alt="cart-icon" />
+                View Cart
+                {cartCount > 0 && <ItemCount>{cartCount}</ItemCount>}
+              </ViewCartContainer>
+            </Link>
+          </NavBarLinks>
+        </Content>
+      </Container>
+    </nav>
   );
 };
 

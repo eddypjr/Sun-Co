@@ -2,9 +2,9 @@ import {
   Container,
   ProductContainer,
   ProductImage,
-  ProductBrand,
-  ProductName,
-  ProductPrice,
+  Brand,
+  Name,
+  Price,
 } from './product-card.styles';
 import { FC } from 'react';
 import type { CartItem } from '../../contexts/cart.context';
@@ -21,10 +21,10 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
       <Container>
         <ProductImage src={image} alt="product-card-thumbnail" />
         <ProductContainer>
-          <ProductBrand>{brand}</ProductBrand>
-          <ProductName>{name}</ProductName>
+          <Brand>{brand}</Brand>
+          <Name>{name}</Name>
         </ProductContainer>
-        <ProductPrice>${price}</ProductPrice>
+        <Price>${price}</Price>
       </Container>
     </>
   );

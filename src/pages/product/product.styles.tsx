@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ProductImage = styled.img`
-width: 100%;
-height: 90%;
+  width: 100%;
+  height: 90%;
 `;
 
 export const Container = styled.div`
@@ -30,5 +30,6 @@ export const Content = styled.div`
     width: 90%;
     align-items: center;
     row-gap: 2.188rem;
+    margin-bottom: 5%;
   }
 `;

@@ -19,8 +19,7 @@ export const AddButton = styled.button`
   line-height: 1.25rem; /* 111.111% */
 
   &:hover {
-    background-color: #eaeeef;
-    color: black;
+    background-color: #67696e;
   }
 
   @media (max-width: 1400px) {

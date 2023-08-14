@@ -43,6 +43,7 @@ export const Span = styled.span`
 export const Button = styled.div`
   width: 1.5rem;
   height: 1.5rem;
+  cursor: pointer;
 
   @media screen and (max-width: 800px) {
     width: 1.5rem;
