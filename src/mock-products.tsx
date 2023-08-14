@@ -1,7 +1,7 @@
-import OffWhiteThumbnail from './assets/images/products/thumbnails/1.png';
-import GammaForceThumbnail from './assets/images/products/thumbnails/2.png';
-import CosmicUnityThumbnail from './assets/images/products/thumbnails/3.png';
-import AdidasThumbnail from './assets/images/products/thumbnails/4.png';
+import OffWhiteThumbnail from './assets/images/products/thumbnails/1.webp';
+import GammaForceThumbnail from './assets/images/products/thumbnails/2.webp';
+import CosmicUnityThumbnail from './assets/images/products/thumbnails/3.webp';
+import AdidasThumbnail from './assets/images/products/thumbnails/4.webp';
 
 export const mockProducts = [
   {
