@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const Footer: FC = () => {
   return (
     <>
-      <section>
+      <footer>
         <Container>
           <Content>
             <Link to="/">
@@ -37,7 +37,7 @@ const Footer: FC = () => {
             </SocialLogoContainer>
           </Content>
         </Container>
-      </section>
+      </footer>
     </>
   );
 };

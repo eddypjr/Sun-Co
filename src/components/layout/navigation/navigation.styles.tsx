@@ -1,19 +1,38 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-export const NavigationContainer = styled.div`
-  display: flex;
+export const Container = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: center;
   height: 3.75rem;
-  margin-bottom: 1.563rem;
-  justify-content: space-around;
   border-bottom: 0.063rem solid #e9ebee;
-  @media screen and (max-width: 800px) {
-    height: 3.75rem;
-    justify-content: space-between;
-    padding: 0.625rem 0rem;
-    margin-bottom: 1.25rem;
+  margin-bottom: 1.563rem;
+
+  a {
+    cursor: pointer;
   }
+`;
+
+export const Content = styled.div`
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    width: 95%;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    padding: 0.625rem;
+    height: auto;
+  }
+`;
+
+export const NavBarLinks = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const ViewCartContainer = styled.div`
@@ -25,32 +44,11 @@ export const ViewCartContainer = styled.div`
   border-radius: 0.5rem;
   color: #201b21;
   background-color: white;
+
   @media screen and (max-width: 800px) {
     justify-content: space-between;
     align-items: center;
     padding: 0.375rem 1.125rem;
-  }
-`;
-
-export const LogoContainer = styled.div`
-  margin-left: 10%;
-  @media screen and (max-width: 800px) {
-    margin-left: 5%;
-  }
-`;
-
-export const NavBarLinks = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-export const NavLink = styled(Link)`
-  cursor: pointer;
-  margin-right: 10%;
-  @media screen and (max-width: 800px) {
-    margin-right: 10%;
   }
 `;
 
