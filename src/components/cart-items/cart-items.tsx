@@ -1,14 +1,10 @@
 import {
-  Brand,
   Container,
-  Image,
+  Content,
   ImageContainer,
-  InnerContainer,
   MiddleColumn,
-  Name,
-  Price,
-  RemoveButton,
   MiddleColumnBottom,
+  RemoveButton,
   Underline,
 } from './cart-items.styles';
 import { FC, useContext } from 'react';
@@ -32,13 +28,13 @@ const CartItems: FC<CartItemsProps> = ({ item }) => {
   return (
     <>
       <Container>
-        <InnerContainer>
+        <Content>
           <ImageContainer>
-            <Image src={image} alt="product-thumbnail" />
+            <img src={image} alt="product-thumbnail" />
           </ImageContainer>
           <MiddleColumn>
-            <Brand>{brand}</Brand>
-            <Name>{name}</Name>
+            <div className='brand'>{brand}</div>
+            <div className='name'>{name}</div>
             <MiddleColumnBottom>
               <QuantityStepper
                 handleIncrement={addItemHandler}
@@ -48,10 +44,8 @@ const CartItems: FC<CartItemsProps> = ({ item }) => {
               <RemoveButton onClick={removeItemHandler}>Remove</RemoveButton>
             </MiddleColumnBottom>
           </MiddleColumn>
-          <div>
-            <Price>${price}</Price>
-          </div>
-        </InnerContainer>
+            <div className='price'>${price}</div>
+        </Content>
         <Underline />
       </Container>
     </>
