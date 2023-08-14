@@ -1,13 +1,9 @@
 import {
-  Brand,
-  Container,
   Bottom,
-  InnerContainer,
+  ButtonContainer,
+  Container,
+  Content,
   Top,
-  Name,
-  Price,
-  Quantity,
-  Spacing,
   Underline,
 } from './add-to-cart-box.styles';
 import { FC, useState } from 'react';
@@ -32,29 +28,27 @@ const AddToCartBox: FC<AddToCartBoxProps> = ({ product }) => {
   };
 
   return (
-    <>
-      <Container>
-        <InnerContainer>
-          <Top>
-            <Brand>{brand}</Brand>
-            <Name>{name}</Name>
-            <Price>${price}</Price>
-          </Top>
-          <Underline />
-          <Bottom>
-            <Quantity>Quantity</Quantity>
-            <QuantityStepper
-              handleIncrement={handleIncrement}
-              handleDecrement={handleDecrement}
-              quantity={quantity}
-            />
-          </Bottom>
-          <Spacing>
+    <Container>
+      <Content>
+        <Top>
+          <h1>{brand}</h1>
+          <h2>{name}</h2>
+          <h3>${price}</h3>
+        </Top>
+        <Underline />
+        <Bottom>
+          <p>Quantity</p>
+          <QuantityStepper
+            handleIncrement={handleIncrement}
+            handleDecrement={handleDecrement}
+            quantity={quantity}
+          />
+          <ButtonContainer>
             <AddToCartButton product={product} quantity={quantity} />
-          </Spacing>
-        </InnerContainer>
-      </Container>
-    </>
+          </ButtonContainer>
+        </Bottom>
+      </Content>
+    </Container>
   );
 };
 

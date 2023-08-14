@@ -2,117 +2,117 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  display: flex;
   border-radius: 1.25rem;
   background: var(--white, #fff);
   box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
+
+  @media screen and (max-width: 800px) {
+    margin: 5% 0;
+  }
 `;
 
-export const InnerContainer = styled.div`
+export const Content = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media screen and (max-width: 800px) {
-    margin-top: 5%;
-  }
+  align-items: center;
 `;
 
 export const Top = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
+  height: 50%;
   flex-direction: column;
-  height: 55%;
-  margin-left: 5%;
+  justify-content: center;
+
+  h1 {
+    color: var(--black, #201b21);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: -0.031rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.125rem;
+      line-height: 1.5rem; /* 133.333% */
+      letter-spacing: -0.023rem;
+    }
+  }
+
+  h2 {
+    color: var(--dark-grey, #67696e);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 120% */
+
+    @media screen and (max-width: 800px) {
+      font-size: 0.938rem;
+      line-height: 1.125rem; /* 120% */
+    }
+  }
+
+  h3 {
+    color: var(--black, #201b21);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 1.5rem; /* 100% */
+    letter-spacing: -0.031rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.125rem;
+      line-height: 1.125rem; /* 100% */
+      letter-spacing: -0.023rem;
+    }
+  }
 `;
 
 export const Bottom = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  margin-left: 13%;
+  height: 50%;
 
   @media screen and (max-width: 800px) {
-    margin-left: 5%;
+    height: 100%;
   }
-`;
 
-export const Brand = styled.h1`
-  color: var(--black, #201b21);
-  font-size: 1.5rem;
-  font-style: normal;
-  font-family: DM Sans;
-  font-weight: 700;
-  line-height: 2rem;
-  letter-spacing: -0.031rem;
-
-  @media screen and (max-width: 800px) {
+  p {
+    color: var(--black, #201b21);
     font-size: 1.125rem;
-    line-height: 1.5rem; /* 133.333% */
-    letter-spacing: -0.023rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem; /* 111.111% */
+    letter-spacing: -0.031rem;
+    margin-top: 1.563rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 0.844rem;
+      line-height: 0.938rem; /* 111.111% */
+      letter-spacing: -0.023rem
+      margin-top: 0.938rem;
+    }
   }
-`;
 
-export const Name = styled.h2`
-  color: var(--dark-grey, #67696e);
-  font-family: Inter;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem; /* 120% */
-
-  @media screen and (max-width: 800px) {
-    font-size: 0.938rem;
-    line-height: 1.125rem; /* 120% */
-  }
-`;
-export const Price = styled.h1`
-  color: var(--black, #201b21);
-  font-size: 1.5rem;
-  font-style: normal;
-  font-family: DM Sans;
-  font-weight: 500;
-  line-height: 1.5rem; /* 100% */
-  letter-spacing: -0.031rem;
-
-  @media screen and (max-width: 800px) {
-    font-size: 1.125rem;
-    line-height: 1.125rem; /* 100% */
-    letter-spacing: -0.023rem;
-  }
-`;
-
-export const Quantity = styled.h1`
-  color: var(--black, #201b21);
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.25rem; /* 111.111% */
-  letter-spacing: -0.031rem;
-  margin-top: 1.563rem;
-
-  @media screen and (max-width: 800px) {
-    font-size: 0.844rem;
-    line-height: 0.938rem; /* 111.111% */
-    letter-spacing: -0.023rem
-    margin-top: 0.938rem;
-  }
-`;
-
-export const Spacing = styled.div`
-  padding-top: 5%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 800px) {
-    margin-bottom: 5%;
-  }
 `;
 
 export const Underline = styled.div`
   opacity: 0.1;
   background-color: #201b21;
   height: 0.063rem;
+  width: 100%;
+`;
+
+export const ButtonContainer = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
