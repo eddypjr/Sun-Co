@@ -1,32 +1,32 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  position: relative;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 100%;
 `;
 
 export const SlideContainer = styled.div`
-  height: 80%;
+  height: 90%;
+  display: flex;
 `;
 
 export const BottomContainer = styled.div`
   width: 100%;
+  height: 10%;
   display: flex;
-  position: absolute;
-  bottom: 0;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 3%;
+  }
 `;
 
 export const Circle = styled.div`
   background-color: white;
+  border-radius: 50%;
   width: 2.188rem;
   height: 2.188rem;
-  text-align: center;
-  border-radius: 50%;
   border: 0.063rem solid white;
   outline: none;
   color: white;
@@ -43,18 +43,19 @@ export const Arrow = styled.img`
 
 export const Slide = styled.img`
   width: 100%;
-  height: 100%;
+  object-fit: fill;
 `;
 
 export const Indicators = styled.div`
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: baseline;
 `;
 
 export const Indicator = styled.button`
   background-color: #201b21;
   height: 0.75rem;
-  width: 0.5rem;
+  width: 0.75rem;
   border-radius: 50%;
   border: 0.063rem solid #201b21;
   outline: none;
@@ -64,9 +65,10 @@ export const Indicator = styled.button`
 
 export const IndicatorInactive = styled.button`
   background-color: #d9dbe1;
-  height: 0.6rem;
+  height: 0.65rem;
+  width: 0.65rem;
   border-radius: 50%;
-  border: none;
+  border: 0.063rem solid #d9dbe1;
   outline: none;
   margin: 0 0.2rem;
   cursor: pointer;
