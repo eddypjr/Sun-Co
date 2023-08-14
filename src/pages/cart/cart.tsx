@@ -1,11 +1,9 @@
 import {
-  CartHeading,
-  CartHeadingDiv,
   Container,
-  InnerContainer,
-  InnerGrid,
-  LeftContainer,
-  RightContainer,
+  Content,
+  Grid,
+  GridLeft,
+  GridRight,
 } from './cart.styles';
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
@@ -18,21 +16,21 @@ const Cart = () => {
   return (
     <>
       <Container>
-        <InnerContainer>
-          <InnerGrid>
-            <LeftContainer>
-              <CartHeadingDiv>
-                <CartHeading>Your Bag</CartHeading>
-              </CartHeadingDiv>
+        <Content>
+          <Grid>
+            <GridLeft>
+              <div>
+                <h1>Your Bag</h1>
+              </div>
               {cartItems.map((item, i) => {
                 return <CartItems item={item} key={i} />;
               })}
-            </LeftContainer>
-            <RightContainer>
+            </GridLeft>
+            <GridRight>
               <Summary cartTotal={cartTotal} />
-            </RightContainer>
-          </InnerGrid>
-        </InnerContainer>
+            </GridRight>
+          </Grid>
+        </Content>
       </Container>
     </>
   );

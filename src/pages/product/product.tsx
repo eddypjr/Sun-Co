@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import AddToCartBox from '../../components/addToCart/add-to-cart-box';
 import ProductDescription from '../../components/product-description/product-description';
-import { Container, InnerContainer, ProductImage } from './product.styles';
+import {
+  Container,
+  Content,
+  ProductImage,
+} from './product.styles';
 import { useLocation } from 'react-router-dom';
 import { PhotoUrlList } from '../../products';
 import PhotoCarousel from '../../components/photo-carousel/photo-carousel';
@@ -23,8 +27,8 @@ const Product = () => {
     // This is due to file paths changing after bundling for deployment
     const matchingImages =
       isLocal === true
-      ? findMatchingStrings(PhotoUrlList, brand, name)
-      : findImagesContainingBrandOrName(PhotoUrlList, brand, name)
+        ? findMatchingStrings(PhotoUrlList, brand, name)
+        : findImagesContainingBrandOrName(PhotoUrlList, brand, name);
 
     setImageUrls(matchingImages);
   }, [brand, name, isLocal]);
@@ -32,15 +36,17 @@ const Product = () => {
   return (
     <>
       <Container>
-        <InnerContainer>
+        <Content>
           <PhotoCarousel images={imageUrls} />
           <AddToCartBox product={product} />
           <ProductDescription description={description} />
-          <ProductImage
-            src={imageUrls[imageUrls.length - 1]}
-            alt="product-display-image"
-          />
-        </InnerContainer>
+          
+            <ProductImage
+              src={imageUrls[imageUrls.length - 1]}
+              alt="product-display-image"
+            />
+       
+        </Content>
       </Container>
     </>
   );
