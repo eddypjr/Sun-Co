@@ -37,7 +37,7 @@ export const Content = styled.div`
 export const ProductsContainer = styled.div`
   width: 100%;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 
   @media screen and (max-width: 800px) {
     display: flex;

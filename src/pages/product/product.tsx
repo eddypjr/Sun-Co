@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
 import AddToCartBox from '../../components/addToCart/add-to-cart-box';
 import ProductDescription from '../../components/product-description/product-description';
-import {
-  Container,
-  Content,
-  ProductImage,
-} from './product.styles';
+import { Container, Content, ProductImage } from './product.styles';
 import { useLocation } from 'react-router-dom';
 import { PhotoUrlList } from '../../products';
 import PhotoCarousel from '../../components/photo-carousel/photo-carousel';
@@ -19,7 +15,7 @@ const Product = () => {
   const { state } = useLocation();
   const [imageUrls, setImageUrls] = useState<string[]>([]);
   const { product } = state || {};
-  const { description, brand, name } = product;
+  const { description, brand, name, image } = product;
   const isLocal = useEnvironmentCheck();
 
   useEffect(() => {
@@ -37,15 +33,11 @@ const Product = () => {
     <>
       <Container>
         <Content>
-          <PhotoCarousel images={imageUrls} />
+          <PhotoCarousel images={imageUrls.length > 0 ? imageUrls : image} />
           <AddToCartBox product={product} />
           <ProductDescription description={description} />
-          
-            <ProductImage
-              src={imageUrls[imageUrls.length - 1]}
-              alt="product-display-image"
-            />
-       
+
+          <ProductImage src={image} alt="product-display-image" />
         </Content>
       </Container>
     </>

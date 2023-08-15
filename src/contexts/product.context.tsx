@@ -1,44 +1,45 @@
-import { createContext, useState, useEffect, PropsWithChildren } from 'react';
+import {
+  createContext,
+  useState,
+  useEffect,
+  PropsWithChildren,
+  useRef,
+} from 'react';
 import useEnvironmentCheck from '../custom-hooks/useEnvironmentCheck/useEnvironmentCheck';
 import { mockProducts } from '../mock-products';
-import type { CartItem } from './cart.context';
 
+export interface Product {
+  id: string;
+  brand: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string[] | string;
+  category: string;
+}
+
+interface Category {
+  [category: string]: Product[];
+}
 interface ProductContextInterface {
-  products: CartItem[];
+  [key: string]: Category;
 }
 
 const initialState = {
-  products: [],
+  categories: {},
 };
 
 export const ProductsContext =
   createContext<ProductContextInterface>(initialState);
 
 export const ProductsProvider = ({ children }: PropsWithChildren) => {
-  const [products, setProducts] = useState<CartItem[]>([]);
-  const isLocal = useEnvironmentCheck();
+  const [categories, setCategories] = useState<Category>({});
 
   useEffect(() => {
-    const localFetch = async () => {
-      try {
-        if (isLocal === true) {
-          await fetch('http://localhost:3000/products')
-            .then((response) => response.json())
-            .then((data) => setProducts(data));
+    setCategories(mockProducts);
+  }, []);
 
-          console.log('Successfully fetched from json-server');
-        } else {
-          setProducts(mockProducts);
-        }
-      } catch (e) {
-        console.log(`Error: ${e}. Using imported mock products.`);
-      }
-    };
-
-    localFetch();
-  }, [isLocal]);
-
-  const value = { products };
+  const value = { categories };
   return (
     <ProductsContext.Provider value={value}>
       {children}

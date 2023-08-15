@@ -252,7 +252,7 @@ export const mockProducts = {
       description:
         "Experience iconic fashion with our Yeezy shoes, a symbol of urban sophistication that's bound to turn heads and leave an impression wherever you go.",
       price: 250,
-      image: '"https://i.ibb.co/dJbG1cT/yeezy.png"',
+      image: 'https://i.ibb.co/dJbG1cT/yeezy.png',
       category: 'shoes',
     },
     {
@@ -316,7 +316,7 @@ export const mockProducts = {
       category: 'shoes',
     },
   ],
-  men: [
+  mens: [
     {
       id: '31',
       brand: 'PacZun',
@@ -379,7 +379,7 @@ export const mockProducts = {
     },
   ],
 
-  women: [
+  womens: [
     {
       id: '37',
       brand: 'Sun Co',
@@ -427,7 +427,7 @@ export const mockProducts = {
       description:
         'Wrap yourself in cozy warmth with our striped sweater, a classic wardrobe essential that adds a touch of versatility to your everyday look.',
       price: 200,
-      image: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
+      image: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
       category: 'women',
     },
     {
@@ -443,11 +443,11 @@ export const mockProducts = {
     {
       id: '43',
       brand: 'Vibey Threads',
-      name: 'White Vest',
-      description: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-      price: 20,
-      image:
+      name: 'White Blouse',
+      description:
         'Complete your outfit with a touch of sophistication in our white vest, a versatile piece that adds a polished finish to any ensemble.',
+      price: 20,
+      image: 'https://i.ibb.co/qBcrsJg/white-vest.png',
       category: 'women',
     },
   ],

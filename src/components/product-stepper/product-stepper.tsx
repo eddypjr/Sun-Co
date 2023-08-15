@@ -5,19 +5,21 @@ import ProductCard from '../product-card/product-card';
 import { ProductsContext } from '../../contexts/product.context';
 
 const ProductStepper: FC = () => {
-  const { products } = useContext(ProductsContext);
+  const { categories } = useContext(ProductsContext);
+  const { latest } = categories;
 
   return (
     <>
-      {products.map((product) => {
-        return (
-          <NavLinkDiv key={product['id']}>
-            <Link to={`/product/${product['id']}`} state={{ product }}>
-              <ProductCard product={product} />
-            </Link>
-          </NavLinkDiv>
-        );
-      })}
+      {latest &&
+        latest.map((product) => {
+          return (
+            <NavLinkDiv key={product['id']}>
+              <Link to={`/product/${product['name']}`} state={{ product }}>
+                <ProductCard product={product} />
+              </Link>
+            </NavLinkDiv>
+          );
+        })}
     </>
   );
 };
