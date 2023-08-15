@@ -16,9 +16,9 @@ export const BottomContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin-top: 2%;
 
   @media screen and (max-width: 800px) {
-    margin-top: 3%;
   }
 `;
 
@@ -43,7 +43,15 @@ export const Arrow = styled.img`
 
 export const Slide = styled.img`
   width: 100%;
-  object-fit: fill;
+  height: 450px;
+
+  @media (width >= 1400px) {
+    height: 600px;
+  }
+
+  @media (width <= 1000px) {
+    height: 300px;
+  }
 `;
 
 export const Indicators = styled.div`
