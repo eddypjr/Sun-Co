@@ -6,7 +6,6 @@ import {
   ShopNowButton,
 } from './banner.styles';
 import { FC } from 'react';
-import banner from '../../assets/images/banner.png';
 import rightArrow from '../../assets/svg/rightArrow.svg';
 
 const Banner: FC = () => {
@@ -23,7 +22,10 @@ const Banner: FC = () => {
             </ShopNowButton>
           </BannerLeft>
           <BannerRight>
-            <img src={banner} alt="banner-image" />
+            <img
+              src="https://i.ibb.co/prgDHYk/banner.webp"
+              alt="banner-image"
+            />
           </BannerRight>
         </Content>
       </Container>

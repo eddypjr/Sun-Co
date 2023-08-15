@@ -26,17 +26,20 @@ export const AddButton = styled.button`
     padding: 1rem 6rem;
   }
 
-  @media (width <= 900px) {
+  @media (801px <= width <= 1399px) {
+    margin: 15px 0;
     padding: 0.75rem 5rem;
   }
 
   @media (480px <= width <= 800px) {
     padding: 1rem 6rem;
     width: 25rem;
+    margin: 15px 0;
   }
 
   @media (width <= 479px) {
     padding: 0.75rem 5rem;
+  margin: 15px 0;
   }
 
   @media (width <= 319px) {

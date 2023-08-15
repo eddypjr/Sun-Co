@@ -5,7 +5,6 @@ import {
   SocialLogoContainer,
 } from './footer.styles';
 import { FC } from 'react';
-import blackLogo from '../../../assets/images/blackLogo.png';
 import Instagram from '../../../assets/svg/Instagram.svg';
 import Twitter from '../../../assets/svg/Twitter.svg';
 import Youtube from '../../../assets/svg/Youtube.svg';
@@ -17,7 +16,7 @@ const Footer: FC = () => {
       <Container>
         <Content>
           <Link to="/">
-            <img src={blackLogo} alt="logo" />
+            <img src="https://i.ibb.co/NF3m1Xr/black-Logo.webp" alt="logo" />
           </Link>
           <CopyrightContainer>
             <div>&#169; 2023 Sun Co.</div>
