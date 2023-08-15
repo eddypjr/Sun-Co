@@ -1,45 +1,41 @@
-import {
-  createContext,
-  useState,
-  useEffect,
-  PropsWithChildren,
-  useRef,
-} from 'react';
-import useEnvironmentCheck from '../custom-hooks/useEnvironmentCheck/useEnvironmentCheck';
-import { mockProducts } from '../mock-products';
+import { createContext, useState, useEffect, PropsWithChildren } from 'react';
+import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils';
 
-export interface Product {
+export type Product = {
   id: string;
   brand: string;
   name: string;
   description: string;
   price: number;
-  image: string[] | string;
+  image: string[];
   category: string;
-}
-
-interface Category {
-  [category: string]: Product[];
-}
-interface ProductContextInterface {
-  [key: string]: Category;
-}
-
-const initialState = {
-  categories: {},
 };
 
-export const ProductsContext =
-  createContext<ProductContextInterface>(initialState);
+export type Category = {
+  title: string;
+  imageUrl: string;
+  items: Product[];
+};
+
+export type CategoryMap = {
+  [key: string]: Category[];
+};
+
+export const ProductsContext = createContext<CategoryMap>({});
 
 export const ProductsProvider = ({ children }: PropsWithChildren) => {
-  const [categories, setCategories] = useState<Category>({});
+  const [categoriesMap, setCategoriesMap] = useState<Category[]>([]);
 
   useEffect(() => {
-    setCategories(mockProducts);
+    const getCategoriesMap = async () => {
+      const categoryMap = await getCategoriesAndDocuments();
+      setCategoriesMap(categoryMap);
+    };
+
+    getCategoriesMap();
   }, []);
 
-  const value = { categories };
+  const value = { categoriesMap };
   return (
     <ProductsContext.Provider value={value}>
       {children}
