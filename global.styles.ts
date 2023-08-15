@@ -23,4 +23,8 @@ a:-webkit-any-link {
   color: white;
   cursor: pointer;
 }
+
+img {
+  border-radius: 1.173rem;
+}
 `;
