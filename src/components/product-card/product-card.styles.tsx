@@ -8,11 +8,11 @@ export const Container = styled.div`
   gap: 1.125rem;
 
   @media screen and (max-width: 800px) {
-    width: 30vw;
+    // width: 30vw;
   }
 
   @media screen and (max-width: 480px) {
-    width: 50vw;
+    // width: 50vw;
   }
 
   &:hover {
@@ -29,11 +29,18 @@ export const ProductContainer = styled.div`
 `;
 
 export const ProductImage = styled.img`
-  width: 95%;
+  width: 100%;
   border-radius: 1.173rem;
+  height: 350px;
 
   @media screen and (max-width: 800px) {
-    width: 100%;
+    // width: 100%;
+    height: 300px;
+  }
+
+  @media (width <= 600px) {
+    // width: 95%;
+    height: 250px;
   }
 `;
 
