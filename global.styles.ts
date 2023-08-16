@@ -7,6 +7,12 @@ body {
   font-family: 'Inter-Bold', Helvetica;
   background-color: var(--white, #FFF);
   scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+
 }
 
 a {
