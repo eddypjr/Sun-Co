@@ -28,26 +28,6 @@ export const ProductContainer = styled.div`
   width: 100%;
 `;
 
-export const ProductImage = styled.img`
-  width: 100%;
-  border-radius: 1.173rem;
-  height: 350px;
-  display: block;
-  object-position: center;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-
-  @media screen and (max-width: 800px) {
-    // width: 100%;
-    height: 300px;
-  }
-
-  @media (width <= 600px) {
-    // width: 95%;
-    height: 250px;
-  }
-`;
-
 export const Brand = styled.div`
   color: var(--black, #201b21);
   font-family: DM Sans;

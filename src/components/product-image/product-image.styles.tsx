@@ -4,21 +4,18 @@ export const Container = styled.div`
   .blur-image {
     filter: blur(4px);
   }
-`;
-export const ProductImage = styled.img`
   width: 100%;
+`;
+
+export const ProductImage = styled.img`
   border-radius: 1.173rem;
-  height: 350px;
   display: block;
-  object-position: center;
-  aspect-ratio: 1/1;
-  object-fit: cover;
+  height: 400px;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
 
   @media screen and (max-width: 800px) {
     height: 300px;
-  }
-
-  @media (width <= 600px) {
-    height: 250px;
+    width: 300px;
   }
 `;
