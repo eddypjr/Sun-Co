@@ -1,5 +1,5 @@
 import Banner from '../../components/banner/banner';
-import ProductList from '../../components/product-list/product-list';
+import LatestDrops from '../../components/latest-drops/latest-drops';
 import CategoriesPreview from '../../components/categories-preview/categories-preview';
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Banner />
       <CategoriesPreview />
-      <ProductList />
+      <LatestDrops />
     </>
   );
 };
