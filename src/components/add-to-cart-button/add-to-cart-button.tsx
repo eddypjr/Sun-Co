@@ -15,7 +15,7 @@ const AddToCartButton: FC<AddToCartButtonProps> = ({ product, quantity }) => {
 
   return (
     <>
-      <Link to="/">
+      <Link to={`/shop/${product.category}`}>
         <AddButton onClick={addItemHandler}>Add to Cart</AddButton>
       </Link>
     </>

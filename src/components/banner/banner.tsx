@@ -17,7 +17,7 @@ const Banner: FC = () => {
             <h1>25% OFF</h1>
             <h2>Summer Sale</h2>
             <p>Discover our summer styles with discount</p>
-            <ShopNowButton to="/cart">
+            <ShopNowButton to="/shop/All">
               Shop Now <img src={rightArrow} alt="right-arrow" />
             </ShopNowButton>
           </BannerLeft>

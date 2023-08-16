@@ -14,7 +14,7 @@ import LeftChevron from '../../assets/svg/chevron-left.svg';
 import RightChevron from '../../assets/svg/chevron-right.svg';
 
 type PhotoCarouselProps = {
-  images: string[] | string;
+  images: string[];
 };
 
 const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
@@ -27,19 +27,14 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
   const prevSlide = () => {
     setSlide(slide === 0 ? images.length - 1 : slide - 1);
   };
-  // console.log(typeof images, images)
 
   return (
     <>
       <Container>
         <SlideContainer>
-          {typeof images === 'object' ? (
-            images.map((img, i) => {
-              return slide === i && <Slide src={img} key={i} alt="no-image" />;
-            })
-          ) : (
-            <Slide src={images} alt="no-image" />
-          )}
+          {images.map((img, i) => {
+            return slide === i && <Slide src={img} key={i} alt="no-image" />;
+          })}
         </SlideContainer>
         <BottomContainer>
           <Circle>
@@ -52,14 +47,13 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
           </Circle>
 
           <Indicators>
-            {typeof images === 'object' &&
-              images.map((_, i) => {
-                return slide === i ? (
-                  <Indicator key={i}></Indicator>
-                ) : (
-                  <IndicatorInactive key={i}></IndicatorInactive>
-                );
-              })}
+            {images.map((_, i) => {
+              return slide === i ? (
+                <Indicator key={i} />
+              ) : (
+                <IndicatorInactive key={i} />
+              );
+            })}
           </Indicators>
           <Circle>
             <Arrow src={RightChevron} onClick={nextSlide} alt="right-chevron" />

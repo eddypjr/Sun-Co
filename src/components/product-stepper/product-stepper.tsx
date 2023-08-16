@@ -21,7 +21,6 @@ const ProductStepper: FC = () => {
     getProducts();
   }, [categoriesMap]);
 
-  // console.log(latestDrops);
   return (
     <>
       {latestDrops.map(
