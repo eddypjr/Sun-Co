@@ -17,20 +17,17 @@ const CategoriesPreview = () => {
     <section>
       <Container>
         <Blah>
-          {categoriesMap.map(
-            (category) =>
-              category.title !== 'latest' && (
-                <Content
-                  key={category.title}
-                  onClick={() => navigate(`shop/${category.title}`)}
-                >
-                  <BackgroundImage src={category.imageUrl} />
-                  <Body>
-                    <h2>{category.title.toUpperCase()}</h2>
-                  </Body>
-                </Content>
-              )
-          )}
+          {categoriesMap.map((category) => (
+            <Content
+              key={category.title}
+              onClick={() => navigate(`shop/${category.title}`)}
+            >
+              <BackgroundImage src={category.imageUrl} />
+              <Body>
+                <h2>{category.title.toUpperCase()}</h2>
+              </Body>
+            </Content>
+          ))}
         </Blah>
       </Container>
     </section>

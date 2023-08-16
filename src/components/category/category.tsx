@@ -3,39 +3,48 @@ import { useParams } from 'react-router-dom';
 import { Container, Content, ProductCardContainer } from './category.styles';
 import { Product, ProductsContext } from '../../contexts/product.context';
 import { Link } from 'react-router-dom';
+import CategoriesHeader from '../categories-header/categories-header';
 import ProductCard from '../product-card/product-card';
+import type { Category } from '../../contexts/product.context';
 
 const Category = () => {
   const { category } = useParams();
-  const { categories } = useContext(ProductsContext);
-  const [catState, setCatState] = useState<Product[] | []>([]);
+  const { categoriesMap } = useContext(ProductsContext);
+  const [categoryProducts, setCategoryProducts] = useState<Product[] | []>([]);
 
   useEffect(() => {
-    const getCategory = () => {
-      return Object.entries(categories).map((catgry, i) => {
-        if (catgry[0] === category) {
-          setCatState(catgry[1]);
+    function extractItemsFromNestedArray(arr: Category[]) {
+      const finalArray: Product[] = [];
+
+      arr.forEach((catgry: Category) => {
+        if (category === 'All' || catgry.title === category) {
+          finalArray.push(...catgry.items);
         }
       });
-    };
-    getCategory();
-  }, [categories, category]);
+
+      return finalArray;
+    }
+
+    const extractedItems = extractItemsFromNestedArray(categoriesMap);
+    setCategoryProducts(extractedItems);
+  }, [categoriesMap, category]);
 
   return (
     <>
+      <CategoriesHeader />
       <section>
         <Container>
           <Content>
-            <div>
-              <h2>{category}</h2>
-            </div>
             <ProductCardContainer>
-              {catState &&
-                catState.map((product: Product, i) => (
-                  <Link to={`/product/${product['name']}`} state={{ product }}>
-                    <ProductCard product={product} key={i} />
-                  </Link>
-                ))}
+              {categoryProducts.map((product: Product, i) => (
+                <Link
+                  to={`/product/${product['name']}`}
+                  state={{ product }}
+                  key={i}
+                >
+                  <ProductCard product={product} />
+                </Link>
+              ))}
             </ProductCardContainer>
           </Content>
         </Container>

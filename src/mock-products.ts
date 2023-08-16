@@ -146,7 +146,7 @@ const MOCK_PRODUCTS = [
         description:
           'Exude timeless elegance with our tan trench coat, a refined and versatile staple that adds a sophisticated touch to your ensemble, whether rain or shine.',
         price: 185,
-        image: ['https://i.ibb.co/s96FpdP/brown-shearling.png'],
+        image: ['https://i.ibb.co/M6hHc3F/brown-trench.png'],
         category: 'jackets',
       },
     ],
@@ -378,7 +378,7 @@ const MOCK_PRODUCTS = [
           'Stay cool and comfortable all day in this stylish blue tank top. Its lightweight fabric and relaxed fit make it a perfect choice for casual outings.',
         price: 25,
         image: ['https://i.ibb.co/7CQVJNm/blue-tank.png'],
-        category: 'women',
+        category: 'womens',
       },
       {
         id: '38',
@@ -388,7 +388,7 @@ const MOCK_PRODUCTS = [
           'Embrace a touch of elegance with our floral blouse, featuring delicate patterns that add a hint of sophistication to your ensemble.',
         price: 20,
         image: ['https://i.ibb.co/4W2DGKm/floral-blouse.png'],
-        category: 'women',
+        category: 'womens',
       },
       {
         id: '39',
@@ -398,7 +398,7 @@ const MOCK_PRODUCTS = [
           "Blossom into spring with our enchanting floral dress, designed to make you feel like you're strolling through a garden with every step you take.",
         price: 80,
         image: ['https://i.ibb.co/KV18Ysr/floral-skirt.png'],
-        category: 'women',
+        category: 'womens',
       },
       {
         id: '40',
@@ -408,7 +408,7 @@ const MOCK_PRODUCTS = [
           'Make a bold statement in this eye-catching red dots dress that effortlessly combines modern design with timeless charm.',
         price: 80,
         image: ['https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png'],
-        category: 'women',
+        category: 'womens',
       },
       {
         id: '41',
@@ -418,7 +418,7 @@ const MOCK_PRODUCTS = [
           'Wrap yourself in cozy warmth with our striped sweater, a classic wardrobe essential that adds a touch of versatility to your everyday look.',
         price: 200,
         image: ['https://i.ibb.co/KmSkMbH/striped-sweater.png'],
-        category: 'women',
+        category: 'womens',
       },
       {
         id: '42',
@@ -428,7 +428,7 @@ const MOCK_PRODUCTS = [
           'Elevate your athleisure game with our vibrant yellow track suit, offering both comfort and style for your active lifestyle.',
         price: 135,
         image: ['https://i.ibb.co/v1cvwNf/yellow-track-suit.png'],
-        category: 'women',
+        category: 'womens',
       },
       {
         id: '43',
@@ -438,7 +438,7 @@ const MOCK_PRODUCTS = [
           'Complete your outfit with a touch of sophistication in our white vest, a versatile piece that adds a polished finish to any ensemble.',
         price: 20,
         image: ['https://i.ibb.co/qBcrsJg/white-vest.png'],
-        category: 'women',
+        category: 'womens',
       },
     ],
   },

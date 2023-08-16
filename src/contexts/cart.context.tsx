@@ -3,6 +3,7 @@ import { createContext, useState, useEffect, PropsWithChildren } from 'react';
 export type CartItem = {
   id: string;
   name: string;
+  category: string;
   brand: string;
   description: string;
   price: number;
