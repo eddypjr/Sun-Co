@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import {
   BackgroundImage,
   Body,
@@ -7,6 +6,7 @@ import {
   Blah,
 } from './categories-preview.styles';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ProductsContext } from '../../contexts/product.context';
 
 const CategoriesPreview = () => {
@@ -22,9 +22,15 @@ const CategoriesPreview = () => {
               key={category.title}
               onClick={() => navigate(`shop/${category.title}`)}
             >
-              <BackgroundImage src={category.imageUrl} />
+              <BackgroundImage
+                src={category.imageUrl}
+                aria-label="category-image"
+              />
+
               <Body>
-                <h2>{category.title.toUpperCase()}</h2>
+                <h2 aria-label={category.title.toUpperCase()}>
+                  {category.title.toUpperCase()}
+                </h2>
               </Body>
             </Content>
           ))}

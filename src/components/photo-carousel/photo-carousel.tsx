@@ -41,7 +41,7 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
             <Arrow
               src={LeftChevron}
               onClick={prevSlide}
-              alt="left-chevron"
+              aria-label="left-chevron"
               data-testid="leftArrow"
             />
           </Circle>
@@ -56,7 +56,7 @@ const PhotoCarousel: FC<PhotoCarouselProps> = ({ images }) => {
             })}
           </Indicators>
           <Circle>
-            <Arrow src={RightChevron} onClick={nextSlide} alt="right-chevron" />
+            <Arrow src={RightChevron} onClick={nextSlide} aria-label="right-chevron" />
           </Circle>
         </BottomContainer>
       </Container>

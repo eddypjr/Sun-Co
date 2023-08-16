@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ProductImage = styled.img`
   width: 100%;
   height: 90%;
+  max-height: 600px;
 `;
 
 export const Container = styled.div`
