@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import ProductList from './product-list';
+import ProductList from './latest-drops';
 import { BrowserRouter } from 'react-router-dom';
 
 describe('ProductList Component', () => {

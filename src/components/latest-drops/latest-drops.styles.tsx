@@ -37,7 +37,8 @@ export const Content = styled.div`
 export const ProductsContainer = styled.div`
   width: 100%;
   display: flex;
-  gap: 1.25rem;
+  gap: 1.2rem;
+  transition: all 0.25s ease-in-out;
 
   @media screen and (max-width: 800px) {
     display: flex;
@@ -66,8 +67,7 @@ export const Circle = styled.div`
     height: 2.188rem;
     text-align: center;
     border-radius: 50%;
-    // border: 0.063rem solid white;
-    border: 1px solid black;
+    border: 0.063rem solid white;
     outline: none;
     color: white;
     cursor: pointer;

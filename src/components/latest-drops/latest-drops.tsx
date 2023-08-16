@@ -5,13 +5,13 @@ import {
   ArrowsContainer,
   Circle,
   Arrow,
-} from './product-list.styles';
+} from './latest-drops.styles';
 import { FC, useRef } from 'react';
 import ProductStepper from '../product-stepper/product-stepper';
 import LeftChevron from '../../assets/svg/chevron-left.svg';
 import RightChevron from '../../assets/svg/chevron-right.svg';
 
-const ProductList: FC = () => {
+const LatestDrops: FC = () => {
   const ref = useRef<HTMLDivElement | null>(null);
 
   const scroll = (percentage: number) => {
@@ -55,4 +55,4 @@ const ProductList: FC = () => {
   );
 };
 
-export default ProductList;
+export default LatestDrops;
