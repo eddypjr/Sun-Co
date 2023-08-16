@@ -1,26 +1,28 @@
+import React from 'react';
 import {
-  Container,
-  ProductContainer,
-  ProductImage,
   Brand,
+  Container,
   Name,
   Price,
+  ProductContainer,
 } from './product-card.styles';
 import { FC } from 'react';
+import ProgressiveImage from '../product-image/product-image';
 import type { Product } from '../../contexts/product.context';
 
 type ProductCardProps = {
   product: Product;
 };
 
-const ProductCard: FC<ProductCardProps> = ({ product }) => {
+const ProductCard: FC<ProductCardProps> = React.memo(({ product }) => {
   const { brand, name, price, image } = product;
   const thumbnail = image[0];
 
   return (
     <>
       <Container>
-        <ProductImage src={thumbnail} alt="product-card-thumbnail" />
+        <ProgressiveImage thumbnail={thumbnail} />
+
         <ProductContainer>
           <Brand>{brand}</Brand>
           <Name>{name}</Name>
@@ -29,6 +31,6 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
       </Container>
     </>
   );
-};
+});
 
 export default ProductCard;

@@ -16,21 +16,25 @@ const Footer: FC = () => {
       <Container>
         <Content>
           <Link to="/">
-            <img src="https://i.ibb.co/NF3m1Xr/black-Logo.webp" alt="logo" />
+            <img
+              src="https://i.ibb.co/NF3m1Xr/black-Logo.webp"
+              alt="logo"
+              loading="lazy"
+            />
           </Link>
           <CopyrightContainer>
             <div>&#169; 2023 Sun Co.</div>
             <div>All rights reserved</div>
           </CopyrightContainer>
           <SocialLogoContainer>
-            <Link to="https://www.instagram.com/dot.cards/?hl=en">
-              <img src={Instagram} alt="instagram-link" />
+            <Link to="https://www.instagram.com/">
+              <img src={Instagram} alt="instagram-link" loading="lazy" />
             </Link>
-            <Link to="https://twitter.com/DotCardsUSA">
-              <img src={Twitter} alt="twitter-link" />
+            <Link to="https://twitter.com/">
+              <img src={Twitter} alt="twitter-link" loading="lazy" />
             </Link>
-            <Link to="https://www.youtube.com/@dotnetworking8220">
-              <img src={Youtube} alt="youtube-link" />
+            <Link to="https://www.youtube.com/">
+              <img src={Youtube} alt="youtube-link" loading="lazy" />
             </Link>
           </SocialLogoContainer>
         </Content>
