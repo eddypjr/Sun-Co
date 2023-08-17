@@ -9,7 +9,8 @@ import type { Category } from '../../contexts/product.context';
 
 const Category = () => {
   const { category } = useParams();
-  const { categoriesMap } = useContext(ProductsContext);
+  const { data } = useContext(ProductsContext);
+  const { categoriesMap } = data;
   const [categoryProducts, setCategoryProducts] = useState<Product[] | []>([]);
 
   useEffect(() => {

@@ -36,8 +36,8 @@ export const ImageContainer = styled.div`
 
   img {
     border-radius: 1.173rem;
-    width: 90%;
-    height: 90%;
+    width: 200px;
+    height: 200px;
     flex-shrink: 0;
 
     @media (800px <= width <= 1200px) {
@@ -45,9 +45,19 @@ export const ImageContainer = styled.div`
       height: 7.813rem;
     }
 
-    @media (max-width: 300px) {
-      width: 5.938rem;
-      height: 5.938rem;
+    @media (480px <= width <= 799px) {
+      width: 150px;
+      height: 150px;
+    }
+
+    @media (300px < width < 480px) {
+      width: 115px;
+      height: 115px;
+    }
+
+    @media (width < 300px) {
+      width: 80px;
+      height: 80px;
     }
   }
 `;

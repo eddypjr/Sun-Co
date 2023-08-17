@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 1.563rem;
 `;
@@ -18,66 +17,60 @@ export const BackgroundImage = styled.div<BackgroundImageProps>`
   background-size: cover;
   background-position: center;
   background-image: ${({ src }) => `url(${src})`};
+  border-radius: 0%;
 `;
 
 export const Body = styled.div`
   height: 90px;
-  padding: 3.125rem 3.438rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 0.625rem;
-  background-color: white;
-  opacity: 0.7;
   position: absolute;
 
   h2 {
     font-weight: 700;
-    margin: 0 0.375rem 0;
-    font-size: 22px;
-    color: #4a4a4a;
+    font-size: 26px;
+    -webkit-text-stroke: 1px black;
+    color: white;
     text-transform: uppercase;
+    transform: all 0.25s ease-in-out;
+
+    @media (min-width: 800px) and (max-width: 1000px) {
+      font-size: 20px;
+    }
+
+    @media (width <= 800px) {
+      font-size: 37px;
+    }
+  }
+`;
+
+export const Title = styled.h2`
+  font-weight: 700;
+  font-size: 26px;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-transform: uppercase;
+  transform: all 0.25s ease-in-out;
+
+  @media (min-width: 800px) and (max-width: 1000px) {
+    font-size: 12px;
+  }
+
+  @media (width <= 800px) {
+    font-size: 37px;
   }
 `;
 
 export const Content = styled.div`
   height: 20rem;
-  // height: 100%;
-  // height: 700px;
   display: flex;
   flex: 1 1 auto;
   align-items: center;
   justify-content: center;
-  // border: 1px solid black;
-  border-radius: 1.173rem;
   margin: 0 0.469rem 0.938rem;
   overflow: hidden;
-
-  &:first-child {
-    // margin-right: 0.469rem;
-      // grid-row-start: 1;
-  // grid-row-end: 3;
-  }
-
-
-  &:nth-last-child(2) {
-    // margin-left: 0.469rem;
-  // grid-row-start: 1;
-  // grid-row-end: 2;
-    // grid-column: 2;
-    // border: 1px solid black;
-  }
-
-  &:nth-last-child(3) {
-    // margin-left: 0.469rem;
-    // grid-column: 1;
-  }
-
-  &:last-child {
-    // margin-left: 0.469rem;
-    // grid-column: 2;
-  }
 
   &:hover {
     cursor: pointer;
@@ -96,7 +89,12 @@ export const Content = styled.div`
   }
 `;
 
-export const Blah = styled.div`
+export const Categories = styled.div`
   width: 80%;
   display: flex;
+
+  @media (width < 800px) {
+    all: unset;
+    width: 90%;
+  }
 `;

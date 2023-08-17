@@ -16,6 +16,10 @@ export const Content = styled.div`
     width: 90%;
   }
 
+  @media (width <= 480px) {
+    object-fit: contain;
+  }
+
   h2 {
     font-size: 1.75rem;
     margin-bottom: 1.563rem;
@@ -42,7 +46,5 @@ export const ProductCardContainer = styled.div`
 
   @media (width <= 800px) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 24px;
-    row-gap: 20px;
   }
 `;
