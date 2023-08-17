@@ -20,6 +20,30 @@ export const Container = styled.div`
   }
 `;
 
+export const ImageContainer = styled.div`
+  .blur-image {
+    filter: blur(4px);
+  }
+  width: 100%;
+`;
+
+export const ProductImage = styled.img`
+  border-radius: 1.173rem;
+  display: block;
+  height: 400px;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+
+  @media (width > 2000px) {
+    height: 600px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 300px;
+    width: 300px;
+  }
+`;
+
 export const ProductContainer = styled.div`
   display: flex;
   flex-direction: column;

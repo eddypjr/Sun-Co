@@ -3,20 +3,21 @@ import {
   Body,
   Content,
   Container,
-  Blah,
+  Categories,
 } from './categories-preview.styles';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ProductsContext } from '../../contexts/product.context';
 
 const CategoriesPreview = () => {
-  const { categoriesMap } = useContext(ProductsContext);
+  const { data } = useContext(ProductsContext);
+  const { categoriesMap } = data;
   const navigate = useNavigate();
 
   return (
     <section>
       <Container>
-        <Blah>
+        <Categories>
           {categoriesMap.map((category) => (
             <Content
               key={category.title}
@@ -34,7 +35,7 @@ const CategoriesPreview = () => {
               </Body>
             </Content>
           ))}
-        </Blah>
+        </Categories>
       </Container>
     </section>
   );
