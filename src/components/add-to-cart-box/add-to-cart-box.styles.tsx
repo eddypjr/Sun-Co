@@ -28,7 +28,7 @@ export const Top = styled.div`
   justify-content: center;
 
   h1 {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-size: 1.5rem;
     font-style: normal;
     font-family: DM Sans;
@@ -44,7 +44,7 @@ export const Top = styled.div`
   }
 
   h2 {
-    color: var(--dark-grey, #67696e);
+    color: #67696e;
     font-family: Inter;
     font-size: 1.25rem;
     font-style: normal;
@@ -58,7 +58,7 @@ export const Top = styled.div`
   }
 
   h3 {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-size: 1.5rem;
     font-style: normal;
     font-family: DM Sans;
@@ -85,7 +85,7 @@ export const Bottom = styled.div`
   }
 
   p {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
