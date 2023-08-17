@@ -6,7 +6,7 @@ import {
   Content,
   Title,
   FilterButtons,
-} from './categories-header.styles';
+} from './category-header.styles';
 
 const CategoriesHeader = () => {
   const { data } = useContext(ProductsContext);

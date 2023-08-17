@@ -57,7 +57,7 @@ export const BannerLeft = styled.div`
     font-family: DM Sans;
     font-size: 4rem;
     font-weight: 700;
-    line-height: 4.563rem; /* 114.063% */
+    line-height: 4.563rem;
     letter-spacing: -0.063rem;
 
     @media screen and (max-width: 800px) {
@@ -72,7 +72,7 @@ export const BannerLeft = styled.div`
     color: #67696e;
     font-family: Inter;
     font-size: 1.25rem;
-    font-weight: 400;
+    
     line-height: 1.875rem;
 
     @media screen and (max-width: 800px) {

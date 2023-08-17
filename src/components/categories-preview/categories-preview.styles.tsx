@@ -21,7 +21,7 @@ export const BackgroundImage = styled.div<BackgroundImageProps>`
 `;
 
 export const Body = styled.div`
-  height: 90px;
+  height: 5.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,35 +30,35 @@ export const Body = styled.div`
 
   h2 {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 1.625rem;
     color: white;
     text-transform: uppercase;
     transform: all 0.25s ease-in-out;
 
     @media (min-width: 800px) and (max-width: 1000px) {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     @media (width <= 800px) {
-      font-size: 37px;
+      font-size: 2.313rem;
     }
   }
 `;
 
 export const Title = styled.h2`
   font-weight: 700;
-  font-size: 26px;
+  font-size: 1.625rem;
   -webkit-text-stroke: 1px #201b21;
   color: white;
   text-transform: uppercase;
   transform: all 0.25s ease-in-out;
 
   @media (min-width: 800px) and (max-width: 1000px) {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   @media (width <= 800px) {
-    font-size: 37px;
+    font-size: 2.313rem;
   }
 `;
 

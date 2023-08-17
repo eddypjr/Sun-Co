@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin: 0 auto;
-  padding: 0 19px;
+  padding: 0 1.188rem;
   flex: 1;
-  height: 250px;
+  height: 15.625rem;
   width: 100%;
-  min-width: 150px;
+  min-width: 9.375rem;
 `;
 
 export const Content = styled.div`
@@ -54,7 +54,7 @@ export const FilterButtons = styled.div`
   display: flex;
   gap: 1rem;
   width: 100%;
-  min-width: 280px;
+  min-width: 17.5rem;
   flex-wrap: wrap;
   align-items: center;
 
@@ -62,12 +62,12 @@ export const FilterButtons = styled.div`
     padding: 0.6rem 1.6rem;
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid rgba(0, 0, 0, 0.3);
     transition: all 0.2s;
     font-family: Inter;
 
     &:hover {
-      border: 2px solid rgba(0, 0, 0, 0.5);
+      border: 0.125rem solid rgba(0, 0, 0, 0.5);
     }
   }
 `;

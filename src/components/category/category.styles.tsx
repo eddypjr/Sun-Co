@@ -37,8 +37,8 @@ export const ProductCardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  column-gap: 16px;
-  row-gap: 16px;
+  column-gap: 1rem;
+  row-gap: 1rem;
 
   @media (width <= 1000px) {
     grid-template-columns: repeat(3, 1fr);

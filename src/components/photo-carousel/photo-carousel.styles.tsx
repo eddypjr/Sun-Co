@@ -17,9 +17,6 @@ export const BottomContainer = styled.div`
   align-items: center;
   text-align: center;
   margin-top: 2%;
-
-  @media screen and (max-width: 800px) {
-  }
 `;
 
 export const Circle = styled.div`
@@ -43,14 +40,14 @@ export const Arrow = styled.img`
 
 export const Slide = styled.img`
   width: 100%;
-  height: 450px;
+  height: 28.125rem;
 
   @media (width >= 1400px) {
-    height: 600px;
+    height: 37.5rem;
   }
 
   @media (width <= 1000px) {
-    height: 300px;
+    height: 18.75rem;
   }
 `;
 

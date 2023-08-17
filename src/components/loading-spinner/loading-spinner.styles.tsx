@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
-  // background-color: red;
   height: 100vh;
   align-items: center;
 `;
@@ -54,7 +53,7 @@ export const Spinner = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 10px solid transparent;
+    border: 0.625rem solid transparent;
     mix-blend-mode: overlay;
     pointer-events: none;
   }
