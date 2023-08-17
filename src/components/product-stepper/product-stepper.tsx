@@ -6,19 +6,22 @@ import { ProductsContext } from '../../contexts/product.context';
 import type { Product } from '../../contexts/product.context';
 
 const ProductStepper: FC = () => {
-  const { categoriesMap } = useContext(ProductsContext);
-  const [latestDrops, setLatestDrops] = useState<Product[] | []>([]);
+  const { data } = useContext(ProductsContext);
+  const { categoriesMap } = data;
+  const initialLatestDrops =
+    categoriesMap
+      .find((catgry) => catgry.title === 'Sneakers')
+      ?.items.slice(0, 4) || [];
+
+  const [latestDrops, setLatestDrops] = useState<Product[]>(initialLatestDrops);
 
   useEffect(() => {
-    const getProducts = () => {
-      return categoriesMap.map((catgry) => {
-        if (catgry.title === 'sneakers') {
-          setLatestDrops(catgry.items);
-        }
-      });
-    };
-
-    getProducts();
+    const sneakersCategory = categoriesMap.find(
+      (catgry) => catgry.title === 'Sneakers'
+    );
+    if (sneakersCategory) {
+      setLatestDrops(sneakersCategory.items.slice(0, 4));
+    }
   }, [categoriesMap]);
 
   return (

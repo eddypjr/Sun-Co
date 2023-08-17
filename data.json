@@ -3,7 +3,7 @@
     {
       "id": 1,
       "brand": "Off-White",
-      "name": "Out of Office 'Ooo' sneakers",
+      "name": "Out of Office 'Ooo' Sneakers",
       "description": "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.",
       "price": 775,
       "image": "src/assets/images/products/thumbnails/1.png"
@@ -22,7 +22,7 @@
       "name": "Cosmic Unity",
       "description": "Stride with power, run with ease! The Nike Cosmic Unity delivers high levels of cushioning with the Nike React technology that boosts confidence with each step. The updated upper uses Flywire technology to keep your foot ventilated during those long runs and the foam with a higher height provides a softer feel and support where you need it. Shaped like a rocker, the foam provides support for the 3 phases of a runner's stride. It offers flexibility when your foot rises off the ground, a smooth ride when your foot is moving forward, and cushioning at ground contact.",
       "price": 160,
-       "image": "src/assets/images/products/thumbnails/3.png"
+      "image": "src/assets/images/products/thumbnails/3.png"
     },
     {
       "id": 4,

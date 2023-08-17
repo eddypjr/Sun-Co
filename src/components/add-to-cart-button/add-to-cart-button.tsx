@@ -1,7 +1,7 @@
 import { AddButton } from './add-to-cart-button.styles';
 import { FC, useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import type { CartItem } from '../../contexts/cart.context';
 
@@ -11,6 +11,7 @@ export type AddToCartButtonProps = {
 };
 
 const AddToCartButton: FC<AddToCartButtonProps> = ({ product, quantity }) => {
+  const navigate = useNavigate();
   const notify = () =>
     toast.success(`${product.name} has been added to the cart.`, {
       position: 'top-center',
@@ -27,13 +28,14 @@ const AddToCartButton: FC<AddToCartButtonProps> = ({ product, quantity }) => {
   const addItemHandler = () => {
     addItemToCart(product, quantity);
     notify();
+    navigate(-1);
   };
 
   return (
     <>
-      <Link to="/" onClick={addItemHandler}>
+      <div onClick={addItemHandler}>
         <AddButton>Add to Cart</AddButton>
-      </Link>
+      </div>
     </>
   );
 };
