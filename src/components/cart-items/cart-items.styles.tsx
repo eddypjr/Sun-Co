@@ -10,7 +10,7 @@ export const Content = styled.div`
   grid-template-columns: repeat(3, 1fr);
 
   .price {
-    color: var(--black, #201b21);
+    color: #201b21;
     text-align: right;
     font-family: DM Sans;
     font-size: 1.125rem;
@@ -73,7 +73,7 @@ export const MiddleColumn = styled.div`
   }
 
   .brand {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-family: DM Sans;
     font-size: 1.25rem;
     font-style: normal;
@@ -88,7 +88,7 @@ export const MiddleColumn = styled.div`
   }
 
   .name {
-    color: var(--dark-grey, #67696e);
+    color: #67696e;
     font-family: Inter;
     font-size: 1.125rem;
     font-style: normal;
@@ -116,7 +116,7 @@ export const MiddleColumnBottom = styled.div`
 `;
 
 export const RemoveButton = styled.button`
-  color: var(--dark-grey, #67696e);
+  color: #67696e;
   font-family: Inter;
   font-size: 1rem;
   font-style: normal;
@@ -136,6 +136,10 @@ export const RemoveButton = styled.button`
     font-weight: 700;
     line-height: 1.25rem; /* 142.857% */
     margin: 5% 0;
+  }
+
+  &:hover {
+    filter: brightness(125%);
   }
 `;
 

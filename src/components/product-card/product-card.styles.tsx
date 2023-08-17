@@ -34,6 +34,10 @@ export const ProductImage = styled.img<ProductImageProps>`
     height: 600px;
   }
 
+  @media (801px < width < 1400px) {
+    height: 300px;
+  }
+
   @media (width < 800px) {
     width: 225px;
     height: 350px;
@@ -54,7 +58,7 @@ export const ProductContainer = styled.div`
 `;
 
 export const Brand = styled.div`
-  color: var(--black, #201b21);
+  color: #201b21;
   font-family: DM Sans;
   font-size: 1.25rem;
   font-style: normal;
@@ -64,7 +68,7 @@ export const Brand = styled.div`
 `;
 
 export const Name = styled.div`
-  color: var(--dark-grey, #67696e);
+  color: #67696e;
   font-family: Inter;
   font-size: 1rem;
   font-style: normal;
@@ -73,7 +77,7 @@ export const Name = styled.div`
 `;
 
 export const Price = styled.div`
-  color: var(--black, #201b21);
+  color: #201b21;
   font-family: DM Sans;
   font-size: 1.125rem;
   font-style: normal;

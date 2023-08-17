@@ -31,7 +31,6 @@ export const Body = styled.div`
   h2 {
     font-weight: 700;
     font-size: 26px;
-    -webkit-text-stroke: 1px black;
     color: white;
     text-transform: uppercase;
     transform: all 0.25s ease-in-out;
@@ -49,7 +48,7 @@ export const Body = styled.div`
 export const Title = styled.h2`
   font-weight: 700;
   font-size: 26px;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px #201b21;
   color: white;
   text-transform: uppercase;
   transform: all 0.25s ease-in-out;

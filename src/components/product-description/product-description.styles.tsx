@@ -12,7 +12,7 @@ export const Content = styled.div`
   align-items: center;
 
   h1 {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-family: DM Sans;
     font-size: 1.5rem;
     font-style: normal;
@@ -22,7 +22,7 @@ export const Content = styled.div`
   }
 
   p {
-    color: var(--dark-grey, #67696e);
+    color: #67696e;
     font-family: Inter;
     font-size: 1.125rem;
     font-style: normal;
@@ -38,7 +38,7 @@ export const Underline = styled.div`
 `;
 
 export const BulletPoints = styled.ul`
-  color: var(--dark-grey, #67696e);
+  color: #67696e;
   font-family: Inter;
   font-size: 1.125rem;
   font-style: normal;

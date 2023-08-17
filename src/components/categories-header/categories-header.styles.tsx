@@ -18,7 +18,7 @@ export const Content = styled.div`
   a {
     font-size: 1.6rem;
     text-decoration: none;
-    color: black;
+    color: #201b21;
   }
 `;
 
@@ -30,6 +30,7 @@ export const Title = styled.div`
   transform: all 0.25s ease-in-out;
 
   h3 {
+    font-family: DM Sans;
     font-size: 2.7rem;
     text-transform: uppercase;
     text-align: center;
@@ -39,7 +40,7 @@ export const Title = styled.div`
   a {
     font-size: 1.6rem;
     text-decoration: none;
-    color: black;
+    color: #201b21;
     text-align: left;
   }
 
@@ -63,6 +64,7 @@ export const FilterButtons = styled.div`
     background-color: transparent;
     border: 2px solid rgba(0, 0, 0, 0.3);
     transition: all 0.2s;
+    font-family: Inter;
 
     &:hover {
       border: 2px solid rgba(0, 0, 0, 0.5);

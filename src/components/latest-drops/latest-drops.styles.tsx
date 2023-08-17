@@ -12,7 +12,7 @@ export const Content = styled.div`
   flex-direction: column;
 
   h1 {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-family: DM Sans;
     font-size: 2.25rem;
     font-weight: 700;
@@ -20,7 +20,7 @@ export const Content = styled.div`
     letter-spacing: -0.063rem;
 
     @media screen and (max-width: 800px) {
-      color: var(--black, #201b21);
+      color: #201b21;
       font-family: DM Sans;
       font-size: 1.75rem;
       line-height: 2.25rem; /* 128.571% */

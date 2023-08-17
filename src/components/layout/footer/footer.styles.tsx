@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 1rem 0;
-  margin: 0 auto;
+  margin-top: 3%;
 
   a {
     cursor: pointer;

@@ -19,7 +19,7 @@ export const QtyStepper = styled.div`
 `;
 
 export const Span = styled.span`
-  color: var(--black, #201b21);
+  color: #201b21;
   text-align: center;
   font-family: Inter;
   font-size: 1.125rem;
@@ -29,7 +29,7 @@ export const Span = styled.span`
   width: 1.5rem;
 
   @media screen and (max-width: 800px) {
-    color: var(--black, #201b21);
+    color: #201b21;
     text-align: center;
     font-family: Inter;
     font-size: 0.844rem;
