@@ -4,6 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
+  // background-color: red;
+  height: 100vh;
   align-items: center;
 `;
 
