@@ -47,7 +47,7 @@ export const BannerLeft = styled.div`
     @media screen and (max-width: 800px) {
       text-align: center;
       font-size: 2.25rem;
-      line-height: 2.625rem;
+      line-height: 1rem;
       letter-spacing: -0.064rem;
     }
   }

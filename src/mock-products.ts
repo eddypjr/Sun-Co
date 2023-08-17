@@ -1,6 +1,6 @@
 const MOCK_PRODUCTS = [
   {
-    title: 'hats',
+    title: 'Hats',
     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
     items: [
       {
@@ -11,7 +11,7 @@ const MOCK_PRODUCTS = [
           'Elevate your look with our brown brim hat, a classic accessory that adds a touch of sophistication and style to any outfit.',
         price: 25,
         image: ['https://i.ibb.co/ZYW3VTp/brown-brim.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '6',
@@ -21,7 +21,7 @@ const MOCK_PRODUCTS = [
           'Stay warm and on-trend with our blue beanie, a cozy choice that keeps you comfortable while adding a pop of color to your ensemble.',
         price: 18,
         image: ['https://i.ibb.co/ypkgK0X/blue-beanie.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '7',
@@ -31,7 +31,7 @@ const MOCK_PRODUCTS = [
           'Embrace the spirit of the Wild West with our brown cowboy hat, a rugged yet fashionable statement piece that sets you apart from the crowd',
         price: 35,
         image: ['https://i.ibb.co/QdJwgmp/brown-cowboy.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '8',
@@ -41,7 +41,7 @@ const MOCK_PRODUCTS = [
           'Complete your look with our grey brim hat, a versatile accessory that effortlessly complements a range of styles for a polished finish.',
         price: 25,
         image: ['https://i.ibb.co/RjBLWxB/grey-brim.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '9',
@@ -51,7 +51,7 @@ const MOCK_PRODUCTS = [
           'Embrace winter charm with our green beanie, a cozy and playful addition that brightens up your cold-weather wardrobe.',
         price: 18,
         image: ['https://i.ibb.co/YTjW3vF/green-beanie.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '10',
@@ -61,7 +61,7 @@ const MOCK_PRODUCTS = [
           'Embrace a tropical vibe wherever you go with our palm tree cap, featuring a stylish palm tree design that transports you to sunny shores and adds a relaxed and coastal flair to your look. Stay shaded and on-trend with this must-have accessory for your everyday adventures.',
         price: 25,
         image: ['https://i.ibb.co/rKBDvJX/palm-tree-cap.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '11',
@@ -71,7 +71,7 @@ const MOCK_PRODUCTS = [
         name: 'Red Beanie',
         price: 25,
         image: ['https://i.ibb.co/bLB646Z/red-beanie.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '12',
@@ -81,7 +81,7 @@ const MOCK_PRODUCTS = [
           'Channel your wild side with our wolf cap, featuring a captivating design that showcases your individuality and love for nature.',
         price: 25,
         image: ['https://i.ibb.co/1f2nWMM/wolf-cap.png'],
-        category: 'hats',
+        category: 'Hats',
       },
       {
         id: '13',
@@ -91,12 +91,12 @@ const MOCK_PRODUCTS = [
           'Stay cool and confident with our blue snapback hat, a sporty accessory that combines comfort and style for a dynamic urban look.',
         price: 16,
         image: ['https://i.ibb.co/X2VJP2W/blue-snapback.png'],
-        category: 'hats',
+        category: 'Hats',
       },
     ],
   },
   {
-    title: 'jackets',
+    title: 'Jackets',
     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
     items: [
       {
@@ -107,7 +107,7 @@ const MOCK_PRODUCTS = [
           "Embrace urban coolness and warmth with our black jean shearling jacket, a fusion of rugged denim and cozy shearling lining that's perfect for your cold-weather adventures.",
         price: 125,
         image: ['https://i.ibb.co/XzcwL5s/black-shearling.png'],
-        category: 'jackets',
+        category: 'Jackets',
       },
       {
         id: '15',
@@ -117,7 +117,7 @@ const MOCK_PRODUCTS = [
           'Add a touch of timeless style to your wardrobe with our blue jean jacket, a versatile staple that effortlessly pairs with any outfit for a casual yet put-together look.',
         price: 90,
         image: ['https://i.ibb.co/mJS6vz0/blue-jean-jacket.png'],
-        category: 'jackets',
+        category: 'Jackets',
       },
       {
         id: '16',
@@ -127,7 +127,7 @@ const MOCK_PRODUCTS = [
           'Discover modern sophistication with our grey jean jacket, a contemporary take on a classic piece that offers an understated and stylish layering option.',
         price: 90,
         image: ['https://i.ibb.co/N71k1ML/grey-jean-jacket.png'],
-        category: 'jackets',
+        category: 'Jackets',
       },
       {
         id: '17',
@@ -137,7 +137,7 @@ const MOCK_PRODUCTS = [
           'Stay cozy and chic in our brown shearling jacket, a luxurious outerwear choice that combines warmth, comfort, and fashion-forward design in one.',
         price: 685,
         image: ['https://i.ibb.co/s96FpdP/brown-shearling.png'],
-        category: 'jackets',
+        category: 'Jackets',
       },
       {
         id: '18',
@@ -147,18 +147,18 @@ const MOCK_PRODUCTS = [
           'Exude timeless elegance with our tan trench coat, a refined and versatile staple that adds a sophisticated touch to your ensemble, whether rain or shine.',
         price: 185,
         image: ['https://i.ibb.co/M6hHc3F/brown-trench.png'],
-        category: 'jackets',
+        category: 'Jackets',
       },
     ],
   },
   {
-    title: 'sneakers',
+    title: 'Sneakers',
     imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
     items: [
       {
         id: '19',
         brand: 'Off-White',
-        name: "Out of Office 'Ooo' sneakers",
+        name: "Out of Office 'Ooo' Sneakers",
         description:
           'Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.',
         price: 775,
@@ -169,7 +169,7 @@ const MOCK_PRODUCTS = [
           'https://i.ibb.co/CsT2GtG/Off-White-3.webp',
           'https://i.ibb.co/18Nyxqq/Off-White-2.webp',
         ],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '20',
@@ -184,7 +184,7 @@ const MOCK_PRODUCTS = [
           'https://i.ibb.co/TrTWTVH/Gamma-Force-4.webp',
           'https://i.ibb.co/YX1mTGf/Gamma-Force-1.webp',
         ],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '21',
@@ -200,7 +200,7 @@ const MOCK_PRODUCTS = [
           'https://i.ibb.co/2c1txFt/Cosmic-Unity-1.webp',
           'https://i.ibb.co/vcnCcKs/Cosmic-Unity-4.webp',
         ],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '22',
@@ -215,17 +215,17 @@ const MOCK_PRODUCTS = [
           'https://i.ibb.co/4p6HN20/adidas-3.webp',
           'https://i.ibb.co/LZXHM5Q/adidas-4.webp',
         ],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '23',
         brand: 'adidas',
         name: 'NMD',
         description:
-          "Step into the future of footwear with our NMD sneakers, a perfect blend of modern design and cutting-edge comfort that's ready to elevate your street style game.",
+          "Step into the future of footwear with our NMD Sneakers, a perfect blend of modern design and cutting-edge comfort that's ready to elevate your street style game.",
         price: 220,
         image: ['https://i.ibb.co/0s3pdnc/adidas-nmd.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '24',
@@ -235,17 +235,17 @@ const MOCK_PRODUCTS = [
           "Experience iconic fashion with our Yeezy shoes, a symbol of urban sophistication that's bound to turn heads and leave an impression wherever you go.",
         price: 250,
         image: ['https://i.ibb.co/dJbG1cT/yeezy.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '25',
         brand: 'Converse',
         name: 'Classic Black Cons',
         description:
-          'Embrace timeless coolness with our classic black Converse sneakers, a wardrobe staple that effortlessly pairs with any outfit for a laid-back yet stylish look.',
+          'Embrace timeless coolness with our classic black Converse Sneakers, a wardrobe staple that effortlessly pairs with any outfit for a laid-back yet stylish look.',
         price: 110,
         image: ['https://i.ibb.co/bPmVXyP/black-converse.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '26',
@@ -255,7 +255,7 @@ const MOCK_PRODUCTS = [
           "Elevate your sneaker collection with our white Air Force high tops, offering a blend of sporty elegance and urban flair that's perfect for any occasion.",
         price: 160,
         image: ['https://i.ibb.co/1RcFPk0/white-nike-high-tops.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '27',
@@ -265,7 +265,7 @@ const MOCK_PRODUCTS = [
           'Make a bold statement with our red Air Force high tops, combining vibrant color with high-top style for a unique and eye-catching footwear choice.',
         price: 160,
         image: ['https://i.ibb.co/QcvzydB/nikes-red.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '28',
@@ -275,17 +275,17 @@ const MOCK_PRODUCTS = [
           'Discover urban versatility with our brown Air Force high tops, a shoe that seamlessly transitions from street-style to casual-chic with ease.',
         price: 160,
         image: ['https://i.ibb.co/fMTV342/nike-brown.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '29',
         brand: 'Nike',
         name: 'Air Jordan Limited',
         description:
-          'Own the court and the streets with our Air Jordan Limited sneakers, a tribute to athletic excellence and fashion-forward design that captures attention from every angle.',
+          'Own the court and the streets with our Air Jordan Limited Sneakers, a tribute to athletic excellence and fashion-forward design that captures attention from every angle.',
         price: 190,
         image: ['https://i.ibb.co/w4k6Ws9/nike-funky.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
       {
         id: '30',
@@ -295,13 +295,13 @@ const MOCK_PRODUCTS = [
           "Embrace rugged refinement with our brown Timberland boots, an iconic choice that offers durability and style, whether you're exploring the great outdoors or the city streets.",
         price: 200,
         image: ['https://i.ibb.co/Mhh6wBg/timberlands.png'],
-        category: 'sneakers',
+        category: 'Sneakers',
       },
     ],
   },
 
   {
-    title: 'mens',
+    title: 'Mens',
     imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
     items: [
       {
@@ -312,7 +312,7 @@ const MOCK_PRODUCTS = [
           'Embrace rugged style with our camo vest, a versatile layering piece that effortlessly adds a touch of edginess to your outfit.',
         price: 325,
         image: ['https://i.ibb.co/xJS0T3Y/camo-vest.png'],
-        category: 'men',
+        category: 'Mens',
       },
       {
         id: '32',
@@ -322,7 +322,7 @@ const MOCK_PRODUCTS = [
           'Add a fresh and contemporary vibe to your wardrobe with our floral t-shirt, combining modern design with the timeless comfort of a classic tee.',
         price: 20,
         image: ['https://i.ibb.co/qMQ75QZ/floral-shirt.png'],
-        category: 'men',
+        category: 'Mens',
       },
       {
         id: '33',
@@ -332,7 +332,7 @@ const MOCK_PRODUCTS = [
           'Make a statement in monochrome elegance with our black & white long sleeve shirt, a sophisticated choice for both casual and formal occasions.',
         price: 25,
         image: ['https://i.ibb.co/55z32tw/long-sleeve.png'],
-        category: 'men',
+        category: 'Mens',
       },
       {
         id: '34',
@@ -342,7 +342,7 @@ const MOCK_PRODUCTS = [
           'Elevate your look with a dash of color in our pink shirt, offering a subtle yet impactful way to stand out from the crowd.',
         price: 25,
         image: ['https://i.ibb.co/RvwnBL8/pink-shirt.png'],
-        category: 'men',
+        category: 'Mens',
       },
       {
         id: '35',
@@ -352,7 +352,7 @@ const MOCK_PRODUCTS = [
           'Discover the perfect balance between casual and polished with our denim long sleeve shirt, a staple that exudes effortless style.',
         price: 40,
         image: ['https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png'],
-        category: 'men',
+        category: 'Mens',
       },
       {
         id: '36',
@@ -362,12 +362,12 @@ const MOCK_PRODUCTS = [
           'Add a rich and refined touch to your ensemble with our burgundy shirt, a versatile piece that complements various outfit choices.',
         price: 25,
         image: ['https://i.ibb.co/mh3VM1f/polka-dot-shirt.png'],
-        category: 'men',
+        category: 'Mens',
       },
     ],
   },
   {
-    title: 'womens',
+    title: 'Womens',
     imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
     items: [
       {
@@ -378,7 +378,7 @@ const MOCK_PRODUCTS = [
           'Stay cool and comfortable all day in this stylish blue tank top. Its lightweight fabric and relaxed fit make it a perfect choice for casual outings.',
         price: 25,
         image: ['https://i.ibb.co/7CQVJNm/blue-tank.png'],
-        category: 'womens',
+        category: 'Womens',
       },
       {
         id: '38',
@@ -388,7 +388,7 @@ const MOCK_PRODUCTS = [
           'Embrace a touch of elegance with our floral blouse, featuring delicate patterns that add a hint of sophistication to your ensemble.',
         price: 20,
         image: ['https://i.ibb.co/4W2DGKm/floral-blouse.png'],
-        category: 'womens',
+        category: 'Womens',
       },
       {
         id: '39',
@@ -398,7 +398,7 @@ const MOCK_PRODUCTS = [
           "Blossom into spring with our enchanting floral dress, designed to make you feel like you're strolling through a garden with every step you take.",
         price: 80,
         image: ['https://i.ibb.co/KV18Ysr/floral-skirt.png'],
-        category: 'womens',
+        category: 'Womens',
       },
       {
         id: '40',
@@ -408,7 +408,7 @@ const MOCK_PRODUCTS = [
           'Make a bold statement in this eye-catching red dots dress that effortlessly combines modern design with timeless charm.',
         price: 80,
         image: ['https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png'],
-        category: 'womens',
+        category: 'Womens',
       },
       {
         id: '41',
@@ -418,7 +418,7 @@ const MOCK_PRODUCTS = [
           'Wrap yourself in cozy warmth with our striped sweater, a classic wardrobe essential that adds a touch of versatility to your everyday look.',
         price: 200,
         image: ['https://i.ibb.co/KmSkMbH/striped-sweater.png'],
-        category: 'womens',
+        category: 'Womens',
       },
       {
         id: '42',
@@ -428,7 +428,7 @@ const MOCK_PRODUCTS = [
           'Elevate your athleisure game with our vibrant yellow track suit, offering both comfort and style for your active lifestyle.',
         price: 135,
         image: ['https://i.ibb.co/v1cvwNf/yellow-track-suit.png'],
-        category: 'womens',
+        category: 'Womens',
       },
       {
         id: '43',
@@ -438,7 +438,7 @@ const MOCK_PRODUCTS = [
           'Complete your outfit with a touch of sophistication in our white vest, a versatile piece that adds a polished finish to any ensemble.',
         price: 20,
         image: ['https://i.ibb.co/qBcrsJg/white-vest.png'],
-        category: 'womens',
+        category: 'Womens',
       },
     ],
   },
