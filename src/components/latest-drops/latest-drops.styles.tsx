@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
 `;
 
 export const Content = styled.div`
@@ -79,8 +78,8 @@ export const Circle = styled.div`
 export const ArrowsContainer = styled.div`
   display: none;
   @media screen and (max-width: 800px) {
-    margin-top: 25px;
-    display: flex;
     width: 100%;
+    margin: 25px 0;
+    display: flex;
   }
 `;

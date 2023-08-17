@@ -24,7 +24,7 @@ const CartItems: FC<CartItemsProps> = ({ item }) => {
   const notify = () =>
     toast.success(`${item.name} has been removed.`, {
       position: 'top-center',
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,

@@ -15,7 +15,7 @@ const AddToCartButton: FC<AddToCartButtonProps> = ({ product, quantity }) => {
   const notify = () =>
     toast.success(`${product.name} has been added to the cart.`, {
       position: 'top-center',
-      autoClose: 2500,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,
