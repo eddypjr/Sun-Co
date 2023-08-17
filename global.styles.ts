@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter-Bold', Helvetica;
+  font-family: 'Inter-Bold', DM Sans;
   background-color: var(--white, #FFF);
   scroll-behavior: smooth;
   width: 100%;
