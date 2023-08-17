@@ -14,14 +14,14 @@ export const Content = styled.div`
     text-align: right;
     font-family: DM Sans;
     font-size: 1.125rem;
-    font-style: normal;
+
     font-weight: 500;
-    line-height: 1.5rem; /* 133.333% */
+    line-height: 1.5rem;
     letter-spacing: -0.031rem;
 
     @media screen and (max-width: 800px) {
       font-size: 0.875rem;
-      line-height: 1.25rem; /* 142.857% */
+      line-height: 1.25rem;
     }
   }
 `;
@@ -36,8 +36,8 @@ export const ImageContainer = styled.div`
 
   img {
     border-radius: 1.173rem;
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     flex-shrink: 0;
 
     @media (800px <= width <= 1200px) {
@@ -46,18 +46,18 @@ export const ImageContainer = styled.div`
     }
 
     @media (480px <= width <= 799px) {
-      width: 150px;
-      height: 150px;
+      width: 9.375rem;
+      height: 9.375rem;
     }
 
     @media (300px < width < 480px) {
-      width: 115px;
-      height: 115px;
+      width: 7.188rem;
+      height: 7.188rem;
     }
 
     @media (width < 300px) {
-      width: 80px;
-      height: 80px;
+      width: 5rem;
+      height: 5rem;
     }
   }
 `;
@@ -76,14 +76,14 @@ export const MiddleColumn = styled.div`
     color: #201b21;
     font-family: DM Sans;
     font-size: 1.25rem;
-    font-style: normal;
+
     font-weight: 700;
-    line-height: 1.5rem; /* 120% */
+    line-height: 1.5rem;
     letter-spacing: -0.031rem;
 
     @media screen and (max-width: 800px) {
       font-size: 1rem;
-      line-height: 1.25rem; /* 125% */
+      line-height: 1.25rem;
     }
   }
 
@@ -91,13 +91,12 @@ export const MiddleColumn = styled.div`
     color: #67696e;
     font-family: Inter;
     font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem; /* 133.333% */
+
+    line-height: 1.5rem;
 
     @media screen and (max-width: 800px) {
       font-size: 0.875rem;
-      line-height: 1.125rem; /* 128.571% */
+      line-height: 1.125rem;
     }
   }
 `;
@@ -119,9 +118,9 @@ export const RemoveButton = styled.button`
   color: #67696e;
   font-family: Inter;
   font-size: 1rem;
-  font-style: normal;
+
   font-weight: 700;
-  line-height: 1.5rem; /* 150% */
+  line-height: 1.5rem;
   text-decoration-line: underline;
   width: 3.938rem;
   background: none;
@@ -134,7 +133,7 @@ export const RemoveButton = styled.button`
   @media screen and (max-width: 800px) {
     font-size: 0.875rem;
     font-weight: 700;
-    line-height: 1.25rem; /* 142.857% */
+    line-height: 1.25rem;
     margin: 5% 0;
   }
 

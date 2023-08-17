@@ -51,10 +51,10 @@ const Summary: FC<SummaryProps> = ({ cartTotal }) => {
           </SummaryContainer>
           <Underline />
           <Bottom>
-            <div className="left">
+            <div className="total">
               <div>Total</div>
             </div>
-            <div className="right">
+            <div className="total" id="final-price">
               <div data-testid="finalPrice">${total}</div>
             </div>
           </Bottom>

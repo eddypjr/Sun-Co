@@ -30,7 +30,7 @@ export const Top = styled.div`
   h1 {
     color: #201b21;
     font-size: 1.5rem;
-    font-style: normal;
+
     font-family: DM Sans;
     font-weight: 700;
     line-height: 2rem;
@@ -38,7 +38,7 @@ export const Top = styled.div`
 
     @media screen and (max-width: 800px) {
       font-size: 1.125rem;
-      line-height: 1.5rem; /* 133.333% */
+      line-height: 1.5rem;
       letter-spacing: -0.023rem;
     }
   }
@@ -47,28 +47,27 @@ export const Top = styled.div`
     color: #67696e;
     font-family: Inter;
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem; /* 120% */
+
+    line-height: 1.5rem;
 
     @media screen and (max-width: 800px) {
       font-size: 0.938rem;
-      line-height: 1.125rem; /* 120% */
+      line-height: 1.125rem;
     }
   }
 
   h3 {
     color: #201b21;
     font-size: 1.5rem;
-    font-style: normal;
+
     font-family: DM Sans;
     font-weight: 500;
-    line-height: 1.5rem; /* 100% */
+    line-height: 1.5rem;
     letter-spacing: -0.031rem;
 
     @media screen and (max-width: 800px) {
       font-size: 1.125rem;
-      line-height: 1.125rem; /* 100% */
+      line-height: 1.125rem;
       letter-spacing: -0.023rem;
     }
   }
@@ -87,15 +86,15 @@ export const Bottom = styled.div`
   p {
     color: #201b21;
     font-size: 1.125rem;
-    font-style: normal;
+    
     font-weight: 700;
-    line-height: 1.25rem; /* 111.111% */
+    line-height: 1.25rem; 
     letter-spacing: -0.031rem;
     margin-top: 1.563rem;
 
     @media screen and (max-width: 800px) {
       font-size: 0.844rem;
-      line-height: 0.938rem; /* 111.111% */
+      line-height: 0.938rem; 
       letter-spacing: -0.023rem
       margin-top: 0.938rem;
     }

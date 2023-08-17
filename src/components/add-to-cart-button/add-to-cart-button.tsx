@@ -1,7 +1,7 @@
-import { AddButton } from './add-to-cart-button.styles';
 import { FC, useContext } from 'react';
-import { CartContext } from '../../contexts/cart.context';
 import { useNavigate } from 'react-router-dom';
+import { AddButton } from './add-to-cart-button.styles';
+import { CartContext } from '../../contexts/cart.context';
 import { toast } from 'react-toastify';
 import type { CartItem } from '../../contexts/cart.context';
 

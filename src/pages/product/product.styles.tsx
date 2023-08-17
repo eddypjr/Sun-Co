@@ -32,5 +32,5 @@ export const Content = styled.div`
 export const DisplayImage = styled.img`
   width: 100%;
   height: 90%;
-  max-height: 650px;
+  max-height: 40.625rem;
 `;

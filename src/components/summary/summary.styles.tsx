@@ -32,14 +32,14 @@ export const SummaryContainer = styled.div`
     color: #201b21;
     font-family: DM Sans;
     font-size: 2.25rem;
-    font-style: normal;
+
     font-weight: 700;
-    line-height: 3rem; /* 133.333% */
+    line-height: 3rem;
     letter-spacing: -0.063rem;
 
     @media screen and (max-width: 800px) {
       font-size: 1.75rem;
-      line-height: 2.25rem; /* 128.571% */
+      line-height: 2.25rem;
       letter-spacing: -0.063rem;
     }
   }
@@ -51,14 +51,14 @@ export const SummaryTop = styled.div`
   color: #201b21;
   font-family: DM Sans;
   font-size: 1.25rem;
-  font-style: normal;
+
   font-weight: 500;
-  line-height: 1.5rem; /* 120% */
+  line-height: 1.5rem;
   letter-spacing: -0.031rem;
 
   @media screen and (max-width: 800px) {
     font-size: 1rem;
-    line-height: 1.125rem; /* 112.5% */
+    line-height: 1.125rem;
     letter-spacing: -0.023rem;
   }
 `;
@@ -95,42 +95,26 @@ export const Bottom = styled.div`
   color: #201b21;
   font-family: DM Sans;
   font-size: 1.25rem;
-  font-style: normal;
+
   font-weight: 500;
-  line-height: 1.5rem; /* 120% */
+  line-height: 1.5rem;
   letter-spacing: -0.031rem;
 
-  .left {
-    color: #201b21;
-    font-family: DM Sans;
+  .total {
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 700;
-    line-height: 2rem; /* 133.333% */
+    line-height: 2rem;
     letter-spacing: -0.031rem;
 
     @media screen and (max-width: 800px) {
       font-size: 1.125rem;
-      line-height: 1.5rem; /* 133.333% */
+      line-height: 1.5rem;
       letter-spacing: -0.023rem;
     }
   }
 
-  .right {
-    color: #201b21;
+  #final-price {
     text-align: right;
-    font-family: DM Sans;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5rem; /* 133.333% */
-    letter-spacing: -0.031rem;
-
-    @media screen and (max-width: 800px) {
-      font-size: 0.938rem;
-      line-height: 1.125rem; /* 120% */
-      letter-spacing: -0.023rem;
-    }
   }
 `;
 
@@ -162,7 +146,7 @@ export const Checkout = styled(Link)`
   color: white;
   font-family: Inter;
   font-size: 1.125rem;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 1.5rem;
   margin: 5% 0;

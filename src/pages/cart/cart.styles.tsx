@@ -56,14 +56,14 @@ export const GridLeft = styled.div`
     color: #201b21;
     font-family: DM Sans;
     font-size: 2.25rem;
-    font-style: normal;
+
     font-weight: 700;
-    line-height: 3rem; /* 133.333% */
+    line-height: 3rem;
     letter-spacing: -0.063rem;
 
     @media screen and (max-width: 800px) {
       font-size: 1.75rem;
-      line-height: 2.25rem; /* 128.571% */
+      line-height: 2.25rem;
       letter-spacing: -0.063rem;
     }
   }

@@ -14,9 +14,9 @@ export const AddButton = styled.button`
   transition: background-color 0.3s ease;
   font-family: Inter;
   font-size: 1.125rem;
-  font-style: normal;
+
   font-weight: 700;
-  line-height: 1.25rem; /* 111.111% */
+  line-height: 1.25rem;
 
   &:hover {
     background-color: #d9dbe1;
@@ -27,19 +27,19 @@ export const AddButton = styled.button`
   }
 
   @media (801px <= width <= 1399px) {
-    margin: 15px 0;
+    margin: 0.938rem 0;
     padding: 0.75rem 5rem;
   }
 
   @media (480px <= width <= 800px) {
     padding: 1rem 6rem;
     width: 25rem;
-    margin: 15px 0;
+    margin: 0.938rem 0;
   }
 
   @media (width <= 479px) {
     padding: 0.75rem 5rem;
-    margin: 15px 0;
+    margin: 0.938rem 0;
   }
 
   @media (width <= 319px) {
