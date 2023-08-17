@@ -16,14 +16,14 @@ export const Content = styled.div`
     font-family: DM Sans;
     font-size: 2.25rem;
     font-weight: 700;
-    line-height: 3rem; /* 133.333% */
+    line-height: 3rem;
     letter-spacing: -0.063rem;
 
     @media screen and (max-width: 800px) {
       color: #201b21;
       font-family: DM Sans;
       font-size: 1.75rem;
-      line-height: 2.25rem; /* 128.571% */
+      line-height: 2.25rem;
       letter-spacing: -0.063rem;
     }
   }
@@ -79,7 +79,7 @@ export const ArrowsContainer = styled.div`
   display: none;
   @media screen and (max-width: 800px) {
     width: 100%;
-    margin: 25px 0;
+    margin: 1.563rem 0;
     display: flex;
   }
 `;

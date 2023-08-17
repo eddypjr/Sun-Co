@@ -7,7 +7,7 @@ import {
   Arrow,
 } from './latest-drops.styles';
 import { FC, useRef } from 'react';
-import ProductStepper from '../product-stepper/product-stepper';
+import Products from './products/products';
 import LeftChevron from '../../assets/svg/chevron-left.svg';
 import RightChevron from '../../assets/svg/chevron-right.svg';
 
@@ -29,7 +29,7 @@ const LatestDrops: FC = () => {
           <Content>
             <h1>Explore the latest drops</h1>
             <ProductsContainer ref={ref}>
-              <ProductStepper />
+              <Products />
             </ProductsContainer>
 
             <ArrowsContainer>
