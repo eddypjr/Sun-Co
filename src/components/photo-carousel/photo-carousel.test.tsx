@@ -3,10 +3,9 @@ import { render } from '@testing-library/react';
 import PhotoCarousel from './photo-carousel';
 
 const exampleImageUrl = [
-  './assets/images/products/Off-White/1.png',
-  './assets/images/products/Off-White/2.png',
-  './assets/images/products/Off-White/3.png',
-  './assets/images/products/Off-White/4.png',
+  'https://i.ibb.co/nwT6w1w/Off-White-1.webp',
+  'https://i.ibb.co/C5w4Mpr/Off-White-4.webp',
+  'https://i.ibb.co/3dRMfNL/Off-White-5.webp',
 ];
 
 describe('Photo Carousel in Product page', () => {

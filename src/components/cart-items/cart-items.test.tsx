@@ -6,6 +6,7 @@ import type { CartItem } from '../../contexts/cart.context';
 const exampleProduct: CartItem = {
   id: '1',
   brand: 'Off-White',
+  category: 'Sneakers',
   name: "Out of Office 'Ooo' Sneakers",
   description:
     'Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.',
