@@ -1,4 +1,4 @@
-import Banner from '../../components/banner/banner';
+import Banner from '../../components/hero/hero';
 import LatestDrops from '../../components/latest-drops/latest-drops';
 import CategoriesPreview from '../../components/categories-preview/categories-preview';
 

@@ -53,7 +53,7 @@ export const GridLeft = styled.div`
   }
 
   h1 {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-family: DM Sans;
     font-size: 2.25rem;
     font-style: normal;

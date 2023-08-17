@@ -29,7 +29,7 @@ export const SummaryContainer = styled.div`
   font-size: 1.25rem;
 
   h1 {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-family: DM Sans;
     font-size: 2.25rem;
     font-style: normal;
@@ -48,7 +48,7 @@ export const SummaryContainer = styled.div`
 export const SummaryTop = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  color: var(--black, #201b21);
+  color: #201b21;
   font-family: DM Sans;
   font-size: 1.25rem;
   font-style: normal;
@@ -92,7 +92,7 @@ export const Bottom = styled.div`
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  color: var(--black, #201b21);
+  color: #201b21;
   font-family: DM Sans;
   font-size: 1.25rem;
   font-style: normal;
@@ -101,7 +101,7 @@ export const Bottom = styled.div`
   letter-spacing: -0.031rem;
 
   .left {
-    color: var(--black, #201b21);
+    color: #201b21;
     font-family: DM Sans;
     font-size: 1.5rem;
     font-style: normal;
@@ -117,7 +117,7 @@ export const Bottom = styled.div`
   }
 
   .right {
-    color: var(--black, #201b21);
+    color: #201b21;
     text-align: right;
     font-family: DM Sans;
     font-size: 1.5rem;
@@ -158,7 +158,7 @@ export const Checkout = styled(Link)`
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
-  background: var(--black, #201b21);
+  background: #201b21;
   color: white;
   font-family: Inter;
   font-size: 1.125rem;
