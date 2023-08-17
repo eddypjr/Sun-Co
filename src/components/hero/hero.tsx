@@ -4,7 +4,7 @@ import {
   Container,
   Content,
   ShopNowButton,
-} from './banner.styles';
+} from './hero.styles';
 import { FC } from 'react';
 import rightArrow from '../../assets/svg/rightArrow.svg';
 

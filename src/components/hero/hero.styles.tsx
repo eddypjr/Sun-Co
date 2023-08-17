@@ -53,7 +53,7 @@ export const BannerLeft = styled.div`
   }
 
   h2 {
-    color: var(--black, #201B21);
+    color: #201b21;
     font-family: DM Sans;
     font-size: 4rem;
     font-weight: 700;
@@ -69,7 +69,7 @@ export const BannerLeft = styled.div`
   }
 
   p {
-    color: var(--dark-grey, #67696e);
+    color: #67696e;
     font-family: Inter;
     font-size: 1.25rem;
     font-weight: 400;
@@ -118,13 +118,13 @@ export const ShopNowButton = styled(Link)`
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
-  background: var(--black, #201b21);
+  background: #201b21;
   color: white;
   margin-top: 1.25rem;
   font-size: 1.125rem;
 
   &:hover {
-    background-color: #67696e;
+    background-color: #d9dbe1;
   }
 
   @media screen and (max-width: 800px) {

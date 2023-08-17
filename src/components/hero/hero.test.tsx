@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import Banner from './banner';
+import Banner from './hero';
 import { BrowserRouter } from 'react-router-dom';
 
 describe('Banner in Home page', () => {
