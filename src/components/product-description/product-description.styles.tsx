@@ -15,9 +15,9 @@ export const Content = styled.div`
     color: #201b21;
     font-family: DM Sans;
     font-size: 1.5rem;
-    font-style: normal;
+
     font-weight: 700;
-    line-height: 2rem; /* 133.333% */
+    line-height: 2rem;
     letter-spacing: -0.031rem;
   }
 
@@ -25,9 +25,8 @@ export const Content = styled.div`
     color: #67696e;
     font-family: Inter;
     font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem; /* 133.333% */
+
+    line-height: 1.5rem;
   }
 `;
 
@@ -41,7 +40,6 @@ export const BulletPoints = styled.ul`
   color: #67696e;
   font-family: Inter;
   font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem; /* 133.333% */
+
+  line-height: 1.5rem;
 `;

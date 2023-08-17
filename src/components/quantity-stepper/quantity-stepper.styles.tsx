@@ -23,7 +23,7 @@ export const Span = styled.span`
   text-align: center;
   font-family: Inter;
   font-size: 1.125rem;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 1.5rem;
   width: 1.5rem;
@@ -33,9 +33,9 @@ export const Span = styled.span`
     text-align: center;
     font-family: Inter;
     font-size: 0.844rem;
-    font-style: normal;
+
     font-weight: 700;
-    line-height: 1.125rem; /* 133.333% */
+    line-height: 1.125rem;
     width: 1.125rem;
   }
 `;

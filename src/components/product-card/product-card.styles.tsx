@@ -31,21 +31,21 @@ export const ProductImage = styled.img<ProductImageProps>`
   transition: all 0.25s ease-in-out;
 
   @media (width > 2000px) {
-    height: 600px;
+    height: 37.5rem;
   }
 
   @media (801px < width < 1400px) {
-    height: 300px;
+    height: 18.75rem;
   }
 
   @media (width < 800px) {
-    width: 225px;
-    height: 350px;
+    width: 14.063rem;
+    height: 21.875rem;
   }
 
   @media (width <= 480px) {
     width: ${({ width }) => `${width}`};
-    height: 250px;
+    height: 15.625rem;
   }
 `;
 
@@ -61,9 +61,9 @@ export const Brand = styled.div`
   color: #201b21;
   font-family: DM Sans;
   font-size: 1.25rem;
-  font-style: normal;
+
   font-weight: 700;
-  line-height: 1.5rem; /* 120% */
+  line-height: 1.5rem;
   letter-spacing: -0.031rem;
 `;
 
@@ -71,17 +71,16 @@ export const Name = styled.div`
   color: #67696e;
   font-family: Inter;
   font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.25rem; /* 125% */
+
+  line-height: 1.25rem;
 `;
 
 export const Price = styled.div`
   color: #201b21;
   font-family: DM Sans;
   font-size: 1.125rem;
-  font-style: normal;
+
   font-weight: 500;
-  line-height: 1.5rem; /* 133.333% */
+  line-height: 1.5rem;
   letter-spacing: -0.031rem;
 `;
