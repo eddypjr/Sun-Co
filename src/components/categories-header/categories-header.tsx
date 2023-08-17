@@ -1,35 +1,38 @@
 import { useContext } from 'react';
-import { Link, Outlet, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { ProductsContext } from '../../contexts/product.context';
-import LeftChevron from '../../assets/svg/chevron-left.svg';
+import {
+  Container,
+  Content,
+  Title,
+  FilterButtons,
+} from './categories-header.styles';
 
 const CategoriesHeader = () => {
-  const { categoriesMap } = useContext(ProductsContext);
+  const { data } = useContext(ProductsContext);
+  const { categoriesMap } = data;
   const { category } = useParams();
 
-
   return (
-    <div className="container">
-      <div className="content">
-        <div className="title-home">
-          <Link to="/">
-            <img src={LeftChevron} />
-          </Link>
-          <h3>{category}</h3>
-        </div>
-        <div>
-          <Link to="/shop/All">
-            <button>All</button>
-          </Link>
-          {categoriesMap.map((categoryData, i) => (
-            <Link to={`/shop/${categoryData.title}`} key={i}>
-              <button>{categoryData.title}</button>
+    <section>
+      <Container>
+        <Content>
+          <Title>
+            <h3>{category}</h3>
+          </Title>
+          <FilterButtons className="filter-buttons">
+            <Link to="/shop/All">
+              <button>All</button>
             </Link>
-          ))}
-        </div>
-      </div>
-      <Outlet />
-    </div>
+            {categoriesMap.map((categoryData, i) => (
+              <Link to={`/shop/${categoryData.title}`} key={i}>
+                <button>{categoryData.title}</button>
+              </Link>
+            ))}
+          </FilterButtons>
+        </Content>
+      </Container>
+    </section>
   );
 };
 
