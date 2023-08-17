@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const ProductImage = styled.img`
-  width: 100%;
-  height: 90%;
-  max-height: 600px;
-`;
-
 export const Container = styled.div`
   display: grid;
   justify-items: center;
@@ -33,4 +27,10 @@ export const Content = styled.div`
     row-gap: 2.188rem;
     margin-bottom: 5%;
   }
+`;
+
+export const DisplayImage = styled.img`
+  width: 100%;
+  height: 90%;
+  max-height: 650px;
 `;
