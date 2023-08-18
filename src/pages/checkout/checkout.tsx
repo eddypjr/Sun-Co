@@ -1,37 +1,11 @@
-import {
-  Container,
-  Content,
-  Grid,
-  GridLeft,
-  GridRight,
-} from './checkout.styles';
-import { useContext } from 'react';
-import { CartContext } from '../../contexts/cart.context';
-import CartItems from '../../components/cart-items/cart-items';
-import Summary from '../../components/summary/summary';
+import Cart from '../../components/cart/cart';
 
-const Cart = () => {
-  const { cartItems, cartTotal } = useContext(CartContext);
-
+const Checkout = () => {
   return (
-    <Container>
-      <Content>
-        <Grid>
-          <GridLeft>
-            <div className="bag-label">
-              <h1>Your Bag</h1>
-            </div>
-            {cartItems.map((item, i) => {
-              return <CartItems item={item} key={i} />;
-            })}
-          </GridLeft>
-          <GridRight>
-            <Summary cartTotal={cartTotal} />
-          </GridRight>
-        </Grid>
-      </Content>
-    </Container>
+    <>
+      <Cart />
+    </>
   );
 };
 
-export default Cart;
+export default Checkout;
