@@ -11,8 +11,6 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-
-
 }
 
 a {
