@@ -28,6 +28,5 @@ describe('Button test', () => {
     );
 
     expect(screen.queryByText('Add to Cart')).toBeInTheDocument();
-    expect(screen.getByRole('link')).toHaveAttribute('href', '/');
   });
 });

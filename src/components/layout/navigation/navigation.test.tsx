@@ -14,6 +14,6 @@ describe('Navigation bar', () => {
     const cartLink = getByTestId('cartLink');
 
     expect(screen.getByText('View Cart')).toBeInTheDocument();
-    expect(cartLink).toHaveAttribute('href', '/cart');
+    expect(cartLink).toHaveAttribute('href', '/checkout');
   });
 });

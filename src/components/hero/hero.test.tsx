@@ -12,6 +12,6 @@ describe('Banner in Home page', () => {
     );
 
     expect(screen.getByText('25% OFF')).toBeInTheDocument();
-    expect(screen.getByRole('link')).toHaveAttribute('href', '/cart');
+    expect(screen.getByRole('link')).toHaveAttribute('href', '/shop/All');
   });
 });
