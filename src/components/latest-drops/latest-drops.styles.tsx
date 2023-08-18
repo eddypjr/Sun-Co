@@ -67,7 +67,6 @@ export const Circle = styled.div`
     text-align: center;
     border-radius: 50%;
     border: 0.063rem solid white;
-    outline: none;
     color: white;
     cursor: pointer;
     margin: 0 0.625rem;

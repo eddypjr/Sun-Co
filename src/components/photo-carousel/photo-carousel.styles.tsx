@@ -25,7 +25,6 @@ export const Circle = styled.div`
   width: 2.188rem;
   height: 2.188rem;
   border: 0.063rem solid white;
-  outline: none;
   color: white;
   cursor: pointer;
   box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
@@ -63,7 +62,6 @@ export const Indicator = styled.button`
   width: 0.75rem;
   border-radius: 50%;
   border: 0.063rem solid #201b21;
-  outline: none;
   margin: 0 0.2rem;
   cursor: pointer;
 `;
@@ -74,7 +72,6 @@ export const IndicatorInactive = styled.button`
   width: 0.65rem;
   border-radius: 50%;
   border: 0.063rem solid #d9dbe1;
-  outline: none;
   margin: 0 0.2rem;
   cursor: pointer;
   align-items: baseline;

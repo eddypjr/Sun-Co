@@ -60,7 +60,7 @@ const PaymentForm: FC<PaymentFormProps> = ({ total }) => {
       alert(paymentResult.error);
     } else {
       if (paymentResult.paymentIntent.status === 'succeeded') {
-        alert('Payment Successful');
+        alert('Payment Successful. Thank you for placing an order with Sun Co.');
         clearCart();
       }
     }

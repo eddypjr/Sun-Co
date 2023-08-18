@@ -2,7 +2,7 @@
   "name": "dot-technical-assessment",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+
   "scripts": {
     "dev": "vite",
     "server": "json-server --watch data.json",

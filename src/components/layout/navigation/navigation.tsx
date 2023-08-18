@@ -25,7 +25,7 @@ const Navigation: FC = () => {
               </Link>
             </div>
 
-            <Link to="/cart" data-testid="cartLink">
+            <Link to="/checkout" data-testid="cartLink">
               <ViewCartContainer>
                 <img src={cartIcon} alt="cart-icon" />
                 View Cart
