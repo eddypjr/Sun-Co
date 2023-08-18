@@ -5,7 +5,7 @@ import { CartContext } from '../../contexts/cart.context';
 import { toast } from 'react-toastify';
 import type { CartItem } from '../../contexts/cart.context';
 
-export type AddToCartButtonProps = {
+type AddToCartButtonProps = {
   product: CartItem;
   quantity: number;
 };
