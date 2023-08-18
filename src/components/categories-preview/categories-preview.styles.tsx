@@ -94,7 +94,7 @@ export const Categories = styled.div`
   display: flex;
 
   @media (width < 800px) {
-    all: unset;
+    display: block;
     width: 90%;
   }
 `;

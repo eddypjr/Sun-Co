@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Brand,
   Container,
@@ -17,34 +16,29 @@ type ProductCardProps = {
   product: Product;
 };
 
-const ProductCard: FC<ProductCardProps> = React.memo(({ product }) => {
+const ProductCard: FC<ProductCardProps> = ({ product }) => {
   const { brand, name, price, image } = product;
   const thumbnail = image[0];
   const [imageLoaded, setImageLoaded] = useState(false);
   const { category } = useParams();
 
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-
   return (
     <>
       <Container>
         <ImageContainer>
-          {!imageLoaded && (
-            <ProductImage
-              width={!category ? '250px' : '100%'}
-              className="blur-image"
-              src={thumbnail}
-              alt="product-card-thumbnail"
-            />
-          )}
+          <ProductImage
+            width={!category ? '250px' : '100%'}
+            className="blur-image"
+            src={thumbnail}
+            alt="product-card-thumbnail"
+            style={{ display: imageLoaded ? 'none' : 'block' }}
+          />
+
           <ProductImage
             width={!category ? '250px' : '100%'}
             src={thumbnail}
             alt="product-card-thumbnail"
-            loading="lazy"
-            onLoad={handleImageLoad}
+            onLoad={() => setImageLoaded(true)}
           />
         </ImageContainer>
 
@@ -56,6 +50,6 @@ const ProductCard: FC<ProductCardProps> = React.memo(({ product }) => {
       </Container>
     </>
   );
-});
+};
 
 export default ProductCard;
