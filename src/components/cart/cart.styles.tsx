@@ -47,7 +47,8 @@ export const GridLeft = styled.div`
 
   .bag-label {
     width: 100%;
-    @media (650px <= width <= 800px) {
+
+    @media screen and (min-width: 650px) and (max-width: 800px) {
       margin-top: 1rem;
     }
   }

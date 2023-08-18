@@ -30,20 +30,20 @@ export const ProductImage = styled.img<ProductImageProps>`
   width: 100%;
   transition: all 0.25s ease-in-out;
 
-  @media (width > 2000px) {
+  @media screen and (min-width: 2000px) {
     height: 37.5rem;
   }
 
-  @media (801px < width < 1400px) {
+  @media screen and (min-width: 801px) and (max-width: 1400px) {
     height: 18.75rem;
   }
 
-  @media (width < 800px) {
+  @media screen and (max-width: 800px) {
     width: 14.063rem;
     height: 21.875rem;
   }
 
-  @media (width <= 480px) {
+  @media screen and (max-width: 480px) {
     width: ${({ width }) => `${width}`};
     height: 15.625rem;
   }

@@ -22,27 +22,26 @@ export const AddButton = styled.button`
     background-color: #d9dbe1;
   }
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     padding: 1rem 6rem;
   }
-
-  @media (801px <= width <= 1399px) {
+  @media screen and (min-width: 801px) and (max-width: 1400px) {
     margin: 0.938rem 0;
     padding: 0.75rem 5rem;
   }
 
-  @media (480px <= width <= 800px) {
+  @media screen and (min-width: 480px) and (max-width: 800px) {
     padding: 1rem 6rem;
     width: 25rem;
     margin: 0.938rem 0;
   }
 
-  @media (width <= 479px) {
+  @media screen and (max-width: 479px) {
     padding: 0.75rem 5rem;
     margin: 0.938rem 0;
   }
 
-  @media (width <= 319px) {
+  @media screen and (max-width: 319px) {
     padding: 0.75rem 3rem;
   }
 `;

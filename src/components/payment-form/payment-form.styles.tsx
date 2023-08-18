@@ -96,26 +96,25 @@ export const PayNowButton = styled.button`
     background-color: #67696e;
   }
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     padding: 1rem 6rem;
   }
-
-  @media (800.063rem <= width <= 1399px) {
+  @media screen and (min-width: 800px) and (max-width: 1399px) {
     margin: 0.938rem 0;
     padding: 0.75rem 5rem;
   }
 
-  @media (480px <= width <= 800px) {
+  @media screen and (min-width: 480px) and (max-width: 800px) {
     padding: 1rem 6rem;
     margin: 0.938rem 0;
   }
 
-  @media (width <= 479px) {
+  @media screen and (max-width: 479px) {
     padding: 0.75rem 5rem;
     margin: 0.938rem 0;
   }
 
-  @media (width <= 319px) {
+  @media screen and (max-width: 319px) {
     padding: 0.75rem 3rem;
   }
 `;

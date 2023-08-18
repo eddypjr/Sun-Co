@@ -36,11 +36,11 @@ export const Body = styled.div`
     text-transform: uppercase;
     transform: all 0.25s ease-in-out;
 
-    @media (min-width: 800px) and (max-width: 1000px) {
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
       font-size: 1.25rem;
     }
 
-    @media (width <= 800px) {
+    @media screen and (max-width: 800px) {
       font-size: 2.313rem;
     }
   }
@@ -54,11 +54,11 @@ export const Title = styled.h2`
   text-transform: uppercase;
   transform: all 0.25s ease-in-out;
 
-  @media (min-width: 800px) and (max-width: 1000px) {
+  @media screen and (min-width: 800px) and (max-width: 1000px) {
     font-size: 0.75rem;
   }
 
-  @media (width <= 800px) {
+  @media screen and (max-width: 800px) {
     font-size: 2.313rem;
   }
 `;
@@ -93,7 +93,7 @@ export const Categories = styled.div`
   width: 80%;
   display: flex;
 
-  @media (width < 800px) {
+  @media screen and (max-width: 800px) {
     display: block;
     width: 90%;
   }

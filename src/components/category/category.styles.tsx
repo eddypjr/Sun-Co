@@ -12,11 +12,13 @@ export const Content = styled.div`
   width: 80%;
   height: 100%;
 
-  @media (width <= 800px) {
+
+      @media screen and (max-width: 800px) {
     width: 90%;
   }
 
-  @media (width <= 480px) {
+
+      @media screen and (max-width: 480px) {
     object-fit: contain;
   }
 
@@ -40,7 +42,7 @@ export const ProductCardContainer = styled.div`
   column-gap: 1rem;
   row-gap: 1rem;
 
-  @media (width <= 1000px) {
+  @media screen and (max-width: 1000px) {
     grid-template-columns: repeat(3, 1fr);
   }
 

@@ -44,7 +44,7 @@ export const Title = styled.div`
     text-align: left;
   }
 
-  @media (width < 380px) {
+  @media screen and (max-width: 380px) {
     margin-bottom: 0;
   }
 `;

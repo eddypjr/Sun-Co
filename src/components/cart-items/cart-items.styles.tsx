@@ -40,22 +40,22 @@ export const ImageContainer = styled.div`
     height: 12.5rem;
     flex-shrink: 0;
 
-    @media (800px <= width <= 1200px) {
+    @media screen and (min-width: 800px) and (max-width: 1200px) {
       width: 7.813rem;
       height: 7.813rem;
     }
 
-    @media (480px <= width <= 799px) {
+    @media screen and (min-width: 480px) and (max-width: 799px) {
       width: 9.375rem;
       height: 9.375rem;
     }
 
-    @media (300px < width < 480px) {
+    @media screen and (min-width: 300px) and (max-width: 480px) {
       width: 7.188rem;
       height: 7.188rem;
     }
 
-    @media (width < 300px) {
+    @media screen and (max-width: 300px) {
       width: 5rem;
       height: 5rem;
     }

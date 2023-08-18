@@ -42,11 +42,11 @@ export const Slide = styled.img`
   height: 28.125rem;
   transition: all 0.25s ease-in-out;
 
-  @media (width >= 1400px) {
+  @media screen and (min-width: 1400px) {
     height: 40.5rem;
   }
 
-  @media (width <= 1000px) {
+  @media screen and (max-width: 1000px) {
     height: 18.75rem;
   }
 `;
