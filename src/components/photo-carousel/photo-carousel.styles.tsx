@@ -40,9 +40,10 @@ export const Arrow = styled.img`
 export const Slide = styled.img`
   width: 100%;
   height: 28.125rem;
+  transition: all 0.25s ease-in-out;
 
   @media (width >= 1400px) {
-    height: 37.5rem;
+    height: 40.5rem;
   }
 
   @media (width <= 1000px) {

@@ -8,13 +8,17 @@ export const Container = styled.div`
   margin-top: 1.563rem;
 `;
 
-export const BackgroundImage = styled.img`
+type BackgroundImageProps = {
+  src: string;
+};
+
+export const BackgroundImage = styled.div<BackgroundImageProps>`
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  border-radius: 0;
-  tabIndex: 1;
+  background-image: ${({ src }) => `url(${src})`};
+  border-radius: 0%;
 `;
 
 export const Body = styled.div`

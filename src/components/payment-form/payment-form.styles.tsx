@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { Spinner } from '../loading-spinner/loading-spinner.styles';
 
-
 export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #e1e1e1;
+  padding: 1.25rem;
+  border-top: 0.063rem solid #e9ebee;
   border-radius: 0 0 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
@@ -37,31 +36,29 @@ export const StyledForm = styled.form`
 
   label {
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
   }
 
   input {
     height: 40px;
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 16px;
+    border: 0.063rem solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
   }
 `;
 
 export const Row = styled.div`
   display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 `;
 export const CardContainer = styled.div`
-  border: 1px solid #ccc;
-  padding: 12px;
-  border-radius: 4px;
+  border: 0.063rem solid #ccc;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
 `;
-
-
 
 export const PaymentFormContainer = styled.div`
   height: 100%;
@@ -71,13 +68,12 @@ export const PaymentFormContainer = styled.div`
   justify-content: center;
 `;
 
-
 export const FormContainer = styled.form`
-height: 100%;
-min-width: 500px;
-display: flex;
-flex-direction: column;
-`
+  height: 100%;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+`;
 
 export const PayNowButton = styled.button`
   display: flex;
@@ -93,7 +89,7 @@ export const PayNowButton = styled.button`
   font-family: Inter;
   font-weight: 700;
   line-height: 1.25rem;
-  margin: 0 auto;
+  margin: 3% 0;
   text-align: center;
 
   &:hover {
@@ -104,7 +100,7 @@ export const PayNowButton = styled.button`
     padding: 1rem 6rem;
   }
 
-  @media (801px <= width <= 1399px) {
+  @media (800.063rem <= width <= 1399px) {
     margin: 0.938rem 0;
     padding: 0.75rem 5rem;
   }
@@ -125,9 +121,9 @@ export const PayNowButton = styled.button`
 `;
 
 export const ButtonSpinner = styled(Spinner)`
-  width: 25px;
-  height: 25px;
-  
+  width: 1.563rem;
+  height: 1.563rem;
+
   &:before,
   &:after {
     content: '';

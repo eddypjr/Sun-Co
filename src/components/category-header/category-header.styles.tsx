@@ -63,7 +63,7 @@ export const FilterButtons = styled.div`
     cursor: pointer;
     background-color: transparent;
     border: 0.125rem solid rgba(0, 0, 0, 0.3);
-    transition: all 0.2s;
+    transition: all 0.25s ease-in-out;
     font-family: Inter;
 
     &:hover {

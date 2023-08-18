@@ -6,13 +6,11 @@ import {
   Categories,
 } from './categories-preview.styles';
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { ProductsContext } from '../../contexts/product.context';
 
 const CategoriesPreview = () => {
   const { data } = useContext(ProductsContext);
   const { categoriesMap } = data;
-  const navigate = useNavigate();
 
   return (
     <section>
@@ -23,7 +21,7 @@ const CategoriesPreview = () => {
               <BackgroundImage
                 src={category.imageUrl}
                 role="image"
-                alt="category-image"
+                aria-label="category-image"
               />
 
               <Body>
