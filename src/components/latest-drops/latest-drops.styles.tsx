@@ -74,7 +74,10 @@ export const Circle = styled.button`
     color: white;
     cursor: pointer;
     margin: 0 0.625rem;
-    box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
