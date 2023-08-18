@@ -4,7 +4,7 @@ import { getDocs, query } from 'firebase/firestore';
 import type { Category } from '../../contexts/product.context';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
+  apiKey: import.meta.env.FIREBASE_API_KEY,
   authDomain: 'sun-co.firebaseapp.com',
   projectId: 'sun-co',
   storageBucket: 'sun-co.appspot.com',
