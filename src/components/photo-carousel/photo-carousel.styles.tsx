@@ -27,7 +27,7 @@ export const Circle = styled.button`
   border: 0.063rem solid white;
   color: white;
   cursor: pointer;
-  box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
+  box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,21 +63,22 @@ export const Indicators = styled.div`
 
 export const Indicator = styled.button`
   background-color: #201b21;
-  height: 0.60rem;
-  width: 0.60rem;
+  height: 0.75rem;
+  width: 0.75rem;
   border-radius: 50%;
   border: 0.063rem solid #201b21;
   margin: 0 0.2rem;
   cursor: pointer;
+  padding: 0;
 `;
 
 export const IndicatorInactive = styled.button`
   background-color: #d9dbe1;
-  height: 0.5rem;
-  width: 0.5rem;
+  height: 0.65rem;
+  width: 0.65rem;
   border-radius: 50%;
   border: 0.063rem solid #d9dbe1;
   margin: 0 0.2rem;
   cursor: pointer;
-  align-items: baseline;
+  padding: 0;
 `;
