@@ -44,7 +44,7 @@ export const ProductCardContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (width <= 800px) {
+  @media screen and (max-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;
