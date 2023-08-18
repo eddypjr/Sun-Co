@@ -41,6 +41,20 @@ export const Category = styled(Link)`
   font-size: 1.6rem;
   text-decoration: none;
   color: #201b21;
+
+  button {
+    padding: 0.6rem 1.6rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.125rem solid rgba(0, 0, 0, 0.3);
+    transition: all 0.25s ease-in-out;
+    font-family: Inter;
+    color: #201b21;
+
+    &:hover {
+      border: 0.125rem solid rgba(0, 0, 0, 0.5);
+    }
+  }
 `;
 
 export const FilterButtons = styled.div`
@@ -51,17 +65,5 @@ export const FilterButtons = styled.div`
   min-width: 17.5rem;
   flex-wrap: wrap;
   align-items: center;
-
-  button {
-    padding: 0.6rem 1.6rem;
-    cursor: pointer;
-    background-color: transparent;
-    border: 0.125rem solid rgba(0, 0, 0, 0.3);
-    transition: all 0.25s ease-in-out;
-    font-family: Inter;
-
-    &:hover {
-      border: 0.125rem solid rgba(0, 0, 0, 0.5);
-    }
-  }
+  color: #201b21;
 `;
