@@ -54,6 +54,7 @@ interface CartContextInterface {
   addItemToCart: (productToAdd: CartItem, quantity: number) => void;
   subtractItemFromCart: (productToSubtract: CartItem) => void;
   removeItemFromCart: (productToRemove: CartItem) => void;
+  clearCart: () => void;
   cartTotal: number;
   cartCount: number;
 }
@@ -63,6 +64,7 @@ export const CartContext = createContext<CartContextInterface>({
   addItemToCart: () => {},
   subtractItemFromCart: () => {},
   removeItemFromCart: () => {},
+  clearCart: () => {},
   cartTotal: 0,
   cartCount: 0,
 });
@@ -102,11 +104,16 @@ export const CartProvider = ({ children }: PropsWithChildren) => {
     setCartItems(removeCartItem(cartItems, productToRemove));
   };
 
+  const clearCart = () => {
+    setCartItems([]);
+  };
+
   const value = {
     cartItems,
     addItemToCart,
     subtractItemFromCart,
     removeItemFromCart,
+    clearCart,
     cartTotal,
     cartCount,
   };
