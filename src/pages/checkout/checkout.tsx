@@ -1,4 +1,10 @@
-import { Container, Content, Grid, GridLeft, GridRight } from './cart.styles';
+import {
+  Container,
+  Content,
+  Grid,
+  GridLeft,
+  GridRight,
+} from './checkout.styles';
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
 import CartItems from '../../components/cart-items/cart-items';
