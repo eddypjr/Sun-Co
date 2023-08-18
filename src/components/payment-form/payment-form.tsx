@@ -1,5 +1,6 @@
 import {
   Container,
+  Content,
   StyledForm,
   Title,
   Row,
@@ -69,6 +70,8 @@ const PaymentForm: FC<PaymentFormProps> = ({ total }) => {
 
   return (
     <Container>
+      <Content>
+
       <Title>Checkout</Title>
       <StyledForm onSubmit={paymentHandler}>
         <Row>
@@ -94,6 +97,7 @@ const PaymentForm: FC<PaymentFormProps> = ({ total }) => {
           {isProcessingPayment ? <ButtonSpinner /> : 'Pay Now'}
         </PayNowButton>
       </StyledForm>
+      </Content>
     </Container>
   );
 };

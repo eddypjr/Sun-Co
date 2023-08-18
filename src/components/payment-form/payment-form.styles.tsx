@@ -13,11 +13,23 @@ export const Container = styled.div`
   text-align: left;
 `;
 
+export const Content = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
+`;
+
 export const Title = styled.h1`
   color: #201b21;
   font-family: DM Sans;
   font-size: 2.25rem;
-  width: 80%;
+  width: 90%;
   font-weight: 700;
   line-height: 3rem;
   letter-spacing: -0.063rem;
@@ -32,7 +44,7 @@ export const Title = styled.h1`
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 
   label {
     font-weight: bold;

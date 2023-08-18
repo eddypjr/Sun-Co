@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -132,35 +131,4 @@ export const Underline = styled.div`
   // background-color: #201b21;
   height: 0.063rem;
   margin: 5% 0;
-`;
-
-export const Checkout = styled(Link)`
-  display: flex;
-  width: 80%;
-  padding: 1.25rem 5rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  border-radius: 0.625rem;
-  background: #201b21;
-  color: white;
-  font-family: Inter;
-  font-size: 1.125rem;
-
-  font-weight: 700;
-  line-height: 1.5rem;
-  margin: 5% 0;
-
-  &:hover {
-    background-color: #67696e;
-  }
-
-  @media screen and (max-width: 800px) {
-    display: flex;
-    width: 70vw;
-    padding: 0.75rem 5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-  }
 `;

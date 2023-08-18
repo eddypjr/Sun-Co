@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ProductsContext } from '../../contexts/product.context';
 import {
+  Category,
   Container,
   Content,
   Title,
@@ -21,13 +22,13 @@ const CategoriesHeader = () => {
             <h3>{category}</h3>
           </Title>
           <FilterButtons className="filter-buttons">
-            <Link to="/shop/All">
+            <Category to="/shop/All">
               <button>All</button>
-            </Link>
+            </Category>
             {categoriesMap.map((categoryData, i) => (
-              <Link to={`/shop/${categoryData.title}`} key={i}>
+              <Category to={`/shop/${categoryData.title}`} key={i}>
                 <button>{categoryData.title}</button>
-              </Link>
+              </Category>
             ))}
           </FilterButtons>
         </Content>

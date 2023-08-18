@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -14,12 +15,6 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  a {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: #201b21;
-  }
 `;
 
 export const Title = styled.div`
@@ -42,6 +37,12 @@ export const Title = styled.div`
   }
 `;
 
+export const Category = styled(Link)`
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #201b21;
+`;
+
 export const FilterButtons = styled.div`
   justify-content: center;
   display: flex;
@@ -50,7 +51,6 @@ export const FilterButtons = styled.div`
   min-width: 17.5rem;
   flex-wrap: wrap;
   align-items: center;
-  color: #201b21;
 
   button {
     padding: 0.6rem 1.6rem;

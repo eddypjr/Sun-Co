@@ -39,7 +39,6 @@ export const ProductImage = styled.img<ProductImageProps>`
   }
 
   @media screen and (max-width: 800px) {
-    width: 14.063rem;
     height: 21.875rem;
   }
 
