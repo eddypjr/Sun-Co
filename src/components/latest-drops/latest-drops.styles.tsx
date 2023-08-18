@@ -47,6 +47,10 @@ export const ProductsContainer = styled.div`
     white-space: nowrap;
     scroll-behavior: smooth;
     position: relative;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 

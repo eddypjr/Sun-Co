@@ -7,12 +7,6 @@ export const Container = styled.div`
   height: 15.625rem;
   width: 100%;
   min-width: 9.375rem;
-
-  a {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: #201b21;
-  }
 `;
 
 export const Content = styled.div`
@@ -56,6 +50,7 @@ export const FilterButtons = styled.div`
   min-width: 17.5rem;
   flex-wrap: wrap;
   align-items: center;
+  color: #201b21;
 
   button {
     padding: 0.6rem 1.6rem;
