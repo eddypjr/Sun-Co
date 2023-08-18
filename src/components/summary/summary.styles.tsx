@@ -7,7 +7,6 @@ export const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     justify-content: center;
-    height: 24.31rem;
   }
 `;
 
@@ -99,6 +98,7 @@ export const Bottom = styled.div`
   font-weight: 500;
   line-height: 1.5rem;
   letter-spacing: -0.031rem;
+  margin-bottom: 5%;
 
   .total {
     font-size: 1.5rem;
@@ -129,7 +129,7 @@ export const Spacing = styled.div`
 export const Underline = styled.div`
   width: 100%;
   opacity: 0.1;
-  background-color: #201b21;
+  // background-color: #201b21;
   height: 0.063rem;
   margin: 5% 0;
 `;
@@ -150,6 +150,10 @@ export const Checkout = styled(Link)`
   font-weight: 700;
   line-height: 1.5rem;
   margin: 5% 0;
+
+  &:hover {
+    background-color: #67696e;
+  }
 
   @media screen and (max-width: 800px) {
     display: flex;

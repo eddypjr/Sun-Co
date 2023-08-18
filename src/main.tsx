@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { ProductsProvider } from './contexts/product.context.tsx';
 import { CartProvider } from './contexts/cart.context.tsx';
+import { Elements } from '@stripe/react-stripe-js';
+import { stripePromise } from './utils/stripe/stripe.utils.ts';
+
 import App from './App.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -10,7 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <ProductsProvider>
         <CartProvider>
-          <App />
+          <Elements stripe={stripePromise}>
+            <App />
+          </Elements>
         </CartProvider>
       </ProductsProvider>
     </BrowserRouter>

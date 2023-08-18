@@ -124,7 +124,7 @@ export const ShopNowButton = styled(Link)`
   font-size: 1.125rem;
 
   &:hover {
-    background-color: #d9dbe1;
+    background-color: #67696e;
   }
 
   @media screen and (max-width: 800px) {

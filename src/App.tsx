@@ -7,7 +7,7 @@ import LoadingSpinner from '../src/components/loading-spinner/loading-spinner';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Cart = lazy(() => import('./pages/cart/cart'));
+const Checkout = lazy(() => import('./pages/checkout/checkout'));
 const Product = lazy(() => import('./pages/product/product'));
 const Shop = lazy(() => import('./pages/shop/shop'));
 
@@ -19,7 +19,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="cart" element={<Cart />} />
+            <Route path="checkout" element={<Checkout />} />
             <Route path="product/*" element={<Product />} />
             <Route path="shop/*" element={<Shop />} />
           </Route>
