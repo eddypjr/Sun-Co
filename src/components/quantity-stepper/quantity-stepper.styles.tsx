@@ -50,6 +50,7 @@ export const Button = styled.button`
   background-color: white;
   cursor: pointer;
   font-size: 1.25rem;
+  color: black;
 
   @media screen and (max-width: 800px) {
     width: 1.5rem;

@@ -28,6 +28,9 @@ export const Circle = styled.button`
   color: white;
   cursor: pointer;
   box-shadow: 0rem 0.278rem 4.167rem 0rem rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Arrow = styled.img`
@@ -55,12 +58,13 @@ export const Indicators = styled.div`
   display: flex;
   align-items: center;
   justify-content: baseline;
+  height: 100%;
 `;
 
 export const Indicator = styled.button`
   background-color: #201b21;
-  height: 0.75rem;
-  width: 0.75rem;
+  height: 0.60rem;
+  width: 0.60rem;
   border-radius: 50%;
   border: 0.063rem solid #201b21;
   margin: 0 0.2rem;
@@ -69,8 +73,8 @@ export const Indicator = styled.button`
 
 export const IndicatorInactive = styled.button`
   background-color: #d9dbe1;
-  height: 0.65rem;
-  width: 0.65rem;
+  height: 0.5rem;
+  width: 0.5rem;
   border-radius: 50%;
   border: 0.063rem solid #d9dbe1;
   margin: 0 0.2rem;

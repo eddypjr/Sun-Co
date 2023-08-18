@@ -7,6 +7,12 @@ export const Container = styled.div`
   height: 15.625rem;
   width: 100%;
   min-width: 9.375rem;
+
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #201b21;
+  }
 `;
 
 export const Content = styled.div`
@@ -35,13 +41,6 @@ export const Title = styled.div`
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-  }
-
-  a {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: #201b21;
-    text-align: left;
   }
 
   @media screen and (max-width: 380px) {
