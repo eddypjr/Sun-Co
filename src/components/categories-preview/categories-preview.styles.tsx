@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -7,17 +8,13 @@ export const Container = styled.div`
   margin-top: 1.563rem;
 `;
 
-type BackgroundImageProps = {
-  src: string;
-};
-
-export const BackgroundImage = styled.div<BackgroundImageProps>`
+export const BackgroundImage = styled.img`
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: ${({ src }) => `url(${src})`};
-  border-radius: 0%;
+  border-radius: 0;
+  tabIndex: 1;
 `;
 
 export const Body = styled.div`
@@ -62,7 +59,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled(Link)`
   height: 20rem;
   display: flex;
   flex: 1 1 auto;

@@ -19,7 +19,7 @@ export const BottomContainer = styled.div`
   margin-top: 2%;
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.button`
   background-color: white;
   border-radius: 50%;
   width: 2.188rem;

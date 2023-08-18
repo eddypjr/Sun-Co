@@ -128,7 +128,6 @@ export const RemoveButton = styled.button`
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
 
   @media screen and (max-width: 800px) {
     font-size: 0.875rem;

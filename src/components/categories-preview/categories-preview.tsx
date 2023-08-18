@@ -19,13 +19,11 @@ const CategoriesPreview = () => {
       <Container>
         <Categories>
           {categoriesMap.map((category) => (
-            <Content
-              key={category.title}
-              onClick={() => navigate(`shop/${category.title}`)}
-            >
+            <Content key={category.title} to={`shop/${category.title}`}>
               <BackgroundImage
                 src={category.imageUrl}
-                aria-label="category-image"
+                role="image"
+                alt="category-image"
               />
 
               <Body>

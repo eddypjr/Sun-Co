@@ -59,7 +59,7 @@ export const Arrow = styled.img`
   }
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.button`
   @media screen and (max-width: 800px) {
     background-color: white;
     width: 2.188rem;

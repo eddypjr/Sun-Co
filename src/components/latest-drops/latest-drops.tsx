@@ -36,14 +36,14 @@ const LatestDrops: FC = () => {
               <Circle>
                 <Arrow
                   src={LeftChevron}
-                  onClick={() => scroll(30)}
+                  onClick={() => scroll(50)}
                   alt="left-chevron"
                 />
               </Circle>
               <Circle>
                 <Arrow
                   src={RightChevron}
-                  onClick={() => scroll(-30)}
+                  onClick={() => scroll(-50)}
                   alt="right-chevron"
                 />
               </Circle>

@@ -40,9 +40,14 @@ export const Span = styled.span`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   width: 1.5rem;
   height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
   cursor: pointer;
 
   @media screen and (max-width: 800px) {

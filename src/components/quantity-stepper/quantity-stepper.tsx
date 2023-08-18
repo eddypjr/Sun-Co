@@ -19,11 +19,11 @@ const QuantityStepper: FC<QuantityStepperProps> = ({
       <div>
         <QtyStepper>
           <Button onClick={handleDecrement}>
-            <img src={minus} alt="minus"/>
+            <img src={minus} alt="minus" />
           </Button>
           <Span>{quantity}</Span>
           <Button onClick={handleIncrement}>
-            <img src={plus} alt="plus"/>
+            <img src={plus} alt="plus" />
           </Button>
         </QtyStepper>
       </div>
