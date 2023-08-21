@@ -25,7 +25,6 @@ const PaymentForm: FC<PaymentFormProps> = ({ total }) => {
   const elements = useElements();
   const navigate = useNavigate();
 
-
   const paymentHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -54,14 +53,16 @@ const PaymentForm: FC<PaymentFormProps> = ({ total }) => {
         },
       },
     });
-    
+
     setIsProcessingPayment(false);
-    
+
     if (paymentResult.error) {
       alert(paymentResult.error);
     } else {
       if (paymentResult.paymentIntent.status === 'succeeded') {
-        alert('Payment Successful. Thank you for placing an order with Sun Co.');
+        alert(
+          'Payment Successful. Thank you for placing an order with Sun Co.'
+        );
         clearCart();
       }
     }
@@ -71,32 +72,31 @@ const PaymentForm: FC<PaymentFormProps> = ({ total }) => {
   return (
     <Container>
       <Content>
+        <Title>Checkout</Title>
+        <StyledForm onSubmit={paymentHandler}>
+          <Row>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </Row>
+          <input type="email" placeholder="Email" />
+          <Row>
+            <input type="tel" placeholder="Phone Number" />
+          </Row>
+          <input type="text" placeholder="Address" />
+          <Row>
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="State" />
+            <input type="text" placeholder="Zip" />
+          </Row>
+          <CardContainer>
+            <label>Card Details</label>
+            <CardElement options={{ style: { base: { fontSize: '16px' } } }} />
+          </CardContainer>
 
-      <Title>Checkout</Title>
-      <StyledForm onSubmit={paymentHandler}>
-        <Row>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-        </Row>
-        <input type="email" placeholder="Email" />
-        <Row>
-          <input type="tel" placeholder="Phone Number" />
-        </Row>
-        <input type="text" placeholder="Address" />
-        <Row>
-          <input type="text" placeholder="City" />
-          <input type="text" placeholder="State" />
-          <input type="text" placeholder="Zip" />
-        </Row>
-        <CardContainer>
-          <label>Card Details</label>
-          <CardElement options={{ style: { base: { fontSize: '16px' } } }} />
-        </CardContainer>
-
-        <PayNowButton disabled={isProcessingPayment}>
-          {isProcessingPayment ? <ButtonSpinner /> : 'Pay Now'}
-        </PayNowButton>
-      </StyledForm>
+          <PayNowButton disabled={isProcessingPayment}>
+            {isProcessingPayment ? <ButtonSpinner /> : 'Pay Now'}
+          </PayNowButton>
+        </StyledForm>
       </Content>
     </Container>
   );

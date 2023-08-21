@@ -41,17 +41,10 @@ export const Arrow = styled.img`
 `;
 
 export const Slide = styled.img`
+aspect-ratio: 0.92/1;
   width: 100%;
-  height: 28.125rem;
+  max-height: 650px;
   transition: all 0.25s ease-in-out;
-
-  @media screen and (min-width: 1400px) {
-    height: 40.5rem;
-  }
-
-  @media screen and (max-width: 1000px) {
-    height: 18.75rem;
-  }
 `;
 
 export const Indicators = styled.div`

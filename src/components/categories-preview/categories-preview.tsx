@@ -20,7 +20,7 @@ const CategoriesPreview = () => {
             <Content key={category.title} to={`shop/${category.title}`}>
               <BackgroundImage
                 src={category.imageUrl}
-                role="image"
+                role="img"
                 aria-label="category-image"
               />
 

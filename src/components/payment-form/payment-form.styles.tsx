@@ -64,7 +64,7 @@ export const StyledForm = styled.form`
 export const Row = styled.div`
   display: flex;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 export const CardContainer = styled.div`
   border: 0.063rem solid #ccc;

@@ -36,8 +36,8 @@ export const ImageContainer = styled.div`
 
   img {
     border-radius: 1.173rem;
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 10.5rem;
+    height: 10.5rem;
     flex-shrink: 0;
 
     @media screen and (min-width: 800px) and (max-width: 1200px) {

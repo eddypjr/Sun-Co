@@ -1,6 +1,7 @@
 import { FC, Suspense, lazy } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { GlobalStyle } from '../global.styles';
+
 import Home from './pages/home/home';
 import Layout from './components/layout/layout';
 import LoadingSpinner from '../src/components/loading-spinner/loading-spinner';

@@ -37,7 +37,7 @@ export const BannerLeft = styled.div`
   }
 
   h1 {
-    color: var(--orange, #ec5e2a);
+    color: #D45425;
     font-family: DM Sans;
     font-size: 3rem;
     font-weight: 700;

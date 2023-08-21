@@ -17,34 +17,27 @@ export const ImageContainer = styled.div`
     filter: blur(4px);
   }
   width: 100%;
-`;
-
-type ProductImageProps = {
-  width: string;
-};
-
-export const ProductImage = styled.img<ProductImageProps>`
+  `;
+  
+  type ProductImageProps = {
+    width: string;
+  };
+  
+  export const ProductImage = styled.img<ProductImageProps>`
   border-radius: 1.173rem;
   display: block;
-  height: 400px;
+  aspect-ratio: 0.92/1;
+  object-fit: fill;
   width: 100%;
   transition: all 0.25s ease-in-out;
 
-  @media screen and (min-width: 2000px) {
-    height: 37.5rem;
-  }
-
-  @media screen and (min-width: 801px) and (max-width: 1400px) {
-    height: 18.75rem;
-  }
-
   @media screen and (max-width: 800px) {
-    height: 21.875rem;
+    width: 300px;
+
   }
 
   @media screen and (max-width: 480px) {
     width: ${({ width }) => `${width}`};
-    height: 15.625rem;
   }
 `;
 
