@@ -3,8 +3,9 @@
 <h2>Description</h2>
 <p>Discover <b>Sun Co.</b>, a serverless ecommerce web application that combines an intuitive design with a seamless user experience, enssuring a clutter-free shopping experience.</p>
 
-<h3>Built with:</h3>
+<p>When checking out, please use Stripe&apos;s demo credit car number of <b>4242 4242 4242 4242</b>. The CVC can be any three-digit number and the expiration date can be any future date.</p>
 
+<h3>Built with:</h3>
 - React
 - TypeScript
 - Firebase
